@@ -1,0 +1,416 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<HelpKI>
+  <HelpKINode Title="AddedFiles field" Url="html/F_PatchKit_Api_ApiConnection_AppDiffSummary_AddedFiles.htm" />
+  <HelpKINode Title="ApiConnection class">
+    <HelpKINode Title="ApiConnection Class" Url="html/T_PatchKit_Api_ApiConnection.htm" />
+    <HelpKINode Title="about ApiConnection class" Url="html/T_PatchKit_Api_ApiConnection.htm" />
+    <HelpKINode Title="constructor" Url="html/Overload_PatchKit_Api_ApiConnection__ctor.htm" />
+    <HelpKINode Title="methods" Url="html/Methods_T_PatchKit_Api_ApiConnection.htm" />
+  </HelpKINode>
+  <HelpKINode Title="ApiConnection.ApiConnection constructor" Url="html/Overload_PatchKit_Api_ApiConnection__ctor.htm" />
+  <HelpKINode Title="ApiConnection.AppContentSummary structure">
+    <HelpKINode Title="ApiConnection.AppContentSummary Structure" Url="html/T_PatchKit_Api_ApiConnection_AppContentSummary.htm" />
+    <HelpKINode Title="about ApiConnection.AppContentSummary structure" Url="html/T_PatchKit_Api_ApiConnection_AppContentSummary.htm" />
+  </HelpKINode>
+  <HelpKINode Title="ApiConnection.AppContentSummary.CompressionMethod field" Url="html/F_PatchKit_Api_ApiConnection_AppContentSummary_CompressionMethod.htm" />
+  <HelpKINode Title="ApiConnection.AppContentSummary.EncryptionMethod field" Url="html/F_PatchKit_Api_ApiConnection_AppContentSummary_EncryptionMethod.htm" />
+  <HelpKINode Title="ApiConnection.AppContentSummary.Files field" Url="html/F_PatchKit_Api_ApiConnection_AppContentSummary_Files.htm" />
+  <HelpKINode Title="ApiConnection.AppContentSummary.Size field" Url="html/F_PatchKit_Api_ApiConnection_AppContentSummary_Size.htm" />
+  <HelpKINode Title="ApiConnection.AppContentSummaryFile structure">
+    <HelpKINode Title="ApiConnection.AppContentSummaryFile Structure" Url="html/T_PatchKit_Api_ApiConnection_AppContentSummaryFile.htm" />
+    <HelpKINode Title="about ApiConnection.AppContentSummaryFile structure" Url="html/T_PatchKit_Api_ApiConnection_AppContentSummaryFile.htm" />
+  </HelpKINode>
+  <HelpKINode Title="ApiConnection.AppContentSummaryFile.Hash field" Url="html/F_PatchKit_Api_ApiConnection_AppContentSummaryFile_Hash.htm" />
+  <HelpKINode Title="ApiConnection.AppContentSummaryFile.Path field" Url="html/F_PatchKit_Api_ApiConnection_AppContentSummaryFile_Path.htm" />
+  <HelpKINode Title="ApiConnection.AppContentTorrentUrl structure">
+    <HelpKINode Title="ApiConnection.AppContentTorrentUrl Structure" Url="html/T_PatchKit_Api_ApiConnection_AppContentTorrentUrl.htm" />
+    <HelpKINode Title="about ApiConnection.AppContentTorrentUrl structure" Url="html/T_PatchKit_Api_ApiConnection_AppContentTorrentUrl.htm" />
+  </HelpKINode>
+  <HelpKINode Title="ApiConnection.AppContentTorrentUrl.Url field" Url="html/F_PatchKit_Api_ApiConnection_AppContentTorrentUrl_Url.htm" />
+  <HelpKINode Title="ApiConnection.AppContentUrl structure">
+    <HelpKINode Title="ApiConnection.AppContentUrl Structure" Url="html/T_PatchKit_Api_ApiConnection_AppContentUrl.htm" />
+    <HelpKINode Title="about ApiConnection.AppContentUrl structure" Url="html/T_PatchKit_Api_ApiConnection_AppContentUrl.htm" />
+  </HelpKINode>
+  <HelpKINode Title="ApiConnection.AppContentUrl.Url field" Url="html/F_PatchKit_Api_ApiConnection_AppContentUrl_Url.htm" />
+  <HelpKINode Title="ApiConnection.AppDiffSummary structure">
+    <HelpKINode Title="ApiConnection.AppDiffSummary Structure" Url="html/T_PatchKit_Api_ApiConnection_AppDiffSummary.htm" />
+    <HelpKINode Title="about ApiConnection.AppDiffSummary structure" Url="html/T_PatchKit_Api_ApiConnection_AppDiffSummary.htm" />
+  </HelpKINode>
+  <HelpKINode Title="ApiConnection.AppDiffSummary.AddedFiles field" Url="html/F_PatchKit_Api_ApiConnection_AppDiffSummary_AddedFiles.htm" />
+  <HelpKINode Title="ApiConnection.AppDiffSummary.CompressionMethod field" Url="html/F_PatchKit_Api_ApiConnection_AppDiffSummary_CompressionMethod.htm" />
+  <HelpKINode Title="ApiConnection.AppDiffSummary.EncryptionMethod field" Url="html/F_PatchKit_Api_ApiConnection_AppDiffSummary_EncryptionMethod.htm" />
+  <HelpKINode Title="ApiConnection.AppDiffSummary.ModifiedFiles field" Url="html/F_PatchKit_Api_ApiConnection_AppDiffSummary_ModifiedFiles.htm" />
+  <HelpKINode Title="ApiConnection.AppDiffSummary.RemovedFiles field" Url="html/F_PatchKit_Api_ApiConnection_AppDiffSummary_RemovedFiles.htm" />
+  <HelpKINode Title="ApiConnection.AppDiffSummary.Size field" Url="html/F_PatchKit_Api_ApiConnection_AppDiffSummary_Size.htm" />
+  <HelpKINode Title="ApiConnection.AppDiffTorrentUrl structure">
+    <HelpKINode Title="ApiConnection.AppDiffTorrentUrl Structure" Url="html/T_PatchKit_Api_ApiConnection_AppDiffTorrentUrl.htm" />
+    <HelpKINode Title="about ApiConnection.AppDiffTorrentUrl structure" Url="html/T_PatchKit_Api_ApiConnection_AppDiffTorrentUrl.htm" />
+  </HelpKINode>
+  <HelpKINode Title="ApiConnection.AppDiffTorrentUrl.Url field" Url="html/F_PatchKit_Api_ApiConnection_AppDiffTorrentUrl_Url.htm" />
+  <HelpKINode Title="ApiConnection.AppDiffUrl structure">
+    <HelpKINode Title="ApiConnection.AppDiffUrl Structure" Url="html/T_PatchKit_Api_ApiConnection_AppDiffUrl.htm" />
+    <HelpKINode Title="about ApiConnection.AppDiffUrl structure" Url="html/T_PatchKit_Api_ApiConnection_AppDiffUrl.htm" />
+  </HelpKINode>
+  <HelpKINode Title="ApiConnection.AppDiffUrl.Url field" Url="html/F_PatchKit_Api_ApiConnection_AppDiffUrl_Url.htm" />
+  <HelpKINode Title="ApiConnection.AppVersion structure">
+    <HelpKINode Title="ApiConnection.AppVersion Structure" Url="html/T_PatchKit_Api_ApiConnection_AppVersion.htm" />
+    <HelpKINode Title="about ApiConnection.AppVersion structure" Url="html/T_PatchKit_Api_ApiConnection_AppVersion.htm" />
+  </HelpKINode>
+  <HelpKINode Title="ApiConnection.AppVersion.Changelog field" Url="html/F_PatchKit_Api_ApiConnection_AppVersion_Changelog.htm" />
+  <HelpKINode Title="ApiConnection.AppVersion.ContentGuid field" Url="html/F_PatchKit_Api_ApiConnection_AppVersion_ContentGuid.htm" />
+  <HelpKINode Title="ApiConnection.AppVersion.DiffGuid field" Url="html/F_PatchKit_Api_ApiConnection_AppVersion_DiffGuid.htm" />
+  <HelpKINode Title="ApiConnection.AppVersion.Draft field" Url="html/F_PatchKit_Api_ApiConnection_AppVersion_Draft.htm" />
+  <HelpKINode Title="ApiConnection.AppVersion.Id field" Url="html/F_PatchKit_Api_ApiConnection_AppVersion_Id.htm" />
+  <HelpKINode Title="ApiConnection.AppVersion.Label field" Url="html/F_PatchKit_Api_ApiConnection_AppVersion_Label.htm" />
+  <HelpKINode Title="ApiConnection.AppVersion.PublishDate field" Url="html/F_PatchKit_Api_ApiConnection_AppVersion_PublishDate.htm" />
+  <HelpKINode Title="ApiConnection.AppVersionId structure">
+    <HelpKINode Title="ApiConnection.AppVersionId Structure" Url="html/T_PatchKit_Api_ApiConnection_AppVersionId.htm" />
+    <HelpKINode Title="about ApiConnection.AppVersionId structure" Url="html/T_PatchKit_Api_ApiConnection_AppVersionId.htm" />
+  </HelpKINode>
+  <HelpKINode Title="ApiConnection.AppVersionId.Id field" Url="html/F_PatchKit_Api_ApiConnection_AppVersionId_Id.htm" />
+  <HelpKINode Title="ApiConnection.BeginGetAppChangelog method" Url="html/M_PatchKit_Api_ApiConnection_BeginGetAppChangelog.htm" />
+  <HelpKINode Title="ApiConnection.BeginGetAppLatestVersion method" Url="html/M_PatchKit_Api_ApiConnection_BeginGetAppLatestVersion.htm" />
+  <HelpKINode Title="ApiConnection.BeginGetAppLatestVersionId method" Url="html/M_PatchKit_Api_ApiConnection_BeginGetAppLatestVersionId.htm" />
+  <HelpKINode Title="ApiConnection.BeginGetAppVersion method" Url="html/M_PatchKit_Api_ApiConnection_BeginGetAppVersion.htm" />
+  <HelpKINode Title="ApiConnection.BeginGetAppVersionContentSummary method" Url="html/M_PatchKit_Api_ApiConnection_BeginGetAppVersionContentSummary.htm" />
+  <HelpKINode Title="ApiConnection.BeginGetAppVersionContentTorrentUrl method" Url="html/M_PatchKit_Api_ApiConnection_BeginGetAppVersionContentTorrentUrl.htm" />
+  <HelpKINode Title="ApiConnection.BeginGetAppVersionContentUrls method" Url="html/M_PatchKit_Api_ApiConnection_BeginGetAppVersionContentUrls.htm" />
+  <HelpKINode Title="ApiConnection.BeginGetAppVersionDiffSummary method" Url="html/M_PatchKit_Api_ApiConnection_BeginGetAppVersionDiffSummary.htm" />
+  <HelpKINode Title="ApiConnection.BeginGetAppVersionDiffTorrentUrl method" Url="html/M_PatchKit_Api_ApiConnection_BeginGetAppVersionDiffTorrentUrl.htm" />
+  <HelpKINode Title="ApiConnection.BeginGetAppVersionDiffUrls method" Url="html/M_PatchKit_Api_ApiConnection_BeginGetAppVersionDiffUrls.htm" />
+  <HelpKINode Title="ApiConnection.BeginGetAppVersionList method" Url="html/M_PatchKit_Api_ApiConnection_BeginGetAppVersionList.htm" />
+  <HelpKINode Title="ApiConnection.EndGetAppChangelog method" Url="html/M_PatchKit_Api_ApiConnection_EndGetAppChangelog.htm" />
+  <HelpKINode Title="ApiConnection.EndGetAppLatestVersion method" Url="html/M_PatchKit_Api_ApiConnection_EndGetAppLatestVersion.htm" />
+  <HelpKINode Title="ApiConnection.EndGetAppLatestVersionId method" Url="html/M_PatchKit_Api_ApiConnection_EndGetAppLatestVersionId.htm" />
+  <HelpKINode Title="ApiConnection.EndGetAppVersion method" Url="html/M_PatchKit_Api_ApiConnection_EndGetAppVersion.htm" />
+  <HelpKINode Title="ApiConnection.EndGetAppVersionContentSummary method" Url="html/M_PatchKit_Api_ApiConnection_EndGetAppVersionContentSummary.htm" />
+  <HelpKINode Title="ApiConnection.EndGetAppVersionContentTorrentUrl method" Url="html/M_PatchKit_Api_ApiConnection_EndGetAppVersionContentTorrentUrl.htm" />
+  <HelpKINode Title="ApiConnection.EndGetAppVersionContentUrls method" Url="html/M_PatchKit_Api_ApiConnection_EndGetAppVersionContentUrls.htm" />
+  <HelpKINode Title="ApiConnection.EndGetAppVersionDiffSummary method" Url="html/M_PatchKit_Api_ApiConnection_EndGetAppVersionDiffSummary.htm" />
+  <HelpKINode Title="ApiConnection.EndGetAppVersionDiffTorrentUrl method" Url="html/M_PatchKit_Api_ApiConnection_EndGetAppVersionDiffTorrentUrl.htm" />
+  <HelpKINode Title="ApiConnection.EndGetAppVersionDiffUrls method" Url="html/M_PatchKit_Api_ApiConnection_EndGetAppVersionDiffUrls.htm" />
+  <HelpKINode Title="ApiConnection.EndGetAppVersionList method" Url="html/M_PatchKit_Api_ApiConnection_EndGetAppVersionList.htm" />
+  <HelpKINode Title="ApiConnection.GetAppChangelog method" Url="html/M_PatchKit_Api_ApiConnection_GetAppChangelog.htm" />
+  <HelpKINode Title="ApiConnection.GetAppLatestVersion method" Url="html/M_PatchKit_Api_ApiConnection_GetAppLatestVersion.htm" />
+  <HelpKINode Title="ApiConnection.GetAppLatestVersionId method" Url="html/M_PatchKit_Api_ApiConnection_GetAppLatestVersionId.htm" />
+  <HelpKINode Title="ApiConnection.GetAppVersion method" Url="html/M_PatchKit_Api_ApiConnection_GetAppVersion.htm" />
+  <HelpKINode Title="ApiConnection.GetAppVersionContentSummary method" Url="html/M_PatchKit_Api_ApiConnection_GetAppVersionContentSummary.htm" />
+  <HelpKINode Title="ApiConnection.GetAppVersionContentTorrentUrl method" Url="html/M_PatchKit_Api_ApiConnection_GetAppVersionContentTorrentUrl.htm" />
+  <HelpKINode Title="ApiConnection.GetAppVersionContentUrls method" Url="html/M_PatchKit_Api_ApiConnection_GetAppVersionContentUrls.htm" />
+  <HelpKINode Title="ApiConnection.GetAppVersionDiffSummary method" Url="html/M_PatchKit_Api_ApiConnection_GetAppVersionDiffSummary.htm" />
+  <HelpKINode Title="ApiConnection.GetAppVersionDiffTorrentUrl method" Url="html/M_PatchKit_Api_ApiConnection_GetAppVersionDiffTorrentUrl.htm" />
+  <HelpKINode Title="ApiConnection.GetAppVersionDiffUrls method" Url="html/M_PatchKit_Api_ApiConnection_GetAppVersionDiffUrls.htm" />
+  <HelpKINode Title="ApiConnection.GetAppVersionList method" Url="html/M_PatchKit_Api_ApiConnection_GetAppVersionList.htm" />
+  <HelpKINode Title="ApiConnection.Job structure">
+    <HelpKINode Title="ApiConnection.Job Structure" Url="html/T_PatchKit_Api_ApiConnection_Job.htm" />
+    <HelpKINode Title="about ApiConnection.Job structure" Url="html/T_PatchKit_Api_ApiConnection_Job.htm" />
+  </HelpKINode>
+  <HelpKINode Title="ApiConnection.Job.JobGuid field" Url="html/F_PatchKit_Api_ApiConnection_Job_JobGuid.htm" />
+  <HelpKINode Title="ApiConnectionSettings structure">
+    <HelpKINode Title="ApiConnectionSettings Structure" Url="html/T_PatchKit_Api_ApiConnectionSettings.htm" />
+    <HelpKINode Title="about ApiConnectionSettings structure" Url="html/T_PatchKit_Api_ApiConnectionSettings.htm" />
+    <HelpKINode Title="constructor" Url="html/M_PatchKit_Api_ApiConnectionSettings__ctor.htm" />
+    <HelpKINode Title="fields" Url="html/Fields_T_PatchKit_Api_ApiConnectionSettings.htm" />
+    <HelpKINode Title="methods" Url="html/Methods_T_PatchKit_Api_ApiConnectionSettings.htm" />
+  </HelpKINode>
+  <HelpKINode Title="ApiConnectionSettings.ApiConnectionSettings constructor" Url="html/M_PatchKit_Api_ApiConnectionSettings__ctor.htm" />
+  <HelpKINode Title="ApiConnectionSettings.Timeout field" Url="html/F_PatchKit_Api_ApiConnectionSettings_Timeout.htm" />
+  <HelpKINode Title="ApiConnectionSettings.Urls field" Url="html/F_PatchKit_Api_ApiConnectionSettings_Urls.htm" />
+  <HelpKINode Title="ApiException class">
+    <HelpKINode Title="ApiException Class" Url="html/T_PatchKit_Api_ApiException.htm" />
+    <HelpKINode Title="about ApiException class" Url="html/T_PatchKit_Api_ApiException.htm" />
+    <HelpKINode Title="events" Url="html/Events_T_PatchKit_Api_ApiException.htm" />
+    <HelpKINode Title="fields" Url="html/Fields_T_PatchKit_Api_ApiException.htm" />
+    <HelpKINode Title="methods" Url="html/Methods_T_PatchKit_Api_ApiException.htm" />
+    <HelpKINode Title="properties" Url="html/Properties_T_PatchKit_Api_ApiException.htm" />
+  </HelpKINode>
+  <HelpKINode Title="ApiException.StatusCode field" Url="html/F_PatchKit_Api_ApiException_StatusCode.htm" />
+  <HelpKINode Title="ApiHttpDownloader class">
+    <HelpKINode Title="ApiHttpDownloader Class" Url="html/T_PatchKit_Api_ApiHttpDownloader.htm" />
+    <HelpKINode Title="about ApiHttpDownloader class" Url="html/T_PatchKit_Api_ApiHttpDownloader.htm" />
+    <HelpKINode Title="constructor" Url="html/M_PatchKit_Api_ApiHttpDownloader__ctor.htm" />
+    <HelpKINode Title="methods" Url="html/Methods_T_PatchKit_Api_ApiHttpDownloader.htm" />
+  </HelpKINode>
+  <HelpKINode Title="ApiHttpDownloader.ApiHttpDownloader constructor" Url="html/M_PatchKit_Api_ApiHttpDownloader__ctor.htm" />
+  <HelpKINode Title="ApiHttpDownloader.BeginDownloadString method" Url="html/M_PatchKit_Api_ApiHttpDownloader_BeginDownloadString.htm" />
+  <HelpKINode Title="ApiHttpDownloader.EndDownloadString method" Url="html/M_PatchKit_Api_ApiHttpDownloader_EndDownloadString.htm" />
+  <HelpKINode Title="ApiHttpResult structure">
+    <HelpKINode Title="ApiHttpResult Structure" Url="html/T_PatchKit_Api_ApiHttpResult.htm" />
+    <HelpKINode Title="about ApiHttpResult structure" Url="html/T_PatchKit_Api_ApiHttpResult.htm" />
+    <HelpKINode Title="methods" Url="html/Methods_T_PatchKit_Api_ApiHttpResult.htm" />
+    <HelpKINode Title="properties" Url="html/Properties_T_PatchKit_Api_ApiHttpResult.htm" />
+  </HelpKINode>
+  <HelpKINode Title="ApiHttpResult.StatusCode property" Url="html/P_PatchKit_Api_ApiHttpResult_StatusCode.htm" />
+  <HelpKINode Title="ApiHttpResult.Value property" Url="html/P_PatchKit_Api_ApiHttpResult_Value.htm" />
+  <HelpKINode Title="AppContentSummary structure">
+    <HelpKINode Title="fields" Url="html/Fields_T_PatchKit_Api_ApiConnection_AppContentSummary.htm" />
+    <HelpKINode Title="methods" Url="html/Methods_T_PatchKit_Api_ApiConnection_AppContentSummary.htm" />
+  </HelpKINode>
+  <HelpKINode Title="AppContentSummaryFile structure">
+    <HelpKINode Title="fields" Url="html/Fields_T_PatchKit_Api_ApiConnection_AppContentSummaryFile.htm" />
+    <HelpKINode Title="methods" Url="html/Methods_T_PatchKit_Api_ApiConnection_AppContentSummaryFile.htm" />
+  </HelpKINode>
+  <HelpKINode Title="AppContentTorrentUrl structure">
+    <HelpKINode Title="fields" Url="html/Fields_T_PatchKit_Api_ApiConnection_AppContentTorrentUrl.htm" />
+    <HelpKINode Title="methods" Url="html/Methods_T_PatchKit_Api_ApiConnection_AppContentTorrentUrl.htm" />
+  </HelpKINode>
+  <HelpKINode Title="AppContentUrl structure">
+    <HelpKINode Title="fields" Url="html/Fields_T_PatchKit_Api_ApiConnection_AppContentUrl.htm" />
+    <HelpKINode Title="methods" Url="html/Methods_T_PatchKit_Api_ApiConnection_AppContentUrl.htm" />
+  </HelpKINode>
+  <HelpKINode Title="AppDiffSummary structure">
+    <HelpKINode Title="fields" Url="html/Fields_T_PatchKit_Api_ApiConnection_AppDiffSummary.htm" />
+    <HelpKINode Title="methods" Url="html/Methods_T_PatchKit_Api_ApiConnection_AppDiffSummary.htm" />
+  </HelpKINode>
+  <HelpKINode Title="AppDiffTorrentUrl structure">
+    <HelpKINode Title="fields" Url="html/Fields_T_PatchKit_Api_ApiConnection_AppDiffTorrentUrl.htm" />
+    <HelpKINode Title="methods" Url="html/Methods_T_PatchKit_Api_ApiConnection_AppDiffTorrentUrl.htm" />
+  </HelpKINode>
+  <HelpKINode Title="AppDiffUrl structure">
+    <HelpKINode Title="fields" Url="html/Fields_T_PatchKit_Api_ApiConnection_AppDiffUrl.htm" />
+    <HelpKINode Title="methods" Url="html/Methods_T_PatchKit_Api_ApiConnection_AppDiffUrl.htm" />
+  </HelpKINode>
+  <HelpKINode Title="AppVersion structure">
+    <HelpKINode Title="fields" Url="html/Fields_T_PatchKit_Api_ApiConnection_AppVersion.htm" />
+    <HelpKINode Title="methods" Url="html/Methods_T_PatchKit_Api_ApiConnection_AppVersion.htm" />
+  </HelpKINode>
+  <HelpKINode Title="AppVersionId structure">
+    <HelpKINode Title="fields" Url="html/Fields_T_PatchKit_Api_ApiConnection_AppVersionId.htm" />
+    <HelpKINode Title="methods" Url="html/Methods_T_PatchKit_Api_ApiConnection_AppVersionId.htm" />
+  </HelpKINode>
+  <HelpKINode Title="AsyncCancellationToken structure">
+    <HelpKINode Title="AsyncCancellationToken Structure" Url="html/T_PatchKit_Async_AsyncCancellationToken.htm" />
+    <HelpKINode Title="about AsyncCancellationToken structure" Url="html/T_PatchKit_Async_AsyncCancellationToken.htm" />
+    <HelpKINode Title="fields" Url="html/Fields_T_PatchKit_Async_AsyncCancellationToken.htm" />
+    <HelpKINode Title="methods" Url="html/Methods_T_PatchKit_Async_AsyncCancellationToken.htm" />
+    <HelpKINode Title="properties" Url="html/Properties_T_PatchKit_Async_AsyncCancellationToken.htm" />
+  </HelpKINode>
+  <HelpKINode Title="AsyncCancellationToken.IsCancellationRequested property" Url="html/P_PatchKit_Async_AsyncCancellationToken_IsCancellationRequested.htm" />
+  <HelpKINode Title="AsyncCancellationToken.None field" Url="html/F_PatchKit_Async_AsyncCancellationToken_None.htm" />
+  <HelpKINode Title="AsyncCancellationToken.Register method" Url="html/M_PatchKit_Async_AsyncCancellationToken_Register.htm" />
+  <HelpKINode Title="AsyncCancellationToken.ThrowIfCancellationRequested method" Url="html/M_PatchKit_Async_AsyncCancellationToken_ThrowIfCancellationRequested.htm" />
+  <HelpKINode Title="AsyncCancellationTokenRegistration class">
+    <HelpKINode Title="AsyncCancellationTokenRegistration Class" Url="html/T_PatchKit_Async_AsyncCancellationTokenRegistration.htm" />
+    <HelpKINode Title="about AsyncCancellationTokenRegistration class" Url="html/T_PatchKit_Async_AsyncCancellationTokenRegistration.htm" />
+    <HelpKINode Title="methods" Url="html/Methods_T_PatchKit_Async_AsyncCancellationTokenRegistration.htm" />
+  </HelpKINode>
+  <HelpKINode Title="AsyncCancellationTokenRegistration.Dispose method" Url="html/M_PatchKit_Async_AsyncCancellationTokenRegistration_Dispose.htm" />
+  <HelpKINode Title="AsyncCancellationTokenSource class">
+    <HelpKINode Title="AsyncCancellationTokenSource Class" Url="html/T_PatchKit_Async_AsyncCancellationTokenSource.htm" />
+    <HelpKINode Title="about AsyncCancellationTokenSource class" Url="html/T_PatchKit_Async_AsyncCancellationTokenSource.htm" />
+    <HelpKINode Title="constructor" Url="html/M_PatchKit_Async_AsyncCancellationTokenSource__ctor.htm" />
+    <HelpKINode Title="methods" Url="html/Methods_T_PatchKit_Async_AsyncCancellationTokenSource.htm" />
+    <HelpKINode Title="properties" Url="html/Properties_T_PatchKit_Async_AsyncCancellationTokenSource.htm" />
+  </HelpKINode>
+  <HelpKINode Title="AsyncCancellationTokenSource.AsyncCancellationTokenSource constructor" Url="html/M_PatchKit_Async_AsyncCancellationTokenSource__ctor.htm" />
+  <HelpKINode Title="AsyncCancellationTokenSource.Cancel method" Url="html/M_PatchKit_Async_AsyncCancellationTokenSource_Cancel.htm" />
+  <HelpKINode Title="AsyncCancellationTokenSource.IsCancellationRequested property" Url="html/P_PatchKit_Async_AsyncCancellationTokenSource_IsCancellationRequested.htm" />
+  <HelpKINode Title="AsyncCancellationTokenSource.Token property" Url="html/P_PatchKit_Async_AsyncCancellationTokenSource_Token.htm" />
+  <HelpKINode Title="AsyncResult class">
+    <HelpKINode Title="AsyncResult Class" Url="html/T_PatchKit_Async_AsyncResult.htm" />
+    <HelpKINode Title="about AsyncResult class" Url="html/T_PatchKit_Async_AsyncResult.htm" />
+    <HelpKINode Title="constructor" Url="html/Overload_PatchKit_Async_AsyncResult__ctor.htm" />
+    <HelpKINode Title="methods" Url="html/Methods_T_PatchKit_Async_AsyncResult.htm" />
+    <HelpKINode Title="properties" Url="html/Properties_T_PatchKit_Async_AsyncResult.htm" />
+  </HelpKINode>
+  <HelpKINode Title="AsyncResult(Of T) class">
+    <HelpKINode Title="AsyncResult(T) Class" Url="html/T_PatchKit_Async_AsyncResult_1.htm" />
+    <HelpKINode Title="about AsyncResult(Of T) class" Url="html/T_PatchKit_Async_AsyncResult_1.htm" />
+    <HelpKINode Title="constructor" Url="html/Overload_PatchKit_Async_AsyncResult_1__ctor.htm" />
+    <HelpKINode Title="methods" Url="html/Methods_T_PatchKit_Async_AsyncResult_1.htm" />
+    <HelpKINode Title="properties" Url="html/Properties_T_PatchKit_Async_AsyncResult_1.htm" />
+  </HelpKINode>
+  <HelpKINode Title="AsyncResult(Of T).AsyncResult constructor" Url="html/Overload_PatchKit_Async_AsyncResult_1__ctor.htm" />
+  <HelpKINode Title="AsyncResult(Of T).AsyncState property" Url="html/P_PatchKit_Async_AsyncResult_1_AsyncState.htm" />
+  <HelpKINode Title="AsyncResult(Of T).AsyncWaitHandle property" Url="html/P_PatchKit_Async_AsyncResult_1_AsyncWaitHandle.htm" />
+  <HelpKINode Title="AsyncResult(Of T).CanBeCancelled property" Url="html/P_PatchKit_Async_AsyncResult_1_CanBeCancelled.htm" />
+  <HelpKINode Title="AsyncResult(Of T).Cancel method" Url="html/M_PatchKit_Async_AsyncResult_1_Cancel.htm" />
+  <HelpKINode Title="AsyncResult(Of T).CompletedSynchronously property" Url="html/P_PatchKit_Async_AsyncResult_1_CompletedSynchronously.htm" />
+  <HelpKINode Title="AsyncResult(Of T).Exception property" Url="html/P_PatchKit_Async_AsyncResult_1_Exception.htm" />
+  <HelpKINode Title="AsyncResult(Of T).IsCancelled property" Url="html/P_PatchKit_Async_AsyncResult_1_IsCancelled.htm" />
+  <HelpKINode Title="AsyncResult(Of T).IsCompleted property" Url="html/P_PatchKit_Async_AsyncResult_1_IsCompleted.htm" />
+  <HelpKINode Title="AsyncResult(Of T).Result property" Url="html/P_PatchKit_Async_AsyncResult_1_Result.htm" />
+  <HelpKINode Title="AsyncResult.AsyncResult constructor" Url="html/Overload_PatchKit_Async_AsyncResult__ctor.htm" />
+  <HelpKINode Title="AsyncResult&lt;T&gt; class">
+    <HelpKINode Title="AsyncResult(T) Class" Url="html/T_PatchKit_Async_AsyncResult_1.htm" />
+    <HelpKINode Title="about AsyncResult&lt;T&gt; class" Url="html/T_PatchKit_Async_AsyncResult_1.htm" />
+    <HelpKINode Title="constructor" Url="html/Overload_PatchKit_Async_AsyncResult_1__ctor.htm" />
+    <HelpKINode Title="methods" Url="html/Methods_T_PatchKit_Async_AsyncResult_1.htm" />
+    <HelpKINode Title="properties" Url="html/Properties_T_PatchKit_Async_AsyncResult_1.htm" />
+  </HelpKINode>
+  <HelpKINode Title="AsyncResult&lt;T&gt;.AsyncResult constructor" Url="html/Overload_PatchKit_Async_AsyncResult_1__ctor.htm" />
+  <HelpKINode Title="AsyncResult&lt;T&gt;.AsyncState property" Url="html/P_PatchKit_Async_AsyncResult_1_AsyncState.htm" />
+  <HelpKINode Title="AsyncResult&lt;T&gt;.AsyncWaitHandle property" Url="html/P_PatchKit_Async_AsyncResult_1_AsyncWaitHandle.htm" />
+  <HelpKINode Title="AsyncResult&lt;T&gt;.CanBeCancelled property" Url="html/P_PatchKit_Async_AsyncResult_1_CanBeCancelled.htm" />
+  <HelpKINode Title="AsyncResult&lt;T&gt;.Cancel method" Url="html/M_PatchKit_Async_AsyncResult_1_Cancel.htm" />
+  <HelpKINode Title="AsyncResult&lt;T&gt;.CompletedSynchronously property" Url="html/P_PatchKit_Async_AsyncResult_1_CompletedSynchronously.htm" />
+  <HelpKINode Title="AsyncResult&lt;T&gt;.Exception property" Url="html/P_PatchKit_Async_AsyncResult_1_Exception.htm" />
+  <HelpKINode Title="AsyncResult&lt;T&gt;.IsCancelled property" Url="html/P_PatchKit_Async_AsyncResult_1_IsCancelled.htm" />
+  <HelpKINode Title="AsyncResult&lt;T&gt;.IsCompleted property" Url="html/P_PatchKit_Async_AsyncResult_1_IsCompleted.htm" />
+  <HelpKINode Title="AsyncResult&lt;T&gt;.Result property" Url="html/P_PatchKit_Async_AsyncResult_1_Result.htm" />
+  <HelpKINode Title="AsyncResultExtensions class">
+    <HelpKINode Title="AsyncResultExtensions Class" Url="html/T_PatchKit_Async_AsyncResultExtensions.htm" />
+    <HelpKINode Title="about AsyncResultExtensions class" Url="html/T_PatchKit_Async_AsyncResultExtensions.htm" />
+    <HelpKINode Title="methods" Url="html/Methods_T_PatchKit_Async_AsyncResultExtensions.htm" />
+  </HelpKINode>
+  <HelpKINode Title="AsyncResultExtensions.FetchResultsFromAsyncOperation(Of T) method" Url="html/M_PatchKit_Async_AsyncResultExtensions_FetchResultsFromAsyncOperation__1.htm" />
+  <HelpKINode Title="AsyncResultExtensions.FetchResultsFromAsyncOperation&lt;T&gt; method" Url="html/M_PatchKit_Async_AsyncResultExtensions_FetchResultsFromAsyncOperation__1.htm" />
+  <HelpKINode Title="AsyncState property" Url="html/P_PatchKit_Async_AsyncResult_1_AsyncState.htm" />
+  <HelpKINode Title="AsyncWaitHandle property" Url="html/P_PatchKit_Async_AsyncResult_1_AsyncWaitHandle.htm" />
+  <HelpKINode Title="BeginDownloadString method">
+    <HelpKINode Title="ApiHttpDownloader.BeginDownloadString Method " Url="html/M_PatchKit_Api_ApiHttpDownloader_BeginDownloadString.htm" />
+    <HelpKINode Title="IApiHttpDownloader.BeginDownloadString Method " Url="html/M_PatchKit_Api_IApiHttpDownloader_BeginDownloadString.htm" />
+  </HelpKINode>
+  <HelpKINode Title="BeginGetAppChangelog method" Url="html/M_PatchKit_Api_ApiConnection_BeginGetAppChangelog.htm" />
+  <HelpKINode Title="BeginGetAppLatestVersion method" Url="html/M_PatchKit_Api_ApiConnection_BeginGetAppLatestVersion.htm" />
+  <HelpKINode Title="BeginGetAppLatestVersionId method" Url="html/M_PatchKit_Api_ApiConnection_BeginGetAppLatestVersionId.htm" />
+  <HelpKINode Title="BeginGetAppVersion method" Url="html/M_PatchKit_Api_ApiConnection_BeginGetAppVersion.htm" />
+  <HelpKINode Title="BeginGetAppVersionContentSummary method" Url="html/M_PatchKit_Api_ApiConnection_BeginGetAppVersionContentSummary.htm" />
+  <HelpKINode Title="BeginGetAppVersionContentTorrentUrl method" Url="html/M_PatchKit_Api_ApiConnection_BeginGetAppVersionContentTorrentUrl.htm" />
+  <HelpKINode Title="BeginGetAppVersionContentUrls method" Url="html/M_PatchKit_Api_ApiConnection_BeginGetAppVersionContentUrls.htm" />
+  <HelpKINode Title="BeginGetAppVersionDiffSummary method" Url="html/M_PatchKit_Api_ApiConnection_BeginGetAppVersionDiffSummary.htm" />
+  <HelpKINode Title="BeginGetAppVersionDiffTorrentUrl method" Url="html/M_PatchKit_Api_ApiConnection_BeginGetAppVersionDiffTorrentUrl.htm" />
+  <HelpKINode Title="BeginGetAppVersionDiffUrls method" Url="html/M_PatchKit_Api_ApiConnection_BeginGetAppVersionDiffUrls.htm" />
+  <HelpKINode Title="BeginGetAppVersionList method" Url="html/M_PatchKit_Api_ApiConnection_BeginGetAppVersionList.htm" />
+  <HelpKINode Title="CanBeCancelled property">
+    <HelpKINode Title="AsyncResult(T).CanBeCancelled Property " Url="html/P_PatchKit_Async_AsyncResult_1_CanBeCancelled.htm" />
+    <HelpKINode Title="ICancellableAsyncResult.CanBeCancelled Property " Url="html/P_PatchKit_Async_ICancellableAsyncResult_CanBeCancelled.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Cancel method">
+    <HelpKINode Title="AsyncCancellationTokenSource.Cancel Method " Url="html/M_PatchKit_Async_AsyncCancellationTokenSource_Cancel.htm" />
+    <HelpKINode Title="AsyncResult(T).Cancel Method " Url="html/M_PatchKit_Async_AsyncResult_1_Cancel.htm" />
+    <HelpKINode Title="ICancellableAsyncResult.Cancel Method " Url="html/M_PatchKit_Async_ICancellableAsyncResult_Cancel.htm" />
+  </HelpKINode>
+  <HelpKINode Title="CancellableAsyncCallback delegate" Url="html/T_PatchKit_Async_CancellableAsyncCallback.htm" />
+  <HelpKINode Title="Changelog field" Url="html/F_PatchKit_Api_ApiConnection_AppVersion_Changelog.htm" />
+  <HelpKINode Title="CompletedSynchronously property" Url="html/P_PatchKit_Async_AsyncResult_1_CompletedSynchronously.htm" />
+  <HelpKINode Title="CompressionMethod field">
+    <HelpKINode Title="ApiConnection.AppContentSummary.CompressionMethod Field" Url="html/F_PatchKit_Api_ApiConnection_AppContentSummary_CompressionMethod.htm" />
+    <HelpKINode Title="ApiConnection.AppDiffSummary.CompressionMethod Field" Url="html/F_PatchKit_Api_ApiConnection_AppDiffSummary_CompressionMethod.htm" />
+  </HelpKINode>
+  <HelpKINode Title="ContentGuid field" Url="html/F_PatchKit_Api_ApiConnection_AppVersion_ContentGuid.htm" />
+  <HelpKINode Title="DiffGuid field" Url="html/F_PatchKit_Api_ApiConnection_AppVersion_DiffGuid.htm" />
+  <HelpKINode Title="Dispose method" Url="html/M_PatchKit_Async_AsyncCancellationTokenRegistration_Dispose.htm" />
+  <HelpKINode Title="Draft field" Url="html/F_PatchKit_Api_ApiConnection_AppVersion_Draft.htm" />
+  <HelpKINode Title="EncryptionMethod field">
+    <HelpKINode Title="ApiConnection.AppContentSummary.EncryptionMethod Field" Url="html/F_PatchKit_Api_ApiConnection_AppContentSummary_EncryptionMethod.htm" />
+    <HelpKINode Title="ApiConnection.AppDiffSummary.EncryptionMethod Field" Url="html/F_PatchKit_Api_ApiConnection_AppDiffSummary_EncryptionMethod.htm" />
+  </HelpKINode>
+  <HelpKINode Title="EndDownloadString method">
+    <HelpKINode Title="ApiHttpDownloader.EndDownloadString Method " Url="html/M_PatchKit_Api_ApiHttpDownloader_EndDownloadString.htm" />
+    <HelpKINode Title="IApiHttpDownloader.EndDownloadString Method " Url="html/M_PatchKit_Api_IApiHttpDownloader_EndDownloadString.htm" />
+  </HelpKINode>
+  <HelpKINode Title="EndGetAppChangelog method" Url="html/M_PatchKit_Api_ApiConnection_EndGetAppChangelog.htm" />
+  <HelpKINode Title="EndGetAppLatestVersion method" Url="html/M_PatchKit_Api_ApiConnection_EndGetAppLatestVersion.htm" />
+  <HelpKINode Title="EndGetAppLatestVersionId method" Url="html/M_PatchKit_Api_ApiConnection_EndGetAppLatestVersionId.htm" />
+  <HelpKINode Title="EndGetAppVersion method" Url="html/M_PatchKit_Api_ApiConnection_EndGetAppVersion.htm" />
+  <HelpKINode Title="EndGetAppVersionContentSummary method" Url="html/M_PatchKit_Api_ApiConnection_EndGetAppVersionContentSummary.htm" />
+  <HelpKINode Title="EndGetAppVersionContentTorrentUrl method" Url="html/M_PatchKit_Api_ApiConnection_EndGetAppVersionContentTorrentUrl.htm" />
+  <HelpKINode Title="EndGetAppVersionContentUrls method" Url="html/M_PatchKit_Api_ApiConnection_EndGetAppVersionContentUrls.htm" />
+  <HelpKINode Title="EndGetAppVersionDiffSummary method" Url="html/M_PatchKit_Api_ApiConnection_EndGetAppVersionDiffSummary.htm" />
+  <HelpKINode Title="EndGetAppVersionDiffTorrentUrl method" Url="html/M_PatchKit_Api_ApiConnection_EndGetAppVersionDiffTorrentUrl.htm" />
+  <HelpKINode Title="EndGetAppVersionDiffUrls method" Url="html/M_PatchKit_Api_ApiConnection_EndGetAppVersionDiffUrls.htm" />
+  <HelpKINode Title="EndGetAppVersionList method" Url="html/M_PatchKit_Api_ApiConnection_EndGetAppVersionList.htm" />
+  <HelpKINode Title="Exception property" Url="html/P_PatchKit_Async_AsyncResult_1_Exception.htm" />
+  <HelpKINode Title="FetchResultsFromAsyncOperation(Of T) method" Url="html/M_PatchKit_Async_AsyncResultExtensions_FetchResultsFromAsyncOperation__1.htm" />
+  <HelpKINode Title="FetchResultsFromAsyncOperation&lt;T&gt; method" Url="html/M_PatchKit_Async_AsyncResultExtensions_FetchResultsFromAsyncOperation__1.htm" />
+  <HelpKINode Title="Files field" Url="html/F_PatchKit_Api_ApiConnection_AppContentSummary_Files.htm" />
+  <HelpKINode Title="GetAppChangelog method" Url="html/M_PatchKit_Api_ApiConnection_GetAppChangelog.htm" />
+  <HelpKINode Title="GetAppLatestVersion method" Url="html/M_PatchKit_Api_ApiConnection_GetAppLatestVersion.htm" />
+  <HelpKINode Title="GetAppLatestVersionId method" Url="html/M_PatchKit_Api_ApiConnection_GetAppLatestVersionId.htm" />
+  <HelpKINode Title="GetAppVersion method" Url="html/M_PatchKit_Api_ApiConnection_GetAppVersion.htm" />
+  <HelpKINode Title="GetAppVersionContentSummary method" Url="html/M_PatchKit_Api_ApiConnection_GetAppVersionContentSummary.htm" />
+  <HelpKINode Title="GetAppVersionContentTorrentUrl method" Url="html/M_PatchKit_Api_ApiConnection_GetAppVersionContentTorrentUrl.htm" />
+  <HelpKINode Title="GetAppVersionContentUrls method" Url="html/M_PatchKit_Api_ApiConnection_GetAppVersionContentUrls.htm" />
+  <HelpKINode Title="GetAppVersionDiffSummary method" Url="html/M_PatchKit_Api_ApiConnection_GetAppVersionDiffSummary.htm" />
+  <HelpKINode Title="GetAppVersionDiffTorrentUrl method" Url="html/M_PatchKit_Api_ApiConnection_GetAppVersionDiffTorrentUrl.htm" />
+  <HelpKINode Title="GetAppVersionDiffUrls method" Url="html/M_PatchKit_Api_ApiConnection_GetAppVersionDiffUrls.htm" />
+  <HelpKINode Title="GetAppVersionList method" Url="html/M_PatchKit_Api_ApiConnection_GetAppVersionList.htm" />
+  <HelpKINode Title="Hash field" Url="html/F_PatchKit_Api_ApiConnection_AppContentSummaryFile_Hash.htm" />
+  <HelpKINode Title="IApiHttpDownloader interface">
+    <HelpKINode Title="IApiHttpDownloader Interface" Url="html/T_PatchKit_Api_IApiHttpDownloader.htm" />
+    <HelpKINode Title="about IApiHttpDownloader interface" Url="html/T_PatchKit_Api_IApiHttpDownloader.htm" />
+    <HelpKINode Title="methods" Url="html/Methods_T_PatchKit_Api_IApiHttpDownloader.htm" />
+  </HelpKINode>
+  <HelpKINode Title="IApiHttpDownloader.BeginDownloadString method" Url="html/M_PatchKit_Api_IApiHttpDownloader_BeginDownloadString.htm" />
+  <HelpKINode Title="IApiHttpDownloader.EndDownloadString method" Url="html/M_PatchKit_Api_IApiHttpDownloader_EndDownloadString.htm" />
+  <HelpKINode Title="ICancellableAsyncResult interface">
+    <HelpKINode Title="ICancellableAsyncResult Interface" Url="html/T_PatchKit_Async_ICancellableAsyncResult.htm" />
+    <HelpKINode Title="about ICancellableAsyncResult interface" Url="html/T_PatchKit_Async_ICancellableAsyncResult.htm" />
+    <HelpKINode Title="methods" Url="html/Methods_T_PatchKit_Async_ICancellableAsyncResult.htm" />
+    <HelpKINode Title="properties" Url="html/Properties_T_PatchKit_Async_ICancellableAsyncResult.htm" />
+  </HelpKINode>
+  <HelpKINode Title="ICancellableAsyncResult.CanBeCancelled property" Url="html/P_PatchKit_Async_ICancellableAsyncResult_CanBeCancelled.htm" />
+  <HelpKINode Title="ICancellableAsyncResult.Cancel method" Url="html/M_PatchKit_Async_ICancellableAsyncResult_Cancel.htm" />
+  <HelpKINode Title="ICancellableAsyncResult.IsCancelled property" Url="html/P_PatchKit_Async_ICancellableAsyncResult_IsCancelled.htm" />
+  <HelpKINode Title="Id field">
+    <HelpKINode Title="ApiConnection.AppVersion.Id Field" Url="html/F_PatchKit_Api_ApiConnection_AppVersion_Id.htm" />
+    <HelpKINode Title="ApiConnection.AppVersionId.Id Field" Url="html/F_PatchKit_Api_ApiConnection_AppVersionId_Id.htm" />
+  </HelpKINode>
+  <HelpKINode Title="IsCancellationRequested property">
+    <HelpKINode Title="AsyncCancellationToken.IsCancellationRequested Property " Url="html/P_PatchKit_Async_AsyncCancellationToken_IsCancellationRequested.htm" />
+    <HelpKINode Title="AsyncCancellationTokenSource.IsCancellationRequested Property " Url="html/P_PatchKit_Async_AsyncCancellationTokenSource_IsCancellationRequested.htm" />
+  </HelpKINode>
+  <HelpKINode Title="IsCancelled property">
+    <HelpKINode Title="AsyncResult(T).IsCancelled Property " Url="html/P_PatchKit_Async_AsyncResult_1_IsCancelled.htm" />
+    <HelpKINode Title="ICancellableAsyncResult.IsCancelled Property " Url="html/P_PatchKit_Async_ICancellableAsyncResult_IsCancelled.htm" />
+  </HelpKINode>
+  <HelpKINode Title="IsCompleted property" Url="html/P_PatchKit_Async_AsyncResult_1_IsCompleted.htm" />
+  <HelpKINode Title="Job structure">
+    <HelpKINode Title="fields" Url="html/Fields_T_PatchKit_Api_ApiConnection_Job.htm" />
+    <HelpKINode Title="methods" Url="html/Methods_T_PatchKit_Api_ApiConnection_Job.htm" />
+  </HelpKINode>
+  <HelpKINode Title="JobGuid field" Url="html/F_PatchKit_Api_ApiConnection_Job_JobGuid.htm" />
+  <HelpKINode Title="Label field" Url="html/F_PatchKit_Api_ApiConnection_AppVersion_Label.htm" />
+  <HelpKINode Title="ModifiedFiles field" Url="html/F_PatchKit_Api_ApiConnection_AppDiffSummary_ModifiedFiles.htm" />
+  <HelpKINode Title="None field" Url="html/F_PatchKit_Async_AsyncCancellationToken_None.htm" />
+  <HelpKINode Title="PatchKit.Api namespace" Url="html/N_PatchKit_Api.htm" />
+  <HelpKINode Title="PatchKit.Api.ApiConnection class" Url="html/T_PatchKit_Api_ApiConnection.htm" />
+  <HelpKINode Title="PatchKit.Api.ApiConnection.AppContentSummary structure" Url="html/T_PatchKit_Api_ApiConnection_AppContentSummary.htm" />
+  <HelpKINode Title="PatchKit.Api.ApiConnection.AppContentSummaryFile structure" Url="html/T_PatchKit_Api_ApiConnection_AppContentSummaryFile.htm" />
+  <HelpKINode Title="PatchKit.Api.ApiConnection.AppContentTorrentUrl structure" Url="html/T_PatchKit_Api_ApiConnection_AppContentTorrentUrl.htm" />
+  <HelpKINode Title="PatchKit.Api.ApiConnection.AppContentUrl structure" Url="html/T_PatchKit_Api_ApiConnection_AppContentUrl.htm" />
+  <HelpKINode Title="PatchKit.Api.ApiConnection.AppDiffSummary structure" Url="html/T_PatchKit_Api_ApiConnection_AppDiffSummary.htm" />
+  <HelpKINode Title="PatchKit.Api.ApiConnection.AppDiffTorrentUrl structure" Url="html/T_PatchKit_Api_ApiConnection_AppDiffTorrentUrl.htm" />
+  <HelpKINode Title="PatchKit.Api.ApiConnection.AppDiffUrl structure" Url="html/T_PatchKit_Api_ApiConnection_AppDiffUrl.htm" />
+  <HelpKINode Title="PatchKit.Api.ApiConnection.AppVersion structure" Url="html/T_PatchKit_Api_ApiConnection_AppVersion.htm" />
+  <HelpKINode Title="PatchKit.Api.ApiConnection.AppVersionId structure" Url="html/T_PatchKit_Api_ApiConnection_AppVersionId.htm" />
+  <HelpKINode Title="PatchKit.Api.ApiConnection.Job structure" Url="html/T_PatchKit_Api_ApiConnection_Job.htm" />
+  <HelpKINode Title="PatchKit.Api.ApiConnectionSettings structure" Url="html/T_PatchKit_Api_ApiConnectionSettings.htm" />
+  <HelpKINode Title="PatchKit.Api.ApiException class" Url="html/T_PatchKit_Api_ApiException.htm" />
+  <HelpKINode Title="PatchKit.Api.ApiHttpDownloader class" Url="html/T_PatchKit_Api_ApiHttpDownloader.htm" />
+  <HelpKINode Title="PatchKit.Api.ApiHttpResult structure" Url="html/T_PatchKit_Api_ApiHttpResult.htm" />
+  <HelpKINode Title="PatchKit.Api.IApiHttpDownloader interface" Url="html/T_PatchKit_Api_IApiHttpDownloader.htm" />
+  <HelpKINode Title="PatchKit.Async namespace" Url="html/N_PatchKit_Async.htm" />
+  <HelpKINode Title="PatchKit.Async.AsyncCancellationToken structure" Url="html/T_PatchKit_Async_AsyncCancellationToken.htm" />
+  <HelpKINode Title="PatchKit.Async.AsyncCancellationTokenRegistration class" Url="html/T_PatchKit_Async_AsyncCancellationTokenRegistration.htm" />
+  <HelpKINode Title="PatchKit.Async.AsyncCancellationTokenSource class" Url="html/T_PatchKit_Async_AsyncCancellationTokenSource.htm" />
+  <HelpKINode Title="PatchKit.Async.AsyncResult class" Url="html/T_PatchKit_Async_AsyncResult.htm" />
+  <HelpKINode Title="PatchKit.Async.AsyncResult(Of T) class" Url="html/T_PatchKit_Async_AsyncResult_1.htm" />
+  <HelpKINode Title="PatchKit.Async.AsyncResult&lt;T&gt; class" Url="html/T_PatchKit_Async_AsyncResult_1.htm" />
+  <HelpKINode Title="PatchKit.Async.AsyncResultExtensions class" Url="html/T_PatchKit_Async_AsyncResultExtensions.htm" />
+  <HelpKINode Title="PatchKit.Async.CancellableAsyncCallback delegate" Url="html/T_PatchKit_Async_CancellableAsyncCallback.htm" />
+  <HelpKINode Title="PatchKit.Async.ICancellableAsyncResult interface" Url="html/T_PatchKit_Async_ICancellableAsyncResult.htm" />
+  <HelpKINode Title="Path field" Url="html/F_PatchKit_Api_ApiConnection_AppContentSummaryFile_Path.htm" />
+  <HelpKINode Title="PublishDate field" Url="html/F_PatchKit_Api_ApiConnection_AppVersion_PublishDate.htm" />
+  <HelpKINode Title="Register method" Url="html/M_PatchKit_Async_AsyncCancellationToken_Register.htm" />
+  <HelpKINode Title="RemovedFiles field" Url="html/F_PatchKit_Api_ApiConnection_AppDiffSummary_RemovedFiles.htm" />
+  <HelpKINode Title="Result property" Url="html/P_PatchKit_Async_AsyncResult_1_Result.htm" />
+  <HelpKINode Title="Size field">
+    <HelpKINode Title="ApiConnection.AppContentSummary.Size Field" Url="html/F_PatchKit_Api_ApiConnection_AppContentSummary_Size.htm" />
+    <HelpKINode Title="ApiConnection.AppDiffSummary.Size Field" Url="html/F_PatchKit_Api_ApiConnection_AppDiffSummary_Size.htm" />
+  </HelpKINode>
+  <HelpKINode Title="StatusCode field" Url="html/F_PatchKit_Api_ApiException_StatusCode.htm" />
+  <HelpKINode Title="StatusCode property" Url="html/P_PatchKit_Api_ApiHttpResult_StatusCode.htm" />
+  <HelpKINode Title="ThrowIfCancellationRequested method" Url="html/M_PatchKit_Async_AsyncCancellationToken_ThrowIfCancellationRequested.htm" />
+  <HelpKINode Title="Timeout field" Url="html/F_PatchKit_Api_ApiConnectionSettings_Timeout.htm" />
+  <HelpKINode Title="Token property" Url="html/P_PatchKit_Async_AsyncCancellationTokenSource_Token.htm" />
+  <HelpKINode Title="Url field">
+    <HelpKINode Title="ApiConnection.AppContentTorrentUrl.Url Field" Url="html/F_PatchKit_Api_ApiConnection_AppContentTorrentUrl_Url.htm" />
+    <HelpKINode Title="ApiConnection.AppContentUrl.Url Field" Url="html/F_PatchKit_Api_ApiConnection_AppContentUrl_Url.htm" />
+    <HelpKINode Title="ApiConnection.AppDiffTorrentUrl.Url Field" Url="html/F_PatchKit_Api_ApiConnection_AppDiffTorrentUrl_Url.htm" />
+    <HelpKINode Title="ApiConnection.AppDiffUrl.Url Field" Url="html/F_PatchKit_Api_ApiConnection_AppDiffUrl_Url.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Urls field" Url="html/F_PatchKit_Api_ApiConnectionSettings_Urls.htm" />
+  <HelpKINode Title="Value property" Url="html/P_PatchKit_Api_ApiHttpResult_Value.htm" />
+</HelpKI>

@@ -1,0 +1,232 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<HelpTOC>
+
+  <HelpTOCNode Id="60c8ad55-3845-4b1b-83ef-c96c89e28b21" Title="PatchKit" Url="html/R_Project_Documentation.htm">
+    <HelpTOCNode Id="007b4ff0-8a84-436a-aaf8-de8beabfe48b" Title="PatchKit.Api" Url="html/N_PatchKit_Api.htm">
+      <HelpTOCNode Id="68c65341-7f62-47ee-bd78-1a8a43041632" Title="ApiConnection Class" Url="html/T_PatchKit_Api_ApiConnection.htm">
+        <HelpTOCNode Id="b811d3f0-b049-4db9-9311-5c5fd72df88d" Title="ApiConnection Constructor " Url="html/Overload_PatchKit_Api_ApiConnection__ctor.htm">
+          <HelpTOCNode Title="ApiConnection Constructor " Url="html/M_PatchKit_Api_ApiConnection__ctor.htm" />
+          <HelpTOCNode Title="ApiConnection Constructor (ApiConnectionSettings)" Url="html/M_PatchKit_Api_ApiConnection__ctor_1.htm" />
+          <HelpTOCNode Title="ApiConnection Constructor (ApiConnectionSettings, IApiHttpDownloader)" Url="html/M_PatchKit_Api_ApiConnection__ctor_2.htm" />
+        </HelpTOCNode>
+        <HelpTOCNode Id="dcc7c7aa-8d33-4c43-af4a-9d0ae587729e" Title="ApiConnection Methods" Url="html/Methods_T_PatchKit_Api_ApiConnection.htm">
+          <HelpTOCNode Title="BeginGetAppChangelog Method " Url="html/M_PatchKit_Api_ApiConnection_BeginGetAppChangelog.htm" />
+          <HelpTOCNode Title="BeginGetAppLatestVersion Method " Url="html/M_PatchKit_Api_ApiConnection_BeginGetAppLatestVersion.htm" />
+          <HelpTOCNode Title="BeginGetAppLatestVersionId Method " Url="html/M_PatchKit_Api_ApiConnection_BeginGetAppLatestVersionId.htm" />
+          <HelpTOCNode Title="BeginGetAppVersion Method " Url="html/M_PatchKit_Api_ApiConnection_BeginGetAppVersion.htm" />
+          <HelpTOCNode Title="BeginGetAppVersionContentSummary Method " Url="html/M_PatchKit_Api_ApiConnection_BeginGetAppVersionContentSummary.htm" />
+          <HelpTOCNode Title="BeginGetAppVersionContentTorrentUrl Method " Url="html/M_PatchKit_Api_ApiConnection_BeginGetAppVersionContentTorrentUrl.htm" />
+          <HelpTOCNode Title="BeginGetAppVersionContentUrls Method " Url="html/M_PatchKit_Api_ApiConnection_BeginGetAppVersionContentUrls.htm" />
+          <HelpTOCNode Title="BeginGetAppVersionDiffSummary Method " Url="html/M_PatchKit_Api_ApiConnection_BeginGetAppVersionDiffSummary.htm" />
+          <HelpTOCNode Title="BeginGetAppVersionDiffTorrentUrl Method " Url="html/M_PatchKit_Api_ApiConnection_BeginGetAppVersionDiffTorrentUrl.htm" />
+          <HelpTOCNode Title="BeginGetAppVersionDiffUrls Method " Url="html/M_PatchKit_Api_ApiConnection_BeginGetAppVersionDiffUrls.htm" />
+          <HelpTOCNode Title="BeginGetAppVersionList Method " Url="html/M_PatchKit_Api_ApiConnection_BeginGetAppVersionList.htm" />
+          <HelpTOCNode Title="EndGetAppChangelog Method " Url="html/M_PatchKit_Api_ApiConnection_EndGetAppChangelog.htm" />
+          <HelpTOCNode Title="EndGetAppLatestVersion Method " Url="html/M_PatchKit_Api_ApiConnection_EndGetAppLatestVersion.htm" />
+          <HelpTOCNode Title="EndGetAppLatestVersionId Method " Url="html/M_PatchKit_Api_ApiConnection_EndGetAppLatestVersionId.htm" />
+          <HelpTOCNode Title="EndGetAppVersion Method " Url="html/M_PatchKit_Api_ApiConnection_EndGetAppVersion.htm" />
+          <HelpTOCNode Title="EndGetAppVersionContentSummary Method " Url="html/M_PatchKit_Api_ApiConnection_EndGetAppVersionContentSummary.htm" />
+          <HelpTOCNode Title="EndGetAppVersionContentTorrentUrl Method " Url="html/M_PatchKit_Api_ApiConnection_EndGetAppVersionContentTorrentUrl.htm" />
+          <HelpTOCNode Title="EndGetAppVersionContentUrls Method " Url="html/M_PatchKit_Api_ApiConnection_EndGetAppVersionContentUrls.htm" />
+          <HelpTOCNode Title="EndGetAppVersionDiffSummary Method " Url="html/M_PatchKit_Api_ApiConnection_EndGetAppVersionDiffSummary.htm" />
+          <HelpTOCNode Title="EndGetAppVersionDiffTorrentUrl Method " Url="html/M_PatchKit_Api_ApiConnection_EndGetAppVersionDiffTorrentUrl.htm" />
+          <HelpTOCNode Title="EndGetAppVersionDiffUrls Method " Url="html/M_PatchKit_Api_ApiConnection_EndGetAppVersionDiffUrls.htm" />
+          <HelpTOCNode Title="EndGetAppVersionList Method " Url="html/M_PatchKit_Api_ApiConnection_EndGetAppVersionList.htm" />
+          <HelpTOCNode Title="GetAppChangelog Method " Url="html/M_PatchKit_Api_ApiConnection_GetAppChangelog.htm" />
+          <HelpTOCNode Title="GetAppLatestVersion Method " Url="html/M_PatchKit_Api_ApiConnection_GetAppLatestVersion.htm" />
+          <HelpTOCNode Title="GetAppLatestVersionId Method " Url="html/M_PatchKit_Api_ApiConnection_GetAppLatestVersionId.htm" />
+          <HelpTOCNode Title="GetAppVersion Method " Url="html/M_PatchKit_Api_ApiConnection_GetAppVersion.htm" />
+          <HelpTOCNode Title="GetAppVersionContentSummary Method " Url="html/M_PatchKit_Api_ApiConnection_GetAppVersionContentSummary.htm" />
+          <HelpTOCNode Title="GetAppVersionContentTorrentUrl Method " Url="html/M_PatchKit_Api_ApiConnection_GetAppVersionContentTorrentUrl.htm" />
+          <HelpTOCNode Title="GetAppVersionContentUrls Method " Url="html/M_PatchKit_Api_ApiConnection_GetAppVersionContentUrls.htm" />
+          <HelpTOCNode Title="GetAppVersionDiffSummary Method " Url="html/M_PatchKit_Api_ApiConnection_GetAppVersionDiffSummary.htm" />
+          <HelpTOCNode Title="GetAppVersionDiffTorrentUrl Method " Url="html/M_PatchKit_Api_ApiConnection_GetAppVersionDiffTorrentUrl.htm" />
+          <HelpTOCNode Title="GetAppVersionDiffUrls Method " Url="html/M_PatchKit_Api_ApiConnection_GetAppVersionDiffUrls.htm" />
+          <HelpTOCNode Title="GetAppVersionList Method " Url="html/M_PatchKit_Api_ApiConnection_GetAppVersionList.htm" />
+        </HelpTOCNode>
+      </HelpTOCNode>
+      <HelpTOCNode Id="8061f2b6-f12e-406e-beaa-78fe69598fd0" Title="ApiConnection.AppContentSummary Structure" Url="html/T_PatchKit_Api_ApiConnection_AppContentSummary.htm">
+        <HelpTOCNode Title="AppContentSummary Methods" Url="html/Methods_T_PatchKit_Api_ApiConnection_AppContentSummary.htm" />
+        <HelpTOCNode Id="8903f38a-bd3d-4103-84f8-2028755b7e61" Title="AppContentSummary Fields" Url="html/Fields_T_PatchKit_Api_ApiConnection_AppContentSummary.htm">
+          <HelpTOCNode Title="CompressionMethod Field" Url="html/F_PatchKit_Api_ApiConnection_AppContentSummary_CompressionMethod.htm" />
+          <HelpTOCNode Title="EncryptionMethod Field" Url="html/F_PatchKit_Api_ApiConnection_AppContentSummary_EncryptionMethod.htm" />
+          <HelpTOCNode Title="Files Field" Url="html/F_PatchKit_Api_ApiConnection_AppContentSummary_Files.htm" />
+          <HelpTOCNode Title="Size Field" Url="html/F_PatchKit_Api_ApiConnection_AppContentSummary_Size.htm" />
+        </HelpTOCNode>
+      </HelpTOCNode>
+      <HelpTOCNode Id="b08009f9-2eb5-40ea-802e-60a5673cc33b" Title="ApiConnection.AppContentSummaryFile Structure" Url="html/T_PatchKit_Api_ApiConnection_AppContentSummaryFile.htm">
+        <HelpTOCNode Title="AppContentSummaryFile Methods" Url="html/Methods_T_PatchKit_Api_ApiConnection_AppContentSummaryFile.htm" />
+        <HelpTOCNode Id="5009509c-3e86-45e3-b8bd-a38095dbd3d4" Title="AppContentSummaryFile Fields" Url="html/Fields_T_PatchKit_Api_ApiConnection_AppContentSummaryFile.htm">
+          <HelpTOCNode Title="Hash Field" Url="html/F_PatchKit_Api_ApiConnection_AppContentSummaryFile_Hash.htm" />
+          <HelpTOCNode Title="Path Field" Url="html/F_PatchKit_Api_ApiConnection_AppContentSummaryFile_Path.htm" />
+        </HelpTOCNode>
+      </HelpTOCNode>
+      <HelpTOCNode Id="d1f69d64-0faa-4092-a2e8-601e9ee1e3e1" Title="ApiConnection.AppContentTorrentUrl Structure" Url="html/T_PatchKit_Api_ApiConnection_AppContentTorrentUrl.htm">
+        <HelpTOCNode Title="AppContentTorrentUrl Methods" Url="html/Methods_T_PatchKit_Api_ApiConnection_AppContentTorrentUrl.htm" />
+        <HelpTOCNode Id="851272c7-5d92-4ae2-921a-7156a88abd1e" Title="AppContentTorrentUrl Fields" Url="html/Fields_T_PatchKit_Api_ApiConnection_AppContentTorrentUrl.htm">
+          <HelpTOCNode Title="Url Field" Url="html/F_PatchKit_Api_ApiConnection_AppContentTorrentUrl_Url.htm" />
+        </HelpTOCNode>
+      </HelpTOCNode>
+      <HelpTOCNode Id="5ffc6d51-812f-4ea9-b62e-2c00a8fc273e" Title="ApiConnection.AppContentUrl Structure" Url="html/T_PatchKit_Api_ApiConnection_AppContentUrl.htm">
+        <HelpTOCNode Title="AppContentUrl Methods" Url="html/Methods_T_PatchKit_Api_ApiConnection_AppContentUrl.htm" />
+        <HelpTOCNode Id="f202e6fc-30cb-4ead-8f79-5a1bb1d0c750" Title="AppContentUrl Fields" Url="html/Fields_T_PatchKit_Api_ApiConnection_AppContentUrl.htm">
+          <HelpTOCNode Title="Url Field" Url="html/F_PatchKit_Api_ApiConnection_AppContentUrl_Url.htm" />
+        </HelpTOCNode>
+      </HelpTOCNode>
+      <HelpTOCNode Id="13515134-67ad-4c7e-945e-fd0c063658d1" Title="ApiConnection.AppDiffSummary Structure" Url="html/T_PatchKit_Api_ApiConnection_AppDiffSummary.htm">
+        <HelpTOCNode Title="AppDiffSummary Methods" Url="html/Methods_T_PatchKit_Api_ApiConnection_AppDiffSummary.htm" />
+        <HelpTOCNode Id="37406157-d86a-472b-b1c9-3a4261b54b1a" Title="AppDiffSummary Fields" Url="html/Fields_T_PatchKit_Api_ApiConnection_AppDiffSummary.htm">
+          <HelpTOCNode Title="AddedFiles Field" Url="html/F_PatchKit_Api_ApiConnection_AppDiffSummary_AddedFiles.htm" />
+          <HelpTOCNode Title="CompressionMethod Field" Url="html/F_PatchKit_Api_ApiConnection_AppDiffSummary_CompressionMethod.htm" />
+          <HelpTOCNode Title="EncryptionMethod Field" Url="html/F_PatchKit_Api_ApiConnection_AppDiffSummary_EncryptionMethod.htm" />
+          <HelpTOCNode Title="ModifiedFiles Field" Url="html/F_PatchKit_Api_ApiConnection_AppDiffSummary_ModifiedFiles.htm" />
+          <HelpTOCNode Title="RemovedFiles Field" Url="html/F_PatchKit_Api_ApiConnection_AppDiffSummary_RemovedFiles.htm" />
+          <HelpTOCNode Title="Size Field" Url="html/F_PatchKit_Api_ApiConnection_AppDiffSummary_Size.htm" />
+        </HelpTOCNode>
+      </HelpTOCNode>
+      <HelpTOCNode Id="95c4ed8c-2736-41b9-ad64-938ed3d710fc" Title="ApiConnection.AppDiffTorrentUrl Structure" Url="html/T_PatchKit_Api_ApiConnection_AppDiffTorrentUrl.htm">
+        <HelpTOCNode Title="AppDiffTorrentUrl Methods" Url="html/Methods_T_PatchKit_Api_ApiConnection_AppDiffTorrentUrl.htm" />
+        <HelpTOCNode Id="6a13ce4b-71dc-4545-8aff-a5c35c634f76" Title="AppDiffTorrentUrl Fields" Url="html/Fields_T_PatchKit_Api_ApiConnection_AppDiffTorrentUrl.htm">
+          <HelpTOCNode Title="Url Field" Url="html/F_PatchKit_Api_ApiConnection_AppDiffTorrentUrl_Url.htm" />
+        </HelpTOCNode>
+      </HelpTOCNode>
+      <HelpTOCNode Id="8759a31a-c3e1-4e54-9b98-bd843bf1235f" Title="ApiConnection.AppDiffUrl Structure" Url="html/T_PatchKit_Api_ApiConnection_AppDiffUrl.htm">
+        <HelpTOCNode Title="AppDiffUrl Methods" Url="html/Methods_T_PatchKit_Api_ApiConnection_AppDiffUrl.htm" />
+        <HelpTOCNode Id="0678a18c-c6ee-4220-93b7-9dfbe55b7234" Title="AppDiffUrl Fields" Url="html/Fields_T_PatchKit_Api_ApiConnection_AppDiffUrl.htm">
+          <HelpTOCNode Title="Url Field" Url="html/F_PatchKit_Api_ApiConnection_AppDiffUrl_Url.htm" />
+        </HelpTOCNode>
+      </HelpTOCNode>
+      <HelpTOCNode Id="922d4cfb-8bda-460b-a55a-628e4bb00db2" Title="ApiConnection.AppVersion Structure" Url="html/T_PatchKit_Api_ApiConnection_AppVersion.htm">
+        <HelpTOCNode Title="AppVersion Methods" Url="html/Methods_T_PatchKit_Api_ApiConnection_AppVersion.htm" />
+        <HelpTOCNode Id="b3e1d724-ef95-47e7-b735-d71c4bccd713" Title="AppVersion Fields" Url="html/Fields_T_PatchKit_Api_ApiConnection_AppVersion.htm">
+          <HelpTOCNode Title="Changelog Field" Url="html/F_PatchKit_Api_ApiConnection_AppVersion_Changelog.htm" />
+          <HelpTOCNode Title="ContentGuid Field" Url="html/F_PatchKit_Api_ApiConnection_AppVersion_ContentGuid.htm" />
+          <HelpTOCNode Title="DiffGuid Field" Url="html/F_PatchKit_Api_ApiConnection_AppVersion_DiffGuid.htm" />
+          <HelpTOCNode Title="Draft Field" Url="html/F_PatchKit_Api_ApiConnection_AppVersion_Draft.htm" />
+          <HelpTOCNode Title="Id Field" Url="html/F_PatchKit_Api_ApiConnection_AppVersion_Id.htm" />
+          <HelpTOCNode Title="Label Field" Url="html/F_PatchKit_Api_ApiConnection_AppVersion_Label.htm" />
+          <HelpTOCNode Title="PublishDate Field" Url="html/F_PatchKit_Api_ApiConnection_AppVersion_PublishDate.htm" />
+        </HelpTOCNode>
+      </HelpTOCNode>
+      <HelpTOCNode Id="1bed33a7-7c21-4d90-a0d1-0535cb442286" Title="ApiConnection.AppVersionId Structure" Url="html/T_PatchKit_Api_ApiConnection_AppVersionId.htm">
+        <HelpTOCNode Title="AppVersionId Methods" Url="html/Methods_T_PatchKit_Api_ApiConnection_AppVersionId.htm" />
+        <HelpTOCNode Id="abdb4739-7abf-4183-86db-6a828335f516" Title="AppVersionId Fields" Url="html/Fields_T_PatchKit_Api_ApiConnection_AppVersionId.htm">
+          <HelpTOCNode Title="Id Field" Url="html/F_PatchKit_Api_ApiConnection_AppVersionId_Id.htm" />
+        </HelpTOCNode>
+      </HelpTOCNode>
+      <HelpTOCNode Id="885e8ae4-c4a5-419f-8e99-30608063bf7f" Title="ApiConnection.Job Structure" Url="html/T_PatchKit_Api_ApiConnection_Job.htm">
+        <HelpTOCNode Title="Job Methods" Url="html/Methods_T_PatchKit_Api_ApiConnection_Job.htm" />
+        <HelpTOCNode Id="5a555652-d09a-4253-a17d-26f029b2cddc" Title="Job Fields" Url="html/Fields_T_PatchKit_Api_ApiConnection_Job.htm">
+          <HelpTOCNode Title="JobGuid Field" Url="html/F_PatchKit_Api_ApiConnection_Job_JobGuid.htm" />
+        </HelpTOCNode>
+      </HelpTOCNode>
+      <HelpTOCNode Id="55a593ad-7bcc-499b-8b46-c15a490295d5" Title="ApiConnectionSettings Structure" Url="html/T_PatchKit_Api_ApiConnectionSettings.htm">
+        <HelpTOCNode Title="ApiConnectionSettings Constructor " Url="html/M_PatchKit_Api_ApiConnectionSettings__ctor.htm" />
+        <HelpTOCNode Title="ApiConnectionSettings Methods" Url="html/Methods_T_PatchKit_Api_ApiConnectionSettings.htm" />
+        <HelpTOCNode Id="64d44e81-caf1-49b6-bdf4-5dc0468eb14f" Title="ApiConnectionSettings Fields" Url="html/Fields_T_PatchKit_Api_ApiConnectionSettings.htm">
+          <HelpTOCNode Title="Timeout Field" Url="html/F_PatchKit_Api_ApiConnectionSettings_Timeout.htm" />
+          <HelpTOCNode Title="Urls Field" Url="html/F_PatchKit_Api_ApiConnectionSettings_Urls.htm" />
+        </HelpTOCNode>
+      </HelpTOCNode>
+      <HelpTOCNode Id="e669d233-91c4-4cfc-b6d8-682a0fdfcf0b" Title="ApiException Class" Url="html/T_PatchKit_Api_ApiException.htm">
+        <HelpTOCNode Title="ApiException Properties" Url="html/Properties_T_PatchKit_Api_ApiException.htm" />
+        <HelpTOCNode Title="ApiException Methods" Url="html/Methods_T_PatchKit_Api_ApiException.htm" />
+        <HelpTOCNode Title="ApiException Events" Url="html/Events_T_PatchKit_Api_ApiException.htm" />
+        <HelpTOCNode Id="183f52e7-53a7-402c-8c34-ab5273e0911c" Title="ApiException Fields" Url="html/Fields_T_PatchKit_Api_ApiException.htm">
+          <HelpTOCNode Title="StatusCode Field" Url="html/F_PatchKit_Api_ApiException_StatusCode.htm" />
+        </HelpTOCNode>
+      </HelpTOCNode>
+      <HelpTOCNode Id="db536248-26b7-4d82-926a-a93fd183f2c1" Title="ApiHttpDownloader Class" Url="html/T_PatchKit_Api_ApiHttpDownloader.htm">
+        <HelpTOCNode Title="ApiHttpDownloader Constructor " Url="html/M_PatchKit_Api_ApiHttpDownloader__ctor.htm" />
+        <HelpTOCNode Id="05aec624-d594-4d6f-a84c-63409e91b579" Title="ApiHttpDownloader Methods" Url="html/Methods_T_PatchKit_Api_ApiHttpDownloader.htm">
+          <HelpTOCNode Title="BeginDownloadString Method " Url="html/M_PatchKit_Api_ApiHttpDownloader_BeginDownloadString.htm" />
+          <HelpTOCNode Title="EndDownloadString Method " Url="html/M_PatchKit_Api_ApiHttpDownloader_EndDownloadString.htm" />
+        </HelpTOCNode>
+      </HelpTOCNode>
+      <HelpTOCNode Id="a440f984-1976-4565-be10-ac167dd148be" Title="ApiHttpResult Structure" Url="html/T_PatchKit_Api_ApiHttpResult.htm">
+        <HelpTOCNode Id="4a97ab7c-5924-4b0d-9f68-34611085ebd4" Title="ApiHttpResult Properties" Url="html/Properties_T_PatchKit_Api_ApiHttpResult.htm">
+          <HelpTOCNode Title="StatusCode Property " Url="html/P_PatchKit_Api_ApiHttpResult_StatusCode.htm" />
+          <HelpTOCNode Title="Value Property " Url="html/P_PatchKit_Api_ApiHttpResult_Value.htm" />
+        </HelpTOCNode>
+        <HelpTOCNode Title="ApiHttpResult Methods" Url="html/Methods_T_PatchKit_Api_ApiHttpResult.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="65eceb3e-f092-4322-9386-df2e431fcbd9" Title="IApiHttpDownloader Interface" Url="html/T_PatchKit_Api_IApiHttpDownloader.htm">
+        <HelpTOCNode Id="50334179-c6dd-4cdc-a361-fd1de98b855b" Title="IApiHttpDownloader Methods" Url="html/Methods_T_PatchKit_Api_IApiHttpDownloader.htm">
+          <HelpTOCNode Title="BeginDownloadString Method " Url="html/M_PatchKit_Api_IApiHttpDownloader_BeginDownloadString.htm" />
+          <HelpTOCNode Title="EndDownloadString Method " Url="html/M_PatchKit_Api_IApiHttpDownloader_EndDownloadString.htm" />
+        </HelpTOCNode>
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="3430e534-f6d2-4ea8-ab91-8d1096c00daf" Title="PatchKit.Async" Url="html/N_PatchKit_Async.htm">
+      <HelpTOCNode Id="e2d00a71-8023-4a39-948d-2bff155e31e6" Title="AsyncCancellationToken Structure" Url="html/T_PatchKit_Async_AsyncCancellationToken.htm">
+        <HelpTOCNode Id="52bce30c-d5b5-499f-9c6b-64576ac07a14" Title="AsyncCancellationToken Properties" Url="html/Properties_T_PatchKit_Async_AsyncCancellationToken.htm">
+          <HelpTOCNode Title="IsCancellationRequested Property " Url="html/P_PatchKit_Async_AsyncCancellationToken_IsCancellationRequested.htm" />
+        </HelpTOCNode>
+        <HelpTOCNode Id="36524570-4800-4a82-92aa-b7b5a8dec7d3" Title="AsyncCancellationToken Methods" Url="html/Methods_T_PatchKit_Async_AsyncCancellationToken.htm">
+          <HelpTOCNode Title="Register Method " Url="html/M_PatchKit_Async_AsyncCancellationToken_Register.htm" />
+          <HelpTOCNode Title="ThrowIfCancellationRequested Method " Url="html/M_PatchKit_Async_AsyncCancellationToken_ThrowIfCancellationRequested.htm" />
+        </HelpTOCNode>
+        <HelpTOCNode Id="a413d939-0d45-4812-b169-6b2c25f42060" Title="AsyncCancellationToken Fields" Url="html/Fields_T_PatchKit_Async_AsyncCancellationToken.htm">
+          <HelpTOCNode Title="None Field" Url="html/F_PatchKit_Async_AsyncCancellationToken_None.htm" />
+        </HelpTOCNode>
+      </HelpTOCNode>
+      <HelpTOCNode Id="b89dd7f8-cfe1-4847-9186-6bc597e2db8e" Title="AsyncCancellationTokenRegistration Class" Url="html/T_PatchKit_Async_AsyncCancellationTokenRegistration.htm">
+        <HelpTOCNode Id="1384d217-7fcb-466b-ae34-4ac8c0fd857f" Title="AsyncCancellationTokenRegistration Methods" Url="html/Methods_T_PatchKit_Async_AsyncCancellationTokenRegistration.htm">
+          <HelpTOCNode Title="Dispose Method " Url="html/M_PatchKit_Async_AsyncCancellationTokenRegistration_Dispose.htm" />
+        </HelpTOCNode>
+      </HelpTOCNode>
+      <HelpTOCNode Id="5a610cde-a900-4bba-b5d9-af341e1eb6de" Title="AsyncCancellationTokenSource Class" Url="html/T_PatchKit_Async_AsyncCancellationTokenSource.htm">
+        <HelpTOCNode Title="AsyncCancellationTokenSource Constructor " Url="html/M_PatchKit_Async_AsyncCancellationTokenSource__ctor.htm" />
+        <HelpTOCNode Id="c497eed5-c512-45ee-ae1f-8a4cf043b916" Title="AsyncCancellationTokenSource Properties" Url="html/Properties_T_PatchKit_Async_AsyncCancellationTokenSource.htm">
+          <HelpTOCNode Title="IsCancellationRequested Property " Url="html/P_PatchKit_Async_AsyncCancellationTokenSource_IsCancellationRequested.htm" />
+          <HelpTOCNode Title="Token Property " Url="html/P_PatchKit_Async_AsyncCancellationTokenSource_Token.htm" />
+        </HelpTOCNode>
+        <HelpTOCNode Id="55c55e4b-7797-4c09-b33a-ff498733a9b0" Title="AsyncCancellationTokenSource Methods" Url="html/Methods_T_PatchKit_Async_AsyncCancellationTokenSource.htm">
+          <HelpTOCNode Title="Cancel Method " Url="html/M_PatchKit_Async_AsyncCancellationTokenSource_Cancel.htm" />
+        </HelpTOCNode>
+      </HelpTOCNode>
+      <HelpTOCNode Id="46e5c22e-54c0-4038-8dc9-75f972dfdcff" Title="AsyncResult Class" Url="html/T_PatchKit_Async_AsyncResult.htm">
+        <HelpTOCNode Id="cd38872a-247f-476a-bdd4-6e0b34758190" Title="AsyncResult Constructor " Url="html/Overload_PatchKit_Async_AsyncResult__ctor.htm">
+          <HelpTOCNode Title="AsyncResult Constructor (Action, AsyncCallback, Object)" Url="html/M_PatchKit_Async_AsyncResult__ctor.htm" />
+          <HelpTOCNode Title="AsyncResult Constructor (Action(AsyncCancellationToken), CancellableAsyncCallback, Object)" Url="html/M_PatchKit_Async_AsyncResult__ctor_1.htm" />
+        </HelpTOCNode>
+        <HelpTOCNode Title="AsyncResult Properties" Url="html/Properties_T_PatchKit_Async_AsyncResult.htm" />
+        <HelpTOCNode Title="AsyncResult Methods" Url="html/Methods_T_PatchKit_Async_AsyncResult.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="dfc91f06-0d48-47af-8ba8-b44bac25cef4" Title="AsyncResult(T) Class" Url="html/T_PatchKit_Async_AsyncResult_1.htm">
+        <HelpTOCNode Id="c4ba8977-1546-4675-86f7-4d29be9e3604" Title="AsyncResult(T) Constructor " Url="html/Overload_PatchKit_Async_AsyncResult_1__ctor.htm">
+          <HelpTOCNode Title="AsyncResult(T) Constructor (Func(T), AsyncCallback, Object)" Url="html/M_PatchKit_Async_AsyncResult_1__ctor.htm" />
+          <HelpTOCNode Title="AsyncResult(T) Constructor (Func(AsyncCancellationToken, T), CancellableAsyncCallback, Object)" Url="html/M_PatchKit_Async_AsyncResult_1__ctor_1.htm" />
+        </HelpTOCNode>
+        <HelpTOCNode Id="704b6280-3db1-4321-a020-254ca60f2536" Title="AsyncResult(T) Properties" Url="html/Properties_T_PatchKit_Async_AsyncResult_1.htm">
+          <HelpTOCNode Title="AsyncState Property " Url="html/P_PatchKit_Async_AsyncResult_1_AsyncState.htm" />
+          <HelpTOCNode Title="AsyncWaitHandle Property " Url="html/P_PatchKit_Async_AsyncResult_1_AsyncWaitHandle.htm" />
+          <HelpTOCNode Title="CanBeCancelled Property " Url="html/P_PatchKit_Async_AsyncResult_1_CanBeCancelled.htm" />
+          <HelpTOCNode Title="CompletedSynchronously Property " Url="html/P_PatchKit_Async_AsyncResult_1_CompletedSynchronously.htm" />
+          <HelpTOCNode Title="Exception Property " Url="html/P_PatchKit_Async_AsyncResult_1_Exception.htm" />
+          <HelpTOCNode Title="IsCancelled Property " Url="html/P_PatchKit_Async_AsyncResult_1_IsCancelled.htm" />
+          <HelpTOCNode Title="IsCompleted Property " Url="html/P_PatchKit_Async_AsyncResult_1_IsCompleted.htm" />
+          <HelpTOCNode Title="Result Property " Url="html/P_PatchKit_Async_AsyncResult_1_Result.htm" />
+        </HelpTOCNode>
+        <HelpTOCNode Id="03ea26d6-88d4-40c5-b919-b32d847f9c41" Title="AsyncResult(T) Methods" Url="html/Methods_T_PatchKit_Async_AsyncResult_1.htm">
+          <HelpTOCNode Title="Cancel Method " Url="html/M_PatchKit_Async_AsyncResult_1_Cancel.htm" />
+        </HelpTOCNode>
+      </HelpTOCNode>
+      <HelpTOCNode Id="cc359be2-596c-4737-ad69-7118ed457f17" Title="AsyncResultExtensions Class" Url="html/T_PatchKit_Async_AsyncResultExtensions.htm">
+        <HelpTOCNode Id="dff98998-47de-4cf5-b8a3-1fd767e7a197" Title="AsyncResultExtensions Methods" Url="html/Methods_T_PatchKit_Async_AsyncResultExtensions.htm">
+          <HelpTOCNode Title="FetchResultsFromAsyncOperation(T) Method " Url="html/M_PatchKit_Async_AsyncResultExtensions_FetchResultsFromAsyncOperation__1.htm" />
+        </HelpTOCNode>
+      </HelpTOCNode>
+      <HelpTOCNode Title="CancellableAsyncCallback Delegate" Url="html/T_PatchKit_Async_CancellableAsyncCallback.htm" />
+      <HelpTOCNode Id="5b320ffd-9b1b-476c-8421-f495c1be2fb1" Title="ICancellableAsyncResult Interface" Url="html/T_PatchKit_Async_ICancellableAsyncResult.htm">
+        <HelpTOCNode Id="ae78f423-954a-4e98-9515-53ca2817bb77" Title="ICancellableAsyncResult Properties" Url="html/Properties_T_PatchKit_Async_ICancellableAsyncResult.htm">
+          <HelpTOCNode Title="CanBeCancelled Property " Url="html/P_PatchKit_Async_ICancellableAsyncResult_CanBeCancelled.htm" />
+          <HelpTOCNode Title="IsCancelled Property " Url="html/P_PatchKit_Async_ICancellableAsyncResult_IsCancelled.htm" />
+        </HelpTOCNode>
+        <HelpTOCNode Id="9f553018-7771-42cd-aa30-fb2aecc9ead5" Title="ICancellableAsyncResult Methods" Url="html/Methods_T_PatchKit_Async_ICancellableAsyncResult.htm">
+          <HelpTOCNode Title="Cancel Method " Url="html/M_PatchKit_Async_ICancellableAsyncResult_Cancel.htm" />
+        </HelpTOCNode>
+      </HelpTOCNode>
+    </HelpTOCNode>
+  </HelpTOCNode>
+</HelpTOC>
