@@ -38,32 +38,32 @@
                                     </a>
                                 </li>
                                                             <li class="">
-                                    <a href="/pages/what_is_patchkit/what_is_patchkit.html">
+                                    <a href="/what_is_patchkit.html">
                                         What is PatchKit?
                                     </a>
                                 </li>
                                                             <li class="">
-                                    <a href="/pages/how_to_join/how_to_join.html">
+                                    <a href="/how_to_join.html">
                                         How to join
                                     </a>
                                 </li>
                                                             <li class="">
-                                    <a href="/pages/getting_started/getting_started.html">
+                                    <a href="/getting_started.html">
                                         Getting Started
                                     </a>
                                 </li>
-                                                            <li class="active">
-                                    <a href="/pages/custom_patcher_in_unity/custom_patcher_in_unity.html">
+                                                            <li class="">
+                                    <a href="/custom_patcher_in_unity.html">
                                         Custom patcher (Unity3D)
                                     </a>
                                 </li>
                                                             <li class="">
-                                    <a href="/pages/library_dotnet_docs/index.html">
+                                    <a href="/library_dotnet_docs/index.html">
                                         .NET Library Documentation
                                     </a>
                                 </li>
-                                                            <li class="">
-                                    <a href="/pages/faq/faq.html">
+                                                            <li class="active">
+                                    <a href="/faq.html">
                                         FAQ
                                     </a>
                                 </li>
@@ -73,28 +73,17 @@
 
                 
                 <section id="content" class="col-sm-offset-3 col-lg-offset-2 col-sm-9 col-lg-10">
-                    <h1 id="custom-patcher-unity3d">Custom patcher (Unity3D)</h1>
-<p>You can create your custom patcher by modyfing sources of patcher made in Unity3D which sources can be found <a href="https://github.com/patchkit-net/patchkit-patcher-unity">here</a>.</p>
-<h2 id="making-modifications">Making modifications</h2>
-<h3 id="scripts">Scripts</h3>
-<p>All of the patcher scripts are located in <em>Scripts</em> directory. Their functionality is based on <a href="https://github.com/patchkit-net/patchkit-integration-unity">PatchKit Unity Integration</a> which, among other things, provides an easy connection with PatchKit API. Classes are split into a few modules:</p>
+                    <h1 id="frequently-asked-questions">Frequently Asked Questions</h1>
+<h2 id="launcher">Launcher</h2>
+<h3><em>What is the difference between launcher and patcher?</em></h3>
 <ul>
-<li><strong>PatchKit.Unity.Web</strong> - web functionality such as downloading files via HTTP or torrent</li>
-<li><strong>PatchKit.Unity.Patcher</strong> - core functionality of patcher application</li>
-<li><strong>PatchKit.Unity.Patcher.UI</strong> - updating user interface of patcher application</li>
-<li><strong>PatchKit.Unity.Patcher.Utilities</strong> - additional patcher components such as borderless patcher window</li>
+<li>
+<p><strong>Launcher</strong> - small application used for downloading a newest version of <strong>patcher</strong>.</p>
+</li>
+<li><strong>Patcher</strong> - complex application used for downloading a newest version of <strong>application</strong>.</li>
 </ul>
-<h3 id="layout">Layout</h3>
-<p>Patcher layout is done in Unity UI. <a href="https://unity3d.com/learn/tutorials/topics/user-interface-ui">Here you can find a few tutorials about using Unity UI.</a></p>
-<h2 id="setting-custom-patcher">Setting custom patcher</h2>
-<h3 id="configuring-for-the-first-time">Configuring for the first time</h3>
-<ul>
-<li>Create separate application on PatchKit which will be used by patcher (for example - <em>My Game Patcher</em>).</li>
-<li>Upload the first version of your custom patcher (<strong>important</strong> - remember to include <em>patcher.manifest</em> file in the package - it's automaticaly generated while building the patcher with Unity3D).</li>
-<li>Copy patcher application secret and paste it into &quot;Custom Patcher&quot; field in your application settings (for which you want to set a custom patcher).</li>
-</ul>
-<h3 id="updating-custom-patcher">Updating custom patcher</h3>
-<p>Updating custom patcher is the same process as updating every applciation - you just need to upload a new version to your patcher application and publish it - old patcher versions will be automaticaly replaced by the new version on next start of launcher application.</p>
+<h3><em>Why do we need a launcher?</em></h3>
+<p><strong>Launcher</strong> allows us to release a potential updates for the patcher. It doesn't use any patching algorithms to update the patcher - it simply redownloads whole patcher to <strong>keep it simple as it's possible.</strong></p>
                 </section>
 
             </div>
