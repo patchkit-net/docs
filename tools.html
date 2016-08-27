@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <title>PatchKit.net Documentation Center</title>
+
+        <link rel="stylesheet" href="/css/bootstrap.min.css">
+        <link rel="stylesheet" href="/css/font-awesome.min.css">
+        <link rel="stylesheet" href="/css/highlight.dark.css">
+        <link rel="stylesheet" href="/css/main.css">
+    </head>
+    <body>
+
+        <header class="navbar navbar-default navbar-fixed-top">
+
+            <a class="navbar-brand" href="/">
+                PatchKit.net Documentation Center
+                <small class="hidden-xs hidden-sm">
+                    no sweat!
+                </small>
+            </a>
+
+            
+        </header>
+
+        <main class="container-fluid">
+            <div class="row">
+
+                
+                    <nav id="sidebar" class="col-sm-3 col-lg-2" role="navigation">
+
+                        <ul class="nav nav-pills nav-stacked">
+                                                            <li class="">
+                                    <a href="/index.html">
+                                        Introduction
+                                    </a>
+                                </li>
+                                                            <li class="">
+                                    <a href="/what_is_patchkit.html">
+                                        What is PatchKit?
+                                    </a>
+                                </li>
+                                                            <li class="">
+                                    <a href="/how_to_join.html">
+                                        How to join
+                                    </a>
+                                </li>
+                                                            <li class="">
+                                    <a href="/getting_started.html">
+                                        Getting Started
+                                    </a>
+                                </li>
+                                                            <li class="">
+                                    <a href="/custom_patcher_in_unity.html">
+                                        Custom patcher (Unity3D)
+                                    </a>
+                                </li>
+                                                            <li class="">
+                                    <a href="/library_dotnet_docs/index.html">
+                                        .NET Library Documentation
+                                    </a>
+                                </li>
+                                                            <li class="active">
+                                    <a href="/tools.html">
+                                        Tools
+                                    </a>
+                                </li>
+                                                            <li class="">
+                                    <a href="/faq.html">
+                                        FAQ
+                                    </a>
+                                </li>
+                                                    </ul>
+
+                    </nav>
+
+                
+                <section id="content" class="col-sm-offset-3 col-lg-offset-2 col-sm-9 col-lg-10">
+                    <h1 id="tools">Tools</h1>
+<p>PatchKit Tools is set of programs that can be used to access PatchKit functionality through command line.</p>
+<h2 id="installation">Installation</h2>
+<p>PatchKit Tools require Ruby installation (also it must be added to the PATH variable so <code>ruby</code> command is available). </p>
+<p>To install PatchKit Tools clone <a href="https://github.com/patchkit-net/patchkit-tools">repository from GitHub</a> and add it's location to the PATH variable.</p>
+<h2 id="usage">Usage</h2>
+<p>Every tool is started by <code>patchkit-tools</code> command. The working directory is set to location from which script was called.</p>
+<p><strong>Syntax</strong></p>
+<pre><code class="language-bash">patchkit-tools [tool_name] [tool_arguments]</code></pre>
+<p><strong>Displaying help and tools list</strong></p>
+<pre><code class="language-bash">patchkit-tools --help</code></pre>
+<p><strong>Displaying specific tool help</strong></p>
+<pre><code class="language-bash">patchkit-tools [tool_name] --help</code></pre>
+<h2 id="updating-application-with-version-diff">Updating application with version diff</h2>
+<p>You can use PatchKit Tools to update your application by creating a version diff. The advantage of this method is that <strong>you're not uploading whole version content - it works like a patch but in a opposite way.</strong> </p>
+<p><strong>Note that this method works only if your application contains at least one published version.</strong></p>
+<h3 id="guide">Guide</h3>
+<ol>
+<li>
+<p><strong>Create a new draft version</strong></p>
+<p><em>Command</em></p>
+<pre><code class="language-bash">patchkit-tools create-version --secret [app_secret] --apikey [api_key] --label [new_version_label]</code></pre>
+<ul>
+<li><em>[app_secret]</em> - your application secret that can be found on application page</li>
+<li><em>[api_key]</em> - your account api key that can be found on &quot;My Profile&quot; page</li>
+</ul>
+<p><em>Result</em></p>
+<pre><code class="language-html">Sending request...
+Result: {"id"=&gt;[new_version_id], "label"=&gt;"[new_version_label]", "changelog"=&gt;nil, "publish_time"=&gt;-1, "content_guid"=&gt;nil, "diff_guid"=&gt;nil, "draft"=&gt;true}
+Done!</code></pre>
+<ul>
+<li><em>[new_version_id]</em> - id of newly created version</li>
+</ul>
+</li>
+<li>
+<p><strong>Download previous version signatures</strong></p>
+<p><em>Command</em></p>
+<pre><code class="language-bash">patchkit-tools download-version-signatures --secret [app_secret] --apikey [api_key] --version [new_version_id - 1] --output [signatures_file]</code></pre>
+<ul>
+<li><em>[new_version_id - 1]</em> - it's simply <em>[new_version_id]</em> decreased by one</li>
+<li><em>[signatures_file]</em> - path to file where signatures will be saved</li>
+</ul>
+<p><em>Result</em></p>
+<pre><code class="language-html">|===========================================================================|
+Done!</code></pre>
+</li>
+<li>
+<p><strong>Create diff</strong></p>
+<p><em>Command</em></p>
+<pre><code class="language-bash">patchkit-tools diff-version --files [new_version_directory] --signatures [signatures_file] --diff [diff_file] --diffsummary [diff_summary_file]</code></pre>
+<ul>
+<li><em>[new_version_directory]</em> - path to new version files</li>
+<li><em>[diff_file]</em> - path to file where diff will be saved</li>
+<li><em>[diff_summary_file]</em> - path to file where diff summary will be saved</li>
+</ul>
+<p><em>Result</em></p>
+<pre><code class="language-html">Unpacking signatures...
+Creating diff...
+Packing diff...
+Saving diff summary...
+Done!</code></pre>
+</li>
+<li>
+<p><strong>Upload diff</strong></p>
+<p><em>Command</em></p>
+<pre><code class="language-bash">patchkit-tools upload-version --secret [app_secret] --apikey [api_key] --mode diff --version [new_version_id] --file [diff_file] --diffsummary [diff_summary_file]</code></pre>
+<p><em>Result</em></p>
+<pre><code class="language-html">Checking version...
+Uploading diff...
+|===========================================================================|
+Uploading 0.54 MB out of 0.54 MB
+Waiting for finish of version processing job...
+|===========================================================================|
+Finished!
+Done!</code></pre>
+</li>
+<li>
+<p><strong>Publishing version</strong></p>
+<p><em>Command</em></p>
+<pre><code class="language-bash">patchkit-tools publish-version --secret [app_secret] --apikey [api_key] --version [new_version_id]</code></pre>
+<p><em>Result</em></p>
+<pre><code class="language-html">Publishing version...
+Result: {"id"=&gt;[new_version_id], "label"=&gt;[new_version_label], "changelog"=&gt;nil, "publish_time"=&gt;-1, "content_guid"=&gt;"4ff8c3f0-a806-43d0-97cb-8a9769413f28", "diff_guid"=&gt;"f1706e26-4238-4059-8a31-4f5b27e95a30", "draft"=&gt;false}
+Done!</code></pre>
+</li>
+</ol>
+                </section>
+
+            </div>
+        </main>
+
+        <footer>
+            <div class="container-fluid">
+                <p class="text-muted">
+                    website generated with <a href="http://couscous.io" title="Markdown website generator">Couscous</a>
+                </p>
+            </div>
+        </footer>
+
+        <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+        <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+        <script src="//yastatic.net/highlightjs/8.2/highlight.min.js"></script>
+
+        <script>
+            $(function() {
+                $("section>h1").wrap('<div class="page-header" />');
+                // Syntax highlighting
+                hljs.initHighlightingOnLoad();
+            });
+        </script>
+
+    </body>
+</html>
