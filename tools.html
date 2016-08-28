@@ -83,6 +83,10 @@
 <h2 id="installation">Installation</h2>
 <p>PatchKit Tools require Ruby installation (also it must be added to the PATH variable so <code>ruby</code> command is available). </p>
 <p>To install PatchKit Tools clone <a href="https://github.com/patchkit-net/patchkit-tools">repository from GitHub</a> and add it's location to the PATH variable.</p>
+<p>Also you need to install required gems. Start with</p>
+<pre><code class="language-bash">gem install bundler</code></pre>
+<p>Then go to the repository <code>src</code> folder and perform</p>
+<pre><code>bundler install</code></pre>
 <h2 id="usage">Usage</h2>
 <p>Every tool is started by <code>patchkit-tools</code> command. The working directory is set to location from which script was called.</p>
 <p><strong>Syntax</strong></p>
