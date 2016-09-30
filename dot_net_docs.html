@@ -80,7 +80,7 @@
                 
                   
                     
-                    <li>
+                    <li class="active">
                     
                         <a href="/dot_net_docs.html"><i class="fa fa-th-large"></i> <span class="nav-label">.NET Library Docs</span></a>
                     </li>
@@ -88,7 +88,7 @@
                 
                   
                     
-                    <li class="active">
+                    <li>
                     
                         <a href="/tools.html"><i class="fa fa-th-large"></i> <span class="nav-label">Tools</span></a>
                     </li>
@@ -132,54 +132,9 @@
         <div class="wrapper wrapper-content animated fadeInRight">
             <div class="row">
                 <div class="col-lg-12">
-                    <h1 id="tools">Tools</h1>
+                    <h1 id="net-library-documentation">.NET Library Documentation</h1>
 
-<p>PatchKit Tools is set of programs that can be used to access PatchKit functionality through command line.</p>
-
-<h2 id="installation">Installation</h2>
-
-<p>PatchKit Tools require Ruby installation (also it must be added to the PATH variable so <code class="highlighter-rouge">ruby</code> command is available).</p>
-
-<p>To install PatchKit Tools clone <a href="https://github.com/patchkit-net/patchkit-tools">repository from GitHub</a> and add it’s location to the PATH variable.</p>
-
-<p>Also you need to install required gems. Start with</p>
-<div class="language-bash highlighter-rouge"><pre class="highlight"><code>gem install bundler
-</code></pre>
-</div>
-
-<p>Then go to the repository <code class="highlighter-rouge">src</code> folder and perform</p>
-<div class="highlighter-rouge"><pre class="highlight"><code>bundler install
-</code></pre>
-</div>
-
-<h2 id="usage">Usage</h2>
-
-<p>Every tool is started by <code class="highlighter-rouge">patchkit-tools</code> command. The working directory is set to location from which script was called.</p>
-
-<p><strong>Syntax</strong></p>
-
-<div class="language-bash highlighter-rouge"><pre class="highlight"><code>patchkit-tools <span class="o">[</span>tool_name] <span class="o">[</span>tool_arguments]
-</code></pre>
-</div>
-
-<p><strong>Displaying help and tools list</strong></p>
-
-<div class="language-bash highlighter-rouge"><pre class="highlight"><code>patchkit-tools --help
-</code></pre>
-</div>
-
-<p><strong>Displaying specific tool help</strong></p>
-
-<div class="language-bash highlighter-rouge"><pre class="highlight"><code>patchkit-tools <span class="o">[</span>tool_name] --help
-</code></pre>
-</div>
-
-<h2 id="uploading-application-version-with-tools">Uploading application version with tools</h2>
-
-<p>You can use <code class="highlighter-rouge">make-version</code> tool to update your application version. It has huge advantage for uploading new versions for applications which already has got at least one version. In this case instead of uploading whole content, tools will generate diff and upload it to PatchKit. 
-<em>Note that the only difference is method of uploading. Result will be the same as uploading whole content.</em></p>
-
-<p>Type <code class="highlighter-rouge">patchkit-tools make-version --help</code> to learn how to use it.</p>
+<p>.NET Library documentation can be found on library browser <a href="library_dotnet_docs/">here</a>.</p>
 
                 </div>
             </div>

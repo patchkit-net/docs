@@ -1,140 +1,220 @@
 <!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+<html>
 
-        <title>PatchKit.net Documentation Center</title>
+<head>
 
-        <link rel="stylesheet" href="/css/bootstrap.min.css">
-        <link rel="stylesheet" href="/css/font-awesome.min.css">
-        <link rel="stylesheet" href="/css/highlight.dark.css">
-        <link rel="stylesheet" href="/css/main.css">
-    </head>
-    <body>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <header class="navbar navbar-default navbar-fixed-top">
+    <title>PatchKit Documentation</title>
 
-            <a class="navbar-brand" href="/">
-                PatchKit.net Documentation Center
-                <small class="hidden-xs hidden-sm">
-                    no sweat!
-                </small>
-            </a>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="font-awesome/css/font-awesome.css" rel="stylesheet">
 
-            
-        </header>
+    <link href="css/animate.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
 
-        <main class="container-fluid">
+</head>
+
+<body>
+
+<div id="wrapper">
+
+    <nav class="navbar-default navbar-static-side" role="navigation">
+        <div class="sidebar-collapse">
+            <ul class="nav metismenu" id="side-menu">
+                <li class="nav-header">
+                    <div class="dropdown profile-element">
+                            <a data-toggle="dropdown" class="dropdown-toggle" href="#">
+                            <span class="clear"> <span class="block m-t-xs"> <strong class="font-bold">PatchKit Documentation</strong>
+                    </div>
+                    <!-- <div class="logo-element">
+                        IN+
+                    </div> -->
+                </li>
+
+                
+                
+                
+                  
+                
+                  
+                    
+                    <li>
+                    
+                        <a href="/"><i class="fa fa-th-large"></i> <span class="nav-label">Introduction</span></a>
+                    </li>
+                  
+                
+                  
+                    
+                    <li>
+                    
+                        <a href="/what_is_patchkit.html"><i class="fa fa-th-large"></i> <span class="nav-label">What is PatchKit?</span></a>
+                    </li>
+                  
+                
+                  
+                    
+                    <li>
+                    
+                        <a href="/how_to_join.html"><i class="fa fa-th-large"></i> <span class="nav-label">How To Join</span></a>
+                    </li>
+                  
+                
+                  
+                    
+                    <li class="active">
+                    
+                        <a href="/getting_started.html"><i class="fa fa-th-large"></i> <span class="nav-label">Getting Started</span></a>
+                    </li>
+                  
+                
+                  
+                    
+                    <li>
+                    
+                        <a href="/custom_patcher_in_unity.html"><i class="fa fa-th-large"></i> <span class="nav-label">Custom Patcher</span></a>
+                    </li>
+                  
+                
+                  
+                    
+                    <li>
+                    
+                        <a href="/dot_net_docs.html"><i class="fa fa-th-large"></i> <span class="nav-label">.NET Library Docs</span></a>
+                    </li>
+                  
+                
+                  
+                    
+                    <li>
+                    
+                        <a href="/tools.html"><i class="fa fa-th-large"></i> <span class="nav-label">Tools</span></a>
+                    </li>
+                  
+                
+                  
+                    
+                    <li>
+                    
+                        <a href="/faq.html"><i class="fa fa-th-large"></i> <span class="nav-label">FAQ</span></a>
+                    </li>
+                  
+                
+                
+            </ul>
+
+        </div>
+    </nav>
+
+    <div id="page-wrapper" class="gray-bg">
+        <div class="row border-bottom">
+            <!-- <nav class="navbar navbar-static-top white-bg" role="navigation" style="margin-bottom: 0">
+                <div class="navbar-header">
+                    <a class="navbar-minimalize minimalize-styl-2 btn btn-primary " href="#"><i class="fa fa-bars"></i> </a>
+                    <form role="search" class="navbar-form-custom" method="post" action="#">
+                        <div class="form-group">
+                            <input type="text" placeholder="Search for something..." class="form-control" name="top-search" id="top-search">
+                        </div>
+                    </form>
+                </div>
+                <ul class="nav navbar-top-links navbar-right">
+                    <li>
+                        <a href="#">
+                            <i class="fa fa-sign-out"></i> Log out
+                        </a>
+                    </li>
+                </ul>
+
+            </nav> -->
+        </div>
+        <div class="wrapper wrapper-content animated fadeInRight">
             <div class="row">
-
-                
-                    <nav id="sidebar" class="col-sm-3 col-lg-2" role="navigation">
-
-                        <ul class="nav nav-pills nav-stacked">
-                                                            <li class="">
-                                    <a href="/index.html">
-                                        Introduction
-                                    </a>
-                                </li>
-                                                            <li class="">
-                                    <a href="/what_is_patchkit.html">
-                                        What is PatchKit?
-                                    </a>
-                                </li>
-                                                            <li class="">
-                                    <a href="/how_to_join.html">
-                                        How to join
-                                    </a>
-                                </li>
-                                                            <li class="active">
-                                    <a href="/getting_started.html">
-                                        Getting Started
-                                    </a>
-                                </li>
-                                                            <li class="">
-                                    <a href="/custom_patcher_in_unity.html">
-                                        Custom patcher (Unity3D)
-                                    </a>
-                                </li>
-                                                            <li class="">
-                                    <a href="/library_dotnet_docs/index.html">
-                                        .NET Library Documentation
-                                    </a>
-                                </li>
-                                                            <li class="">
-                                    <a href="/tools.html">
-                                        Tools
-                                    </a>
-                                </li>
-                                                            <li class="">
-                                    <a href="/faq.html">
-                                        FAQ
-                                    </a>
-                                </li>
-                                                    </ul>
-
-                    </nav>
-
-                
-                <section id="content" class="col-sm-offset-3 col-lg-offset-2 col-sm-9 col-lg-10">
+                <div class="col-lg-12">
                     <h1 id="getting-started">Getting Started</h1>
+
 <blockquote>
-<p>PatchKit is currently in beta stage. If you're willing to get a free account, please fill in the <a href="http://patchkit.net/#beta">registration form</a>.</p>
+  <p>PatchKit is currently in beta stage. If you’re willing to get a free account, please fill in the <a href="http://patchkit.net/#beta">registration form</a>.</p>
 </blockquote>
+
 <p>To get started first please <a href="http://panel.patchkit.net">sign in</a> to your PatchKit account.</p>
+
 <h2 id="create-the-application">Create the application</h2>
+
 <p>First you have to create an application. In order to do so:</p>
+
 <ol>
-<li>Go to <strong>Applications</strong> page.</li>
-<li>Click on <strong>Create New Application</strong> button.</li>
-<li>Fill-in your application <strong>Name</strong> and select target <strong>Platform</strong>. Note that if your game have version for multiple platform, you have to create multiple <strong>Applications</strong>.</li>
-<li>Click on the <strong>Create App</strong> button.</li>
+  <li>Go to <strong>Applications</strong> page.</li>
+  <li>Click on <strong>Create New Application</strong> button.</li>
+  <li>Fill-in your application <strong>Name</strong> and select target <strong>Platform</strong>. Note that if your game have version for multiple platform, you have to create multiple <strong>Applications</strong>.</li>
+  <li>Click on the <strong>Create App</strong> button.</li>
 </ol>
+
 <p>Your first application is now created!</p>
+
 <h2 id="upload-your-game">Upload your game</h2>
-<p>When your application is created, you will be redirected to application dashboard. Here you can change it's name, platform, get its secret and manage versions. To upload your game you have to create a new version.</p>
+
+<p>When your application is created, you will be redirected to application dashboard. Here you can change it’s name, platform, get its secret and manage versions. To upload your game you have to create a new version.</p>
+
 <ol>
-<li>Click on the <strong>Create New Version</strong> button.</li>
-<li>Set your version <strong>Label</strong>. Versions initially are identified by <em>id</em> number (1, 2, 3 etc.), so label is something more human-like.</li>
-<li>Choose your game's <strong>content zip file</strong>. It should include all the files needed to launch the game.</li>
-<li>Optionally specify the list of <strong>Changes</strong>.</li>
-<li>Click on the <strong>Upload &amp; Create</strong> button.</li>
+  <li>Click on the <strong>Create New Version</strong> button.</li>
+  <li>Set your version <strong>Label</strong>. Versions initially are identified by <em>id</em> number (1, 2, 3 etc.), so label is something more human-like.</li>
+  <li>Choose your game’s <strong>content zip file</strong>. It should include all the files needed to launch the game.</li>
+  <li>Optionally specify the list of <strong>Changes</strong>.</li>
+  <li>Click on the <strong>Upload &amp; Create</strong> button.</li>
 </ol>
+
 <blockquote>
-<p><strong>Be Cautious!</strong> When making a zip file, make sure that your game executable file will be located in the root of your zip file, not in a subdirectory!</p>
+  <p><strong>Be Cautious!</strong> When making a zip file, make sure that your game executable file will be located in the root of your zip file, not in a subdirectory!</p>
 </blockquote>
+
 <p>Now you have to be patient. First your web browser will upload the zip file, so you will have to wait until it is done. When finished, you will be taken into <em>Version Processing</em> page. This page will display a real-time processing progress of your version. You can leave it open (it will reload to <em>Version Dashboard</em> when finished) or get back to it later.</p>
+
 <h2 id="publishing-your-game">Publishing your game</h2>
-<p>When your version has been successfully processed, you should be taken into <em>Version Dashboard</em>. Please read it carefully because it will let you know if there's something wrong with the content that you've uploaded.</p>
-<p>In order to publish your version, click on the <em>Publish Now</em> button. You will be asked if you're 100% sure that you want to do that because that process cannot be reversed. When confirmed, your game is now published.</p>
+
+<p>When your version has been successfully processed, you should be taken into <em>Version Dashboard</em>. Please read it carefully because it will let you know if there’s something wrong with the content that you’ve uploaded.</p>
+
+<p>In order to publish your version, click on the <em>Publish Now</em> button. You will be asked if you’re 100% sure that you want to do that because that process cannot be reversed. When confirmed, your game is now published.</p>
+
 <h2 id="downloading-your-game">Downloading your game</h2>
-<p>Now it's time to try it out! On your <em>Application Dashboard</em> (if you're lost go to <em>Applications</em> page and then click on your application name) you fill find <strong>Launcher</strong> frame with the link to download it. Click on it and it will download a small launcher executable. Try to run it and you will discover that shortly after your game is now installed and can be played!</p>
+
+<p>Now it’s time to try it out! On your <em>Application Dashboard</em> (if you’re lost go to <em>Applications</em> page and then click on your application name) you fill find <strong>Launcher</strong> frame with the link to download it. Click on it and it will download a small launcher executable. Try to run it and you will discover that shortly after your game is now installed and can be played!</p>
+
 <p>You can freely distribute this URL to anyone that you want to give your game to. It will always point to the newest version of your game.</p>
-                </section>
 
+                </div>
             </div>
-        </main>
-
-        <footer>
-            <div class="container-fluid">
-                <p class="text-muted">
-                    website generated with <a href="http://couscous.io" title="Markdown website generator">Couscous</a>
-                </p>
+        </div>
+        <div class="footer">
+            <!-- <div class="pull-right">
+                10GB of <strong>250GB</strong> Free.
+            </div> -->
+            <div class="pull-right">
+                <a href="http://patchkit.net/">Home</a> |
+                <a href="https://panel.patchkit.net/">User Panel</a> |
+                <a href="http://blog.patchkit.net/">Blog</a>
             </div>
-        </footer>
+            <div>
+                <strong>Copyright</strong> Upsoft &copy; 2016
+            </div>
+            
+        </div>
 
-        <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
-        <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
-        <script src="//yastatic.net/highlightjs/8.2/highlight.min.js"></script>
+    </div>
+</div>
 
-        <script>
-            $(function() {
-                $("section>h1").wrap('<div class="page-header" />');
-                // Syntax highlighting
-                hljs.initHighlightingOnLoad();
-            });
-        </script>
+<!-- Mainly scripts -->
+<script src="js/jquery-2.1.1.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/plugins/metisMenu/jquery.metisMenu.js"></script>
+<script src="js/plugins/slimscroll/jquery.slimscroll.min.js"></script>
 
-    </body>
+<!-- Custom and plugin javascript -->
+<script src="js/inspinia.js"></script>
+<script src="js/plugins/pace/pace.min.js"></script>
+
+
+</body>
+
 </html>
