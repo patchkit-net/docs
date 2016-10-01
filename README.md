@@ -2,10 +2,10 @@ Build the image:
 
 ```make docker-build```
 
-Preview and host it locally (port 8000):
+Preview and host it locally (port 400):
 
-```make preview```
+```make serve```
 
 To publish your work to docs.patchkit.net execute:
 
-```make publish
+```make publish```
