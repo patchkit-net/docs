@@ -152,6 +152,16 @@
 </code></pre>
 </div>
 
+<p><strong>In case of certificate failure</strong></p>
+
+<p>Trying to install the bundler, some users may encounter SSL certificate failure. In this case we’d suggest you to download <a href="cacert.pem">this certificate file</a> (cacert.pem) and put it in any directory (eg. C:\RailsInstaller\cacert.pem). Then open a command line and type:</p>
+
+<div class="language-bash highlighter-rouge"><pre class="highlight"><code><span class="nb">set </span><span class="nv">SSL_CERT_FILE</span><span class="o">=</span>C:<span class="se">\R</span>ailsInstaller<span class="se">\c</span>acert.pem
+</code></pre>
+</div>
+
+<p>This will assign the certificate and will allow you to download all the necessary assets. The certificate will remain assigned until the current terminal is closed.</p>
+
 <h2 id="usage">Usage</h2>
 
 <p>Every tool is started by <code class="highlighter-rouge">patchkit-tools</code> command. The working directory is set to location from which script was called.</p>
@@ -176,8 +186,25 @@
 
 <h2 id="uploading-application-version-with-tools">Uploading application version with tools</h2>
 
-<p>You can use <code class="highlighter-rouge">make-version</code> tool to upload your application version. It has huge advantage for uploading new versions for applications which already has got at least one version. In this case instead of uploading whole content, tools will generate diff and upload it to PatchKit. 
-<em>Note that the only difference is method of uploading. Result will be the same as uploading whole content.</em></p>
+<p><code class="highlighter-rouge">make-version</code> tool allows you to create a new version of your project by uploading only the diff files. It means you don’t have to upload the whole new version of your project to PatchKit. If <code class="highlighter-rouge">make-version</code> is executed for uploading the very first version of the project, then the whole project content will be uploaded.</p>
+
+<p><strong>make-version syntax</strong></p>
+
+<div class="language-bash highlighter-rouge"><pre class="highlight"><code>patchkit-tools make-version <span class="o">[</span>-s secret] <span class="o">[</span>-a api_key] <span class="o">[</span>-l label] <span class="o">[</span>-f files] <span class="o">[</span>-c changelog]
+</code></pre>
+</div>
+
+<p><strong>make-version examples</strong></p>
+
+<p>Adding new version</p>
+<div class="language-bash highlighter-rouge"><pre class="highlight"><code>patchkit-tools make-version -s aa11bb22cc33dd55ee66ff77gg88hh99 -a zz99yy88xx77ww66vv55uu44tt33ss22rr11 -l “Second version” -f BuildFolder
+</code></pre>
+</div>
+
+<p>Adding new version and assigning the changelog</p>
+<div class="language-bash highlighter-rouge"><pre class="highlight"><code>patchkit-tools make-version -s aa11bb22cc33dd55ee66ff77gg88hh99 -a zz99yy88xx77ww66vv55uu44tt33ss22rr11 -l “Third version” -f BuildFolder -c <span class="s2">"-feature 1</span><span class="se">\n</span><span class="s2">-feature 2"</span>
+</code></pre>
+</div>
 
 <p>Type <code class="highlighter-rouge">patchkit-tools make-version --help</code> to learn syntax.</p>
 
