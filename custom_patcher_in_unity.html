@@ -134,7 +134,7 @@
                 <div class="col-lg-12">
                     <h1 id="custom-patcher-unity3d">Custom patcher (Unity3D)</h1>
 
-<p>You can create your custom patcher by modyfing sources of patcher made in Unity3D which sources can be found <a href="https://github.com/patchkit-net/patchkit-patcher-unity">here</a>.</p>
+<p>You can create your custom patcher by modifying sources of patcher made in Unity3D. The sources can be found <a href="https://github.com/patchkit-net/patchkit-patcher-unity">here</a>.</p>
 
 <h2 id="making-modifications">Making modifications</h2>
 
@@ -157,15 +157,26 @@
 
 <h3 id="configuring-for-the-first-time">Configuring for the first time</h3>
 
-<ul>
-  <li>Create separate application on PatchKit which will be used by patcher (for example - <em>My Game Patcher</em>).</li>
-  <li>Upload the first version of your custom patcher (<strong>important</strong> - remember to include <em>patcher.manifest</em> file in the package - it’s automaticaly generated while building the patcher with Unity3D).</li>
-  <li>Copy patcher application secret and paste it into “Custom Patcher” field in your application settings (for which you want to set a custom patcher).</li>
-</ul>
+<ol>
+  <li>Create a new application and give it a name, for instance: <strong>My Patcher</strong>. As a platform, select <strong>Other</strong>.</li>
+  <li>Build a custom patcher on a corresponding platform from Unity. Make sure <strong>patcher.manifest</strong> file is in the same build folder. (<strong>patcher.manifest</strong> is automatically generated after building the patcher with Unity3D)</li>
+  <li>Zip the project.</li>
+  <li>Upload the zip to <strong>My Patcher</strong> application.</li>
+  <li>
+    <p>In <strong>My Patcher</strong> application settings copy the <strong>secret code</strong> on the right pane.</p>
+
+    <p><img src="/guide_img/secret.png" alt="Alt text" /></p>
+  </li>
+  <li>
+    <p>Open the game settings (the one you’ve made the custom Patcher for) and scroll down to see <strong>Custom Patcher Secret</strong>. Paste the patcher secret here.</p>
+
+    <p><img src="/guide_img/custom_patcher_secret.png" alt="Alt text" /></p>
+  </li>
+</ol>
 
 <h3 id="updating-custom-patcher">Updating custom patcher</h3>
 
-<p>Updating custom patcher is the same process as updating every applciation - you just need to upload a new version to your patcher application and publish it - old patcher versions will be automaticaly replaced by the new version on next start of launcher application.</p>
+<p>Updating custom patcher is the same process as updating every application - you just need to upload a new version to your patcher application and publish it. Old patcher versions will be automatically replaced by the new version on the next start of the launcher.</p>
 
                 </div>
             </div>
