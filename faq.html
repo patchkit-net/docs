@@ -175,7 +175,12 @@
       <li><a href="#how-to-get-start-with-it" id="markdown-toc-how-to-get-start-with-it">How to get start with it?</a></li>
       <li><a href="#how-much-does-it-cost" id="markdown-toc-how-much-does-it-cost">How much does it cost?</a></li>
       <li><a href="#do-i-need-to-build-a-patcher-application" id="markdown-toc-do-i-need-to-build-a-patcher-application">Do I need to build a patcher application?</a></li>
+      <li><a href="#how-i-can-upload-my-game" id="markdown-toc-how-i-can-upload-my-game">How I can upload my game?</a></li>
+      <li><a href="#how-can-i-publish-my-game" id="markdown-toc-how-can-i-publish-my-game">How can I publish my game?</a></li>
       <li><a href="#where-my-players-can-download-my-game" id="markdown-toc-where-my-players-can-download-my-game">Where my players can download my game?</a></li>
+      <li><a href="#will-my-players-need-to-re-download-my-game-when-new-version-is-published" id="markdown-toc-will-my-players-need-to-re-download-my-game-when-new-version-is-published">Will my players need to re-download my game when new version is published?</a></li>
+      <li><a href="#should-i-prepare-patches" id="markdown-toc-should-i-prepare-patches">Should I prepare patches?</a></li>
+      <li><a href="#my-patch-size-is-pretty-big-why" id="markdown-toc-my-patch-size-is-pretty-big-why">My patch size is pretty big. Why?</a></li>
       <li><a href="#how-big-games-patchkit-can-handle" id="markdown-toc-how-big-games-patchkit-can-handle">How big games PatchKit can handle?</a></li>
       <li><a href="#what-are-some-common-use-cases" id="markdown-toc-what-are-some-common-use-cases">What are some common use cases?</a></li>
       <li><a href="#what-is-the-difference-between-launcher-and-patcher" id="markdown-toc-what-is-the-difference-between-launcher-and-patcher">What is the difference between launcher and patcher?</a></li>
@@ -196,11 +201,45 @@
 
 <p><strong>Definetely not!</strong> PatchKit is a drop-in solution. If you have your game, just upload it, and you will be supplied with a <em>launcher</em> application. Download it and share it with anyone you want.</p>
 
+<h2 id="how-i-can-upload-my-game">How I can upload my game?</h2>
+
+<p>First you have to create application entry using the <a href="https://panel.patchkit.net">Panel</a>. When you’re done it it you can:</p>
+
+<ul>
+  <li>Zip your game and drop it into Web UI upload form.</li>
+  <li>Use <a href="tools.html">Console Tools</a> to upload it directly from your PC.</li>
+  <li>Use <a href="https://github.com/patchkit-net/patchkit-integration-unity/tree/tools-integration">Unity integration</a>.</li>
+</ul>
+
+<p>After the uploading your file contents will be processed. You will see a progress bar of this operation. Just wait a moment to see if everything is alright.</p>
+
+<h2 id="how-can-i-publish-my-game">How can I publish my game?</h2>
+
+<p>After uploading and processing your version you will see a red <em>Publish</em> button in your draft version view. Just click it and confirm your intent. You will be notified when your version is published and ready to be downloaded!</p>
+
 <h2 id="where-my-players-can-download-my-game">Where my players can download my game?</h2>
 
 <p>The only way your players can download your game if you will share the <strong>launcher</strong> application of your game with them. The <strong>launcher</strong> application can be downloaded only by you on your game’s page, and your game’s page is visible only for you.</p>
 
 <p>PatchKit is not a store or marketplace. You can think of it as a mirror servers service with additional features. You’re uploading your game and then you’re sharing your game on your own web page, on your own store or with your friends.</p>
+
+<h2 id="will-my-players-need-to-re-download-my-game-when-new-version-is-published">Will my players need to re-download my game when new version is published?</h2>
+
+<p><strong>Definitely not!</strong> PatchKit is heavily dependent on binary diffs. For every version you’re publishing there’s a binary diff generated on our servers. It will be downloaded and applied by your players as soon as they will launch your game. The procedure is really fast and in most cases they don’t need to wait longer than several seconds based on network and PC performance.</p>
+
+<h2 id="should-i-prepare-patches">Should I prepare patches?</h2>
+
+<p><strong>No, you shouldn’t.</strong> Patches are build by PatchKit servers. Everything is fully automated and you will be notified of the patch size we managed to achieve.</p>
+
+<h2 id="my-patch-size-is-pretty-big-why">My patch size is pretty big. Why?</h2>
+
+<p>There may be several reasons:</p>
+
+<ol>
+  <li>You’ve made some big changes and there’s no way around it.</li>
+  <li>You’ve uploaded a wrong game by mistake.</li>
+  <li>You’ve renamed your files or directories. PatchKit currently does not support this kind of scenario very well.</li>
+</ol>
 
 <h2 id="how-big-games-patchkit-can-handle">How big games PatchKit can handle?</h2>
 
