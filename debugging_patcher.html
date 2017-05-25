@@ -67,14 +67,93 @@
 
 <ol class="breadcrumb">
   <li><a href="/">Home</a></li>
-  <li><a href="#">.NET Library Docs</a></li>
+  <li><a href="#">Debugging Launcher and Patcher</a></li>
 </ol>
 
 <section id="content" class="container">
     <div class="row">
-        <h1 id="net-library-documentation">.NET Library Documentation</h1>
+        <h1 id="debugging-launcher-and-patcher">Debugging Launcher and Patcher</h1>
 
-<p>.NET Library documentation can be found on library browser <a href="library_dotnet_docs/">here</a>.</p>
+<h2 id="getting-the-logs">Getting the logs</h2>
+
+<p>Launcher and Patcher logs is usually the first thing you should be looking into. Here’s the list of where Launcher and Patcher logs can be found.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Operating System</th>
+      <th>Application</th>
+      <th>Location</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Windows</td>
+      <td>launcher.exe</td>
+      <td>launcher-log.txt</td>
+    </tr>
+    <tr>
+      <td>Windows</td>
+      <td>patcher\Patcher.exe</td>
+      <td>patcher\Patcher_Data\output_log.txt</td>
+    </tr>
+    <tr>
+      <td>GNU/Linux</td>
+      <td>launcher</td>
+      <td>launcher-log.txt next to launcher binary</td>
+    </tr>
+    <tr>
+      <td>GNU/Linux</td>
+      <td>patcher/Patcher</td>
+      <td>patcher/Patcher_Data/output_log.txt</td>
+    </tr>
+    <tr>
+      <td>Mac OSX</td>
+      <td>Launcher.app</td>
+      <td>~/Library/Application Support/Launcher/launcher-log.txt</td>
+    </tr>
+    <tr>
+      <td>Mac OSX</td>
+      <td>Launcher.app/Contents/Resources/patcher/Patcher.app</td>
+      <td>~/Library/Logs/Unity/Player.log</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Watch out that both launcher and patcher logs will get overwritten as soon as you will start your game again. If you want to keep it (to send it to support@patchkit.net for example), you have to make a copy.</p>
+
+<h2 id="command-line-arguments">Command line arguments</h2>
+
+<p>Patcher should be ran with following command line arguments:</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>patcher.exe --installdir "dir" --secret "secret" --readable
+</code></pre>
+</div>
+
+<p>You can try and launch it with your custom <em>installdir</em> and <em>secret</em>. Remember to always pass <em>readable</em>, because otherwise patcher will expect an encoded secret instead of a string.</p>
+
+<h2 id="environment-variables">Environment variables</h2>
+
+<p>Patcher behavior can be overriden by setting up those environment variables.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Variable Name</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>PK_PATCHER_FORCE_SECRET</td>
+      <td>Set it to application secret to forcefully change what game should be downloaded.</td>
+    </tr>
+    <tr>
+      <td>PK_PATCHER_FORCE_VERSION</td>
+      <td>Change the latest game version to given one. This is internal version id starting from 1.</td>
+    </tr>
+  </tbody>
+</table>
 
     </div>
 </section>
