@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <!-- Add Your favicon here -->
+    <!--<link rel="icon" href="img/favicon.ico">-->
+
+    <title>PatchKit Documentation</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Animation CSS -->
+    <link href="css/animate.min.css" rel="stylesheet">
+
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Custom styles for this template -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+<body id="page-top">
+<div class="navbar-wrapper">
+        <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+            <div class="container">
+                <div class="navbar-header page-scroll">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="/">
+                        <img src="img/patchkit_logo_black.png">
+                    </a>
+                </div>
+                <div id="navbar" class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a class="page-scroll" href="https://patchkit.net">Go to patchkit.net</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+</div>
+<div id="inSlider" class="carousel carousel-fade" data-ride="carousel">
+    <div class="carousel-inner" role="listbox">
+        <div class="item active">
+            <div class="container">
+                <div class="carousel-caption">
+                    <h1>Support</h1>
+                </div>
+            </div>
+            <!-- Set background for slide in css -->
+            <div class="header-back one"></div>
+        </div>
+    </div>
+</div>
+
+<ol class="breadcrumb">
+  <li><a href="/">Home</a></li>
+  <li><a href="#">Processing Messages</a></li>
+</ol>
+
+<section id="content" class="container">
+    <div class="row">
+        <h1 id="processing-messages">Processing Messages</h1>
+
+<p>When your content processing is finished, you may be notified of progressing warnings or errors. On this page you will learn some more details about each of those.</p>
+
+<h3 id="your-patch-file-size-is-nearly-the-same-as-your-content-file-size">Your patch file size is nearly the same as your content file size</h3>
+
+<p>When you’re uploading new application files, a patch file is created. Patch file is meant to be as small as possible, so if it happens to be nearly the same as your full application size, it is considered as a mistake.</p>
+
+<p>Reasons why this may happen:</p>
+
+<h4 id="youve-uploaded-zip-file-with-different-application">You’ve uploaded zip file with different application</h4>
+
+<p>If by mistake you will upload a zip file that is completely different application, there’s no chance that a valid patch would be created. Most probably this is not what you’d like to do, so look at the file listing to verify that those are the files that you’d like to upload.</p>
+
+<h4 id="your-application-name-changes-so-its-directory-structure">Your application name changes so its directory structure</h4>
+
+<p>Current patch builder implementation does not handle file renaming. If you will change your directory structure, there’s a good chance that the game size will increase.</p>
+
+<p>This is a note especially for <a href="https://unity3d.com">Unity</a> users. Your executable name defines your data directory name. If you will change your executable name, the whole directory structure will change too.</p>
+
+<p>Don’t worry though, future version of PatchKit will handle this case gracefully.</p>
+
+<h3 id="cannot-find-executable-file">Cannot find executable file</h3>
+
+<p>This is error you cannot ignore. Without a valid executable file your application cannot be launched.</p>
+
+<p>You can also see that error because of simple platform mistake. For instance if you choose Mac OSX platform for your application but you’ve uploaded Windows binaries, you can experience this error message for that reason.</p>
+
+    </div>
+</section>
+
+<section id="gooter" class="gray-section gooter">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 text-center m-t-lg m-b-lg">
+                <p><strong>Copyright © 2016 Upsoft All Rights Reserved.</strong><br/></p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<script src="js/jquery-2.1.1.js"></script>
+<script src="js/pace.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/classie.js"></script>
+<script src="js/cbpAnimatedHeader.js"></script>
+<script src="js/wow.min.js"></script>
+<script src="js/inspinia.js"></script>
+</body>
+</html>
