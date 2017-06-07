@@ -59,8 +59,6 @@
                     <h1>Support</h1>
                 </div>
             </div>
-            <!-- Set background for slide in css -->
-            <div class="header-back one"></div>
         </div>
     </div>
 </div>
@@ -74,89 +72,123 @@
     <div class="row">
         <h1 id="getting-started">Getting Started</h1>
 
-<blockquote>
-  <p>PatchKit is currently in beta stage. If you’re willing to get a free account, please fill in the <a href="http://patchkit.net/#beta">registration form</a>.</p>
-</blockquote>
+<p>Before getting started, please <a href="https://panel.patchkit.net">sign in</a> to your PatchKit account. If you don’t have one, you can <a href="https://panel.patchkit.net">create one for free</a>!</p>
 
-<p>To get started, please <a href="http://panel.patchkit.net">sign in</a> to your PatchKit account.</p>
+<h2 id="creating-new-application">Creating new application</h2>
 
-<h2 id="create-the-application">Create the application</h2>
-
-<p>First, you have to create an application. In order to do so:</p>
+<p>When you’re logged in, the first thing you want to do is to create a new application. In order to do so:</p>
 
 <ol>
-  <li>Go to <strong>Applications</strong> page.</li>
-  <li>
-    <p>Click on <strong>New Application</strong> button.</p>
-
-    <p><img src="/guide_img/getting_started/new_application.png" alt="Alt text" /></p>
-  </li>
-  <li>
-    <p>Fill-in your application <strong>Name</strong> and select target <strong>Platform</strong>. If your game supports multiple platforms, you have to create an <strong>Application</strong> for each platform.</p>
-
-    <p><img src="/guide_img/getting_started/new_app_dialog.png" alt="Alt text" /></p>
-  </li>
-  <li>Click on the <strong>Create</strong> button.</li>
+  <li>Naviate to <strong>Applications</strong> tab. You will find there an empty list of your applications.</li>
+  <li>Click on <strong>New Application</strong> button. You will be directed to new application form.</li>
+  <li>Enter your application name and choose your target platform.</li>
+  <li>Click on <strong>Create</strong> button. Your new application is now created.</li>
 </ol>
 
-<p>Your first application is now created!</p>
+<p><img src="/guide_img/getting_started/app_panel.png" alt="Application Panel" /></p>
 
-<p>When your application is created, you will be redirected to application dashboard. Here you can change it’s name, platform, get its secret and manage versions.</p>
+<p>Application panel allows you to do several things:</p>
 
-<h2 id="upload-your-game">Upload your game</h2>
+<ul>
+  <li>Change application name (internal)</li>
+  <li>Change application display name</li>
+  <li>Change application author</li>
+  <li>Change target platform (this shouldn’t be done after app is already published)</li>
+</ul>
 
-<p>To upload your game you have to create a new version.</p>
+<p>You can also:</p>
 
-<ol>
-  <li>
-    <p>Click on the <strong>New Version</strong> button.</p>
+<ul>
+  <li>Create a new version</li>
+  <li>Get the launcher</li>
+</ul>
 
-    <p><img src="/guide_img/getting_started/new_version.png" alt="Alt text" /></p>
-  </li>
-  <li>
-    <p>Type in your version <strong>Label</strong>. Versions initially are identified by <em>id</em> number (1, 2, 3 etc.), so label is something more human-like.</p>
+<p>Let’s now focus on…</p>
 
-    <p><img src="/guide_img/getting_started/label.png" alt="Alt text" /></p>
-  </li>
-  <li>
-    <p>Optionally specify the list of <strong>Changes</strong>.</p>
+<h2 id="creatign-new-version">Creatign new version</h2>
 
-    <p><img src="/guide_img/getting_started/changes.png" alt="Alt text" /></p>
-  </li>
-  <li>
-    <p>Click <strong>Upload Content</strong> button and select your local game’s <strong>content zip file</strong>. It should include all the files needed to launch the game.</p>
+<p>In order to create a new application version, just click on the <strong>New Version</strong> button. You will be redirected to new version panel.</p>
 
-    <p><img src="/guide_img/getting_started/upload_content.png" alt="Alt text" /></p>
-  </li>
-</ol>
+<p><img src="/guide_img/getting_started/version_panel.png" alt="New Version Panel" /></p>
 
-<blockquote>
-  <p><strong>NOTE!</strong> When making a zip file, make sure your game executable file will be located in the root of your zip file, not in a subdirectory!</p>
-</blockquote>
+<p>Now click on the <strong>Upload Content</strong> button to get our application files to PatchKit servers.</p>
 
-<p>Your web browser will upload the zip file, so you will have to wait until it’s done. When finished, you will be taken to <em>Version Processing</em> page. This page will display a real-time processing progress of your version. You can leave it open or get back to it later.</p>
+<p><img src="/guide_img/getting_started/upload_content_form.png" alt="Upload Content Form" /></p>
 
-<p>Uploading the new versions can also be done using <a href="tools.html"><strong>PatchKit Tools</strong></a>.</p>
+<p>Here you can choose a <a href="http://www.wikihow.com/Make-a-Zip-File">ZIP file</a> with your game content. It is required to have a certain file structure though.</p>
 
-<h2 id="publishing-your-game">Publishing your game</h2>
+<h2 id="zip-file-structure">ZIP file structure</h2>
 
-<p>When your version has been successfully processed, you will be taken to <em>Version Dashboard</em>. Please read it carefully, since it will let you know if there’s anything wrong with the content you’ve uploaded.</p>
+<p>ZIP file is required to have a certain structure:</p>
 
-<p>In order to publish your version, click on the <strong>Publish</strong> button.</p>
+<p><strong>Windows/Linux</strong></p>
 
-<p><img src="/guide_img/getting_started/publish.png" alt="Alt text" /></p>
+<ul>
+  <li>executable file should be placed at the top-level if your ZIP archive</li>
+  <li>there should be only one executable file at top-level</li>
+</ul>
 
-<p>You will be asked if you’re 100% sure you want to do that, because that process cannot be reversed. When confirmed, your game is now published.</p>
+<p><strong>Mac OSX</strong></p>
 
-<h2 id="downloading-your-game">Downloading your game</h2>
+<ul>
+  <li>*.app directory should be placed at the top-level of your ZIP archive</li>
+  <li>there should be only one *.app directory at top-level</li>
+</ul>
 
-<p>Now, it’s time to try it out! On your <em>Application</em> dashboard, you’ll find <strong>Get Launcher</strong> button.</p>
+<p><strong>Example 1 - Good</strong></p>
 
-<p><img src="/guide_img/getting_started/get_launcher.png" alt="Alt text" /></p>
+<p>In this example there are two executables, but only one is located at the top-level position.</p>
 
-<p>Click on it and it will download a small launcher executable.</p>
+<div class="highlighter-rouge"><pre class="highlight"><code>/game.exe
+/data.dat
+/tools/editor.exe
+</code></pre>
+</div>
 
-<p>You can now freely share this executable with anyone.</p>
+<p><strong>Example 2 - Good</strong></p>
+
+<p>Here’s a valid example of Mac OSX application.</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>/Game.app
+/Game.app/Contents/MacOS/Game
+/Game.app/Contents/Resources/data.dat
+</code></pre>
+</div>
+
+<p><strong>Example 3 - Bad</strong></p>
+
+<p>In this example there are two executable files at top-level position. PatchKit won’t know which one is your main executable.</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>/editor.exe
+/game.exe
+/data.dat
+</code></pre>
+</div>
+
+<h2 id="uploading-your-zip-file">Uploading your ZIP file</h2>
+
+<p>When your ZIP file is ready, put it into the upload form, and the upload will start automatically. Don’t close your web browser window until the uploading is done. You will get notified when it is safe to close it.</p>
+
+<p>After successful upload, your application files will get processed. This process will take a couple of minutes depending of the size of your application. After its done, you may get some messages regarding the results. Sometimes it’s something that you have to fix and upload the ZIP file again. Don’t worry about it, and try again when that happens!</p>
+
+<p><img src="/guide_img/getting_started/messages.png" alt="Messages" /></p>
+
+<h2 id="publishing-your-application">Publishing your application</h2>
+
+<p>Now you’re ready to publish your application. In order to do that, simply click on <strong>Publish</strong> button.
+You will be asked if you’re absolutely sure about it. Think about it twice, since you cannot undo that!</p>
+
+<p>Publishing will take a while. You will see a progress bar regarding the process. You don’t need to wait for it though, you will be notified by e-mail when the process is done.</p>
+
+<p><img src="/guide_img/getting_started/publishing.png" alt="Publishing" /></p>
+
+<h2 id="getting-the-launcher">Getting the launcher</h2>
+
+<p>As soon as your game is published, you can get a hold of your game launcher. It’s a small application that will get your game downloaded for someone who runs it, and makes sure it’s always up to date.</p>
+
+<h2 id="need-help">Need help?</h2>
+
+<p>Do you have any issues with getting started with PatchKit? If yes, please don’t hestitate and contact us on <a href="mailto:support@patchkit.net">support@patchkit.net</a>.</p>
 
     </div>
 </section>
