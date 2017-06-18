@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <!-- Add Your favicon here -->
+    <!--<link rel="icon" href="img/favicon.ico">-->
+
+    <title>PatchKit Documentation</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Animation CSS -->
+    <link href="css/animate.min.css" rel="stylesheet">
+
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Custom styles for this template -->
+    <link href="css/style.css" rel="stylesheet">
+
+    <script type="text/javascript">
+        window.heap=window.heap||[],heap.load=function(e,t){window.heap.appid=e,window.heap.config=t=t||{};var r=t.forceSSL||"https:"===document.location.protocol,a=document.createElement("script");a.type="text/javascript",a.async=!0,a.src=(r?"https:":"http:")+"//cdn.heapanalytics.com/js/heap-"+e+".js";var n=document.getElementsByTagName("script")[0];n.parentNode.insertBefore(a,n);for(var o=function(e){return function(){heap.push([e].concat(Array.prototype.slice.call(arguments,0)))}},p=["addEventProperties","addUserProperties","clearEventProperties","identify","removeEventProperty","setEventProperties","track","unsetEventProperty"],c=0;c<p.length;c++)heap[p[c]]=o(p[c])};
+        heap.load("1099461563");
+    </script>
+</head>
+<body id="page-top">
+<div class="navbar-wrapper">
+        <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+            <div class="container">
+                <div class="navbar-header page-scroll">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="/">
+                        <img src="img/patchkit_logo_black.png">
+                    </a>
+                </div>
+                <div id="navbar" class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a class="page-scroll" href="https://patchkit.net">Go to patchkit.net</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+</div>
+<div id="inSlider" class="carousel carousel-fade" data-ride="carousel">
+    <div class="carousel-inner" role="listbox">
+        <div class="item active">
+            <div class="container">
+                <div class="carousel-caption">
+                    <h1><a href="/" class="page-title">Support</a></h1>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<ol class="breadcrumb">
+  <li><a href="/">Home</a></li>
+  <li><a href="#">Overview</a></li>
+</ol>
+
+<section id="content" class="container">
+    <div class="row">
+        <h1 id="overview">Overview</h1>
+
+<h2 id="patchkit-gets-your-content-distributed-in-no-time">PatchKit gets your content distributed in no-time</h2>
+
+<p>PatchKit is a <strong>Game Distribution Service</strong> (Content Distribution Service for games). It’s a system that allows you to easily distribute your game to players. You don’t need to learn anything new in particular to get your game published, all you need to do is those three steps:</p>
+
+<ol>
+  <li>Set up an account</li>
+  <li>Upload the game</li>
+  <li>Click on the publish button</li>
+</ol>
+
+<p>It’s enought to get your game distributed to multiple servers all over the world along with delta files. It’s just that easy!</p>
+
+<h2 id="forget-about-patching">Forget about patching</h2>
+
+<p>PatchKit speeds up your development and release process by <strong>fully-automated</strong> version &amp; delta building and file distribution mechanism. You don’t longer need worry about creating and managing patch files by yourself. Just build your game using your game engine of choice and upload the result to PatchKit servers through the website. From there our system takes care of everything else.</p>
+
+<center>
+	<img src="img/overview/servers.png" class="no-border" />
+</center>
+
+<p>To get your game published all you have to do is to upload your game content into PatchKit. From there your files are processed and transfered around before those are delivered to the players:</p>
+
+<ol>
+  <li>Your game content is stored on ours <em>Storage Server</em>.</li>
+  <li>It is sent to <em>Version Processing Severs</em> to build a distributable version file and delta file.</li>
+  <li>Version file and delta file is stored back on <em>Storage Server</em>.</li>
+  <li>When published, version file and delta file is distributed to multiple distribution nodes.</li>
+  <li>Those files can now be downloaded by the players.</li>
+  <li>Launcher applies downloaded version file to the local file system and your new game version is now ready to be played!</li>
+</ol>
+
+<h2 id="game-launcher">Game Launcher</h2>
+
+<div class="row">
+	<div class="col-md-6 col-sm-12">
+<div>
+      <p>With Game Launcher your players will be able to download, validate and play your game without a hustle. Launcher is a internal part of your game, it does not require a separate installation procedure or user registration.</p>
+
+      <h3 id="features">Features</h3>
+      <ul>
+        <li>Game downloading</li>
+        <li>Delta-based game upgrading</li>
+        <li>Files repairing</li>
+        <li>High-speed P2P + HTTP data transfers</li>
+        <li>Self-upgradeable</li>
+        <li><a href="unity_custom_patcher.html">Fully-customizable</a></li>
+        <li>Windows, OSX and Linux versions</li>
+      </ul>
+
+      <p>Launcher will quickly download and install the game. It will make sure it is up-to-date on each run and if not, it will sync and apply the patch on locally installed content. If game content gets corrupted, it allows to verify it and re-download corrupted content.</p>
+
+      <p>If a new version of launcher is released, it will upgrade itself to the newest release. It’s <b>fault-tolerant mechanism</b>, so even if you accidentally publish a launcher version that is not starting, it will still upgrade itself if a new version is released.</p>
+    </div>
+	</div>
+	<div class="col-md-6 col-sm-12"><img src="img/overview/launcher.jpg" align="right" /></div>
+</div>
+
+<h2 id="build-integration-at-reach">Build integration at reach</h2>
+
+<p>Connect PatchKit to your continuous integration server with <a href="tools.html">Command-Line Tools</a> and Unity Integration plugin (Coming Soon!). Save your time and get your game version published fast at any time with a single click. Your version will be build, uploaded, processed and distributed over our CDN network in minutes.</p>
+
+<p>Don’t risk breaking your game! Our system validates your version content each time a new version is uploaded. If there’s something wrong with it, your new version file will be rejected and you will be notified about possible errors and how to solve them.</p>
+
+<h2 id="optional-drm">Optional DRM</h2>
+
+<p>PatchKit does not enforce any particular DRM on your game. Instead, you’re free to use any DRM of your choice, or even make your game completely DRM-free!</p>
+
+<p>You are able to generate through PatchKit any number of <b>license keys</b> and sell or give them away to your players. A valid license key enables to download and upgrade your product for a reasonable number of times. An overused key is automatically blocked to prevent spread of possible illegally re-distributed license keys.</p>
+
+<p>On top of that PatchKit allows a deep integration via PatchKit API to prevent the game from running if a license key cannot be validated.</p>
+
+<!-- ## Analytics
+
+Get insight of your players actions. Measure how your players is downloading and playing your game.
+
+<div class="row">
+	<div class="col-md-6 col-sm-12">
+<div markdown="1">
+### Features
+- Downloading monitoring
+- Patching monitoring
+- Detailed reports divided to weeks and months
+- License keys usage reports
+- Weekly e-mail reports
+
+*PatchKit analytics feature is under heavy development. Please except new features very soon.*
+</div>
+	</div>
+	<div class="col-md-6 col-sm-12"><img src="img/overview/analytics.png" align="right"></div>
+</div> -->
+
+<h2 id="security">Security</h2>
+
+<p>PatchKit team is taking security matters very seriously. The infrastructure is strongly backed up by industry-proven <b>Amazon Web Services</b> with auto-scaling feature set up to meet up even the highest possible demand. Client’s game data is stored on encrypted S3 volumes. Distributed version files are custom-format, AES-encrypted data files.</p>
+
+<p>There’s no a single point of failure - in the worst possible case when main PatchKit API servers will go down, players will be still able to download and play their games. It’s thanks to non-centralized character of PatchKit service. Game files are by default downloaded using private P2P network and mirrors are discovered without a need of centralized server. Game information is distributed to mirror nodes as well.</p>
+
+<h2 id="popular-game-engines-support">Popular game engines support</h2>
+
+<p>PatchKit supports a variety of game engines.</p>
+
+<div id="row">
+	<div class="col-md-4 col-sm-12 text-center">
+		<img src="img/overview/unity_logo.png" class="no-border" />
+	</div>
+	<div class="col-md-4 col-sm-12 text-center">
+		<img src="img/overview/unreal_logo.png" class="no-border" />
+	</div>
+	<div class="col-md-4 col-sm-12 text-center">
+		<img src="img/overview/game_maker_logo.png" class="no-border" />
+	</div>
+</div>
+
+<p>It’s not limited to the above game engines only. If you’re working on a game engine that is not listed here or if your game is build on custom-made game engine, you can still use PatchKit with all its features. If you will encounter any issues, please <a href="mailto:contact@patchkit.net">contact us</a> immediately.</p>
+
+<h2 id="try-us-out">Try us out!</h2>
+
+<p>PatchKit is a great way to save your time and money. Don’t take it for granted, <a href="https://panel.patchkit.net/users/register">sign up</a> for a <strong>free</strong> account and try us out!</p>
+
+<div class="text-center">
+  <h2 id="sign-up-for-freehttpspanelpatchkitnetusersregister"><a href="https://panel.patchkit.net/users/register">SIGN UP FOR FREE</a></h2>
+</div>
+
+<h2 id="still-have-questions">Still have questions?</h2>
+
+<p>We will be happy to answer all the questions you may have! Please reach us on <a href="mailto:contact@patchkit.net">contact@patchkit.net</a>.</p>
+
+    </div>
+</section>
+
+<section id="gooter" class="gray-section gooter">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 text-center m-t-lg m-b-lg">
+                <p><strong>Copyright © 2016 - 2017 Upsoft<br>All Rights Reserved.</strong><br/></p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<script src="js/jquery-2.1.1.js"></script>
+<script src="js/pace.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/classie.js"></script>
+<script src="js/cbpAnimatedHeader.js"></script>
+<script src="js/wow.min.js"></script>
+<script src="js/inspinia.js"></script>
+</body>
+</html>

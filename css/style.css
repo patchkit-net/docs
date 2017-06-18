@@ -1031,3 +1031,13 @@ section.comments {
   box-shadow: 0px 0px 15px #888888;
   margin: 15px;
 }
+
+#content img.no-border {
+  box-shadow: none;
+  margin: 15px;
+}
+
+a.page-title {
+  color: white;
+  text-decoration: none;
+}
