@@ -96,7 +96,7 @@
   <li>Click on the publish button</li>
 </ol>
 
-<p>It’s enought to get your game distributed to multiple servers all over the world along with delta files. It’s just that easy!</p>
+<p>These steps are enough to distribute your game to multiple servers all over the world along with delta files.</p>
 
 <h2 id="forget-about-patching">Forget about patching</h2>
 
@@ -106,15 +106,15 @@
 	<img src="img/overview/servers.png" class="no-border" />
 </center>
 
-<p>To get your game published all you have to do is to upload your game content into PatchKit. From there your files are processed and transfered around before those are delivered to the players:</p>
+<p>Upload your game’s content to PatchKit to publish your game. Your files will be processed and transfered around before delivering them to the players:</p>
 
 <ol>
-  <li>Your game content is stored on ours <em>Storage Server</em>.</li>
+  <li>Your game content is stored on our <em>Storage Server</em>.</li>
   <li>It is sent to <em>Version Processing Severs</em> to build a distributable version file and delta file.</li>
   <li>Version file and delta file is stored back on <em>Storage Server</em>.</li>
   <li>When published, version file and delta file is distributed to multiple distribution nodes.</li>
   <li>Those files can now be downloaded by the players.</li>
-  <li>Launcher applies downloaded version file to the local file system and your new game version is now ready to be played!</li>
+  <li>Launcher applies downloaded version file to the local file system and now your new game version is ready to be played!</li>
 </ol>
 
 <h2 id="game-launcher">Game Launcher</h2>
@@ -122,7 +122,7 @@
 <div class="row">
 	<div class="col-md-6 col-sm-12">
 <div>
-      <p>With Game Launcher your players will be able to download, validate and play your game without a hustle. Launcher is a internal part of your game, it does not require a separate installation procedure or user registration.</p>
+      <p>With Game Launcher your players will be able to download, validate and play your game without a hustle. Launcher is an internal part of your game, it does not require a separate installation procedure or user registration.</p>
 
       <h3 id="features">Features</h3>
       <ul>
@@ -130,12 +130,12 @@
         <li>Delta-based game upgrading</li>
         <li>Files repairing</li>
         <li>High-speed P2P + HTTP data transfers</li>
-        <li>Self-upgradeable</li>
+        <li>Self-upgradable</li>
         <li><a href="unity_custom_patcher.html">Fully-customizable</a></li>
         <li>Windows, OSX and Linux versions</li>
       </ul>
 
-      <p>Launcher will quickly download and install the game. It will make sure it is up-to-date on each run and if not, it will sync and apply the patch on locally installed content. If game content gets corrupted, it allows to verify it and re-download corrupted content.</p>
+      <p>Launcher will quickly download and install the game. It will make sure it is up-to-date on each run and if not, sync and apply the patch on locally installed content. If game content gets corrupted, it allows to verify it and re-download corrupted content.</p>
 
       <p>If a new version of launcher is released, it will upgrade itself to the newest release. It’s <b>fault-tolerant mechanism</b>, so even if you accidentally publish a launcher version that is not starting, it will still upgrade itself if a new version is released.</p>
     </div>
@@ -145,7 +145,7 @@
 
 <h2 id="build-integration-at-reach">Build integration at reach</h2>
 
-<p>Connect PatchKit to your continuous integration server with <a href="tools.html">Command-Line Tools</a> and Unity Integration plugin (Coming Soon!). Save your time and get your game version published fast at any time with a single click. Your version will be build, uploaded, processed and distributed over our CDN network in minutes.</p>
+<p>Connect PatchKit to your continuous integration server with <a href="tools.html">Command-Line Tools</a> and Unity Integration plugin (Coming Soon!). Save your time and publish your game version fast at any time with a single click. Your version will be build, uploaded, processed and distributed over our CDN network in minutes.</p>
 
 <p>Don’t risk breaking your game! Our system validates your version content each time a new version is uploaded. If there’s something wrong with it, your new version file will be rejected and you will be notified about possible errors and how to solve them.</p>
 
@@ -153,25 +153,25 @@
 
 <p>PatchKit does not enforce any particular DRM on your game. Instead, you’re free to use any DRM of your choice, or even make your game completely DRM-free!</p>
 
-<p>You are able to generate through PatchKit any number of <b>license keys</b> and sell or give them away to your players. A valid license key enables to download and upgrade your product for a reasonable number of times. An overused key is automatically blocked to prevent spread of possible illegally re-distributed license keys.</p>
+<p>You are able to generate any number of <b>license keys</b> and sell or give them away to your players. A valid license key enables to download and upgrade your product reasonable number of times. An overused key is automatically blocked to prevent spread of possible illegally re-distributed license keys.</p>
 
-<p>On top of that PatchKit allows a deep integration via PatchKit API to prevent the game from running if a license key cannot be validated.</p>
+<p>On top of that, PatchKit allows deep integration via PatchKit API to prevent the game from running if a license key cannot be validated.</p>
 
 <!-- ## Analytics
 
-Get insight of your players actions. Measure how your players is downloading and playing your game.
+Get insight of your players actions. Measure how your players are downloading and playing your game.
 
 <div class="row">
 	<div class="col-md-6 col-sm-12">
 <div markdown="1">
 ### Features
-- Downloading monitoring
-- Patching monitoring
-- Detailed reports divided to weeks and months
+- Download monitoring
+- Patch monitoring
+- Detailed reports divided into weeks and months
 - License keys usage reports
 - Weekly e-mail reports
 
-*PatchKit analytics feature is under heavy development. Please except new features very soon.*
+*PatchKit analytics feature is under development. Expect new features very soon.*
 </div>
 	</div>
 	<div class="col-md-6 col-sm-12"><img src="img/overview/analytics.png" align="right"></div>
@@ -179,9 +179,9 @@ Get insight of your players actions. Measure how your players is downloading and
 
 <h2 id="security">Security</h2>
 
-<p>PatchKit team is taking security matters very seriously. The infrastructure is strongly backed up by industry-proven <b>Amazon Web Services</b> with auto-scaling feature set up to meet up even the highest possible demand. Client’s game data is stored on encrypted S3 volumes. Distributed version files are custom-format, AES-encrypted data files.</p>
+<p>PatchKit team takes security matters very seriously. The infrastructure is strongly backed up by industry-proven <b>Amazon Web Services</b> with auto-scaling feature set up to meet even the highest possible demand. Client’s game data is stored on encrypted S3 volumes. Distributed version files are custom-format, AES-encrypted data files.</p>
 
-<p>There’s no a single point of failure - in the worst possible case when main PatchKit API servers will go down, players will be still able to download and play their games. It’s thanks to non-centralized character of PatchKit service. Game files are by default downloaded using private P2P network and mirrors are discovered without a need of centralized server. Game information is distributed to mirror nodes as well.</p>
+<p>There’s no a single point of failure - in the worst possible case when main PatchKit API servers will go down, players will still be able to download and play their games due to non-centralized character of PatchKit service. By default game files are downloaded using private P2P network and mirrors are discovered without a need for a centralized server. Game information is distributed to mirror nodes as well.</p>
 
 <h2 id="popular-game-engines-support">Popular game engines support</h2>
 
@@ -199,11 +199,11 @@ Get insight of your players actions. Measure how your players is downloading and
 	</div>
 </div>
 
-<p>It’s not limited to the above game engines only. If you’re working on a game engine that is not listed here or if your game is build on custom-made game engine, you can still use PatchKit with all its features. If you will encounter any issues, please <a href="mailto:contact@patchkit.net">contact us</a> immediately.</p>
+<p>It’s not limited to the above game engines only. If you’re working on a game engine that is not listed here or if your game is built on custom-made game engine, you can still use PatchKit with all its features. If you will encounter any issues, please <a href="mailto:contact@patchkit.net">contact us</a>.</p>
 
-<h2 id="try-us-out">Try us out!</h2>
+<h2 id="try-it-out">Try it out!</h2>
 
-<p>PatchKit is a great way to save your time and money. Don’t take it for granted, <a href="https://panel.patchkit.net/users/register">sign up</a> for a <strong>free</strong> account and try us out!</p>
+<p>PatchKit is a great way to save your time and money. <a href="https://panel.patchkit.net/users/register">Sign up</a> for a <strong>free</strong> account and try it out!</p>
 
 <div class="text-center">
   <h2 id="sign-up-for-freehttpspanelpatchkitnetusersregister"><a href="https://panel.patchkit.net/users/register">SIGN UP FOR FREE</a></h2>
