@@ -1041,3 +1041,12 @@ a.page-title {
   color: white;
   text-decoration: none;
 }
+
+/* Fixes the issue with anchor and fixed header - clicked anchor was not visible on jump */
+/* https://stackoverflow.com/a/9618795 */
+h2[id]::before {
+  content:"";
+  display:block;
+  height:90px; /* fixed header height*/
+  margin:-90px 0 0;
+}
