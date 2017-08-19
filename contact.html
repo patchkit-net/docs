@@ -82,38 +82,67 @@
 
 <ol class="breadcrumb">
   <li><a href="/">Home</a></li>
-  <li><a href="#">Processing Messages</a></li>
+  <li><a href="#">Contact</a></li>
 </ol>
 
 <section id="content" class="container">
     <div class="row">
-        <h1 id="processing-messages">Processing Messages</h1>
+        <h1 id="contact-form">Contact Form</h1>
 
-<p>When your content processing is finished, you may be notified of progressing warnings or errors. On this page you will learn some more details about each of those.</p>
+<div id="zohoSupportWebToCase" align="center">
+    <form name="zsWebToCase_206385000000085001" id="zsWebToCase_206385000000085001" action="https://desk.zoho.com/support/WebToCase" method="POST" onsubmit="return zsValidateMandatoryFields()" enctype="multipart/form-data" class="form">
+        <input type="hidden" name="xnQsjsdp" value="*cik-ppFEQUHNNhSsQ1qxg$$" />
+        <input type="hidden" name="xmIwtLD" value="y9fS6NgeTxah7r4ul8Kb32-*B6-MHnNR" />
+        <input type="hidden" name="actionType" value="Q2FzZXM=" />
+        <input type="hidden" id="property(module)" value="Cases" />
+        <input type="hidden" id="dependent_field_values_Cases" value="&#x7b;&quot;JSON_VALUES&quot;&#x3a;&#x7b;&quot;Category&quot;&#x3a;&#x7b;&quot;Sub&#x20;Category&quot;&#x3a;&#x7b;&quot;General&quot;&#x3a;&#x5b;&quot;Sub&#x20;General&quot;&#x5d;,&quot;Defects&quot;&#x3a;&#x5b;&quot;Sub&#x20;Defects&quot;&#x5d;&#x7d;&#x7d;&#x7d;,&quot;JSON_SELECT_VALUES&quot;&#x3a;&#x7b;&quot;Status&quot;&#x3a;&#x5b;&quot;Open&quot;,&quot;On&#x20;Hold&quot;,&quot;Escalated&quot;,&quot;Closed&quot;&#x5d;,&quot;Category&quot;&#x3a;&#x5b;&quot;General&quot;,&quot;Defects&quot;&#x5d;,&quot;Priority&quot;&#x3a;&#x5b;&quot;-None-&quot;,&quot;High&quot;,&quot;Medium&quot;,&quot;Low&quot;&#x5d;,&quot;Mode&quot;&#x3a;&#x5b;&quot;Twitter&quot;,&quot;Phone&quot;,&quot;Facebook&quot;,&quot;Email&quot;,&quot;Web&quot;,&quot;Chat&quot;,&quot;Forums&quot;,&quot;Feedback&#x20;Widget&quot;&#x5d;,&quot;Classification&quot;&#x3a;&#x5b;&quot;-None-&quot;,&quot;Question&quot;,&quot;Problem&quot;,&quot;Feature&quot;,&quot;Others&quot;&#x5d;,&quot;Sub&#x20;Category&quot;&#x3a;&#x5b;&quot;Sub&#x20;General&quot;,&quot;Sub&#x20;Defects&quot;&#x5d;&#x7d;,&quot;JSON_MAP_DEP_LABELS&quot;&#x3a;&#x5b;&quot;Category&quot;&#x5d;&#x7d;" />
 
-<h3 id="your-patch-file-size-is-nearly-the-same-as-your-content-file-size">Your patch file size is nearly the same as your content file size</h3>
+        <input type="hidden" name="returnURL" value="http://docs.patchkit.net/" />
 
-<p>When you’re uploading new application files, a patch file is created. Patch file is meant to be as small as possible, so if it happens to be nearly the same as your full application size, it is considered as a mistake.</p>
+        <div class="row">
+            <div class="col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2">
+                <div class="text-left">
+                    <label for="Contact Name">Name</label>
+                </div>
+                <div>
+                    <input type="text" maxlength="120" name="Contact Name" class="manfieldbdr form-control" placeholder="Enter your name" />
+                </div>
+            </div>
 
-<p>Reasons why this may happen:</p>
+            <div class="col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2">
+                <div class="text-left">
+                    <label for="Email">Email</label>
+                </div>
+                <div>
+                    <input type="text" maxlength="120" name="Email" value="" class="manfieldbdr form-control" />
+                </div>
+            </div>
 
-<h4 id="youve-uploaded-zip-file-with-different-application">You’ve uploaded zip file with different application</h4>
+            <div class="col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2">
+                <div class="text-left">
+                    <label for="Subject">Subject</label>
+                </div>
+                <div>
+                    <input type="text" maxlength="255" name="Subject" value="" class="manfieldbdr form-control" />
+                </div>
+            </div>
 
-<p>If by mistake you will upload a zip file that is completely different application, there’s no chance that a valid patch would be created. Most probably this is not what you’d like to do, so look at the file listing to verify that those are the files that you’d like to upload.</p>
+            <div class="col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2">
+                <div class="text-left">
+                    <label for="Description">Body</label>
+                </div>
+                <div>
+                    <textarea name="Description" maxlength="3000" width="250" height="250" class="manfieldbdr form-control" rows="10"></textarea>
+                </div>
+            </div>
 
-<h4 id="your-application-name-changes-so-its-directory-structure">Your application name changes so its directory structure</h4>
-
-<p>Current patch builder implementation does not handle file renaming. If you will change your directory structure, there’s a good chance that the game size will increase.</p>
-
-<p>This is a note especially for <a href="https://unity3d.com">Unity</a> users. Your executable name defines your data directory name. If you will change your executable name, the whole directory structure will change too.</p>
-
-<p>Don’t worry though, future version of PatchKit will handle this case gracefully.</p>
-
-<h3 id="cannot-find-executable-file">Cannot find executable file</h3>
-
-<p>This is error you cannot ignore. Without a valid executable file your application cannot be launched.</p>
-
-<p>You can also see that error because of simple platform mistake. For instance if you choose Mac OSX platform for your application but you’ve uploaded Windows binaries, you can experience this error message for that reason.</p>
+            <div class="col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2 text-right">
+                <input type="submit" id="zsSubmitButton_206385000000085001" class="zsFontClass btn" value="Submit" />
+            </div>
+        </div>
+        
+    </form>
+</div>
 
     </div>
 </section>
