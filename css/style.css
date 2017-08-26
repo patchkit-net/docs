@@ -1050,3 +1050,13 @@ h2[id]::before {
   height:90px; /* fixed header height*/
   margin:-90px 0 0;
 }
+
+#content table, th, td {
+  border-style: solid;
+  border-width: 1px;
+  border-color: #CCC;
+}
+
+#content th, td {
+  padding: 5px;
+}
