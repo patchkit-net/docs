@@ -117,17 +117,17 @@
 
 <p><strong>In case of certificate failure</strong></p>
 
-<p>Trying to install the bundler, some users may encounter SSL certificate failure. In this case we’d suggest you to download <a href="cacert.pem">this certificate file</a> (cacert.pem) and put it in any directory (eg. C:\RailsInstaller\cacert.pem). Then open a command line and type:</p>
+<p>Trying to install the bundler, some users may encounter SSL certificate failure. In this case we’d suggest you download <a href="cacert.pem">this certificate file</a> (cacert.pem) and put it in any directory (eg. C:\RailsInstaller\cacert.pem). Then open the command line and type:</p>
 
 <div class="language-bash highlighter-rouge"><pre class="highlight"><code><span class="nb">set </span><span class="nv">SSL_CERT_FILE</span><span class="o">=</span>C:<span class="se">\R</span>ailsInstaller<span class="se">\c</span>acert.pem
 </code></pre>
 </div>
 
-<p>This will assign the certificate and will allow you to download all the necessary assets. The certificate will remain assigned until the current terminal is closed.</p>
+<p>This will assign the certificate and will allow you to download all the necessary assets. The certificate will remain assigned until the current terminal session is closed.</p>
 
 <h2 id="usage">Usage</h2>
 
-<p>Every tool is started by <code class="highlighter-rouge">patchkit-tools</code> command. The working directory is set to location from which script was called.</p>
+<p>Every tool is started by <code class="highlighter-rouge">patchkit-tools</code> command. The working directory is set to the location from which the script was called.</p>
 
 <p><strong>Syntax</strong></p>
 

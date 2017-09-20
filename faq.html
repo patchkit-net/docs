@@ -108,21 +108,21 @@
   </li>
 </ul>
 
-<h2 id="how-to-get-start-with-it">How to get start with it?</h2>
+<h2 id="how-to-get-start-with-it">How to get started with PatchKit?</h2>
 
 <p>See <a href="getting_started.html">Getting Started</a> page.</p>
 
 <h2 id="how-much-does-it-cost">How much does it cost?</h2>
 
-<p>During the <em>Open Beta</em> it’s totally free! After the <em>Open Beta</em> we’d like to keep it free for small developers and introduce a reasonable pricing for more serious developers.</p>
+<p>During the <em>Open Beta</em> it’s completely free! After the <em>Open Beta</em> we’d like to keep it free for small developers and introduce a reasonable pricing for more serious developers.</p>
 
 <h2 id="do-i-need-to-build-a-patcher-application">Do I need to build a patcher application?</h2>
 
 <p><strong>Definetely not!</strong> PatchKit is a drop-in solution. If you have your game, just upload it, and you will be supplied with a <em>launcher</em> application. Download it and share it with anyone you want.</p>
 
-<h2 id="how-i-can-upload-my-game">How I can upload my game?</h2>
+<h2 id="how-i-can-upload-my-game">How can I upload my game?</h2>
 
-<p>First you have to create application entry using the <a href="https://panel.patchkit.net">Panel</a>. When you’re done it it you can:</p>
+<p>First you have to create application entry using the <a href="https://panel.patchkit.net">Panel</a>. Once you've done it you can:</p>
 
 <ul>
   <li>Zip your game and drop it into Web UI upload form.</li>
@@ -130,7 +130,7 @@
   <li>Use <a href="https://github.com/patchkit-net/patchkit-integration-unity/tree/tools-integration">Unity integration</a>.</li>
 </ul>
 
-<p>After the uploading your file contents will be processed. You will see a progress bar of this operation. Just wait a moment to see if everything is alright.</p>
+<p>After being uploaded your file contents will be processed. You will see a progress bar of this operation. Just wait a moment to see if everything is alright.</p>
 
 <h2 id="how-can-i-publish-my-game">How can I publish my game?</h2>
 
@@ -138,17 +138,17 @@
 
 <h2 id="where-my-players-can-download-my-game">Where my players can download my game?</h2>
 
-<p>The only way your players can download your game if you will share the <strong>launcher</strong> application of your game with them. The <strong>launcher</strong> application can be downloaded only by you on your game’s page, and your game’s page is visible only for you.</p>
+<p>The only way your players can download your game is by sharing the <strong>launcher</strong> application with them. The <strong>launcher</strong> application can be downloaded only by you on your game’s page, and your game’s page is visible only for you.</p>
 
-<p>PatchKit is not a store or marketplace. You can think of it as a mirror servers service with additional features. You’re uploading your game and then you’re sharing your game on your own web page, on your own store or with your friends.</p>
+<p>PatchKit is neither a store nor a marketplace. You can think of it as a mirror servers service with additional features. You’re uploading your game and then you’re sharing your game on your own web page, on your own store or with your friends.</p>
 
-<h2 id="will-my-players-need-to-re-download-my-game-when-new-version-is-published">Will my players need to re-download my game when new version is published?</h2>
+<h2 id="will-my-players-need-to-re-download-my-game-when-new-version-is-published">Will my players need to re-download my game when a new version is published?</h2>
 
-<p><strong>Definitely not!</strong> PatchKit is heavily dependent on binary diffs. For every version you’re publishing there’s a binary diff generated on our servers. It will be downloaded and applied by your players as soon as they will launch your game. The procedure is really fast and in most cases they don’t need to wait longer than several seconds based on network and PC performance.</p>
+<p><strong>Definitely not!</strong> PatchKit is heavily dependent on binary diffs. For every version you’re publishing there’s a binary diff generated on our servers. It will be downloaded and applied by your players as soon as they launch your game. The procedure is really fast and in most cases they don’t need to wait longer than several seconds based on network and PC performance.</p>
 
 <h2 id="should-i-prepare-patches">Should I prepare patches?</h2>
 
-<p><strong>No, you shouldn’t.</strong> Patches are build by PatchKit servers. Everything is fully automated and you will be notified of the patch size we managed to achieve.</p>
+<p><strong>No, you shouldn’t.</strong> Patches are built by PatchKit servers. Everything is fully automated and you will be notified of the patch size we managed to achieve.</p>
 
 <h2 id="my-patch-size-is-pretty-big-why">My patch size is pretty big. Why?</h2>
 
@@ -160,7 +160,7 @@
   <li>You’ve renamed your files or directories. PatchKit currently does not support this kind of scenario very well.</li>
 </ol>
 
-<h2 id="how-big-games-patchkit-can-handle">How big games PatchKit can handle?</h2>
+<h2 id="how-big-games-patchkit-can-handle">How big games can PatchKit handle?</h2>
 
 <p>There’s no limit. PatchKit is designed to handle games of any size. It has been tested with really small few-magabytes games and with really big ones (10 gigabytes and more).</p>
 
@@ -169,7 +169,7 @@
 <ul>
   <li>Pre-releases for testing purposes</li>
   <li>Games with subscription-based business model</li>
-  <li>Games with free-2-play business model</li>
+  <li>Games with free-to-play business model</li>
   <li>Games meant for limited audience (e.g. training, educational)</li>
   <li>Backend-side for game marketplaces</li>
 </ul>
@@ -178,16 +178,16 @@
 
 <ul>
   <li>
-    <p><strong>Launcher</strong> - small application used for downloading a newest version of <strong>patcher</strong>.</p>
+    <p><strong>Launcher</strong> - a small application used for downloading the newest version of <strong>patcher</strong>.</p>
   </li>
   <li>
-    <p><strong>Patcher</strong> - complex application used for downloading a newest version of <strong>application</strong>.</p>
+    <p><strong>Patcher</strong> - complex application used for downloading the newest version of <strong>application</strong>.</p>
   </li>
 </ul>
 
 <h2 id="why-do-we-need-a-launcher">Why do we need a launcher?</h2>
 
-<p><strong>Launcher</strong> allows us to release a potential updates for the patcher. It doesn’t use any patching algorithms to update the patcher - it simply redownloads whole patcher to <strong>keep it simple as it’s possible.</strong></p>
+<p><strong>Launcher</strong> allows us to release any potential updates for the patcher. It doesn’t use any patching algorithms to update the patcher - it simply redownloads the whole patcher to <strong>keep it as simple as possible.</strong></p>
 
     </div>
 </section>
