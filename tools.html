@@ -101,7 +101,7 @@
 
 <h2 id="installation">Installation</h2>
 
-<p>PatchKit Tools require <a href="https://www.ruby-lang.org/en/documentation/installation/">Ruby installation</a>. Remember to check “Add Ruby executables to your PATH” during the installation.</p>
+<p>PatchKit Tools require <a href="https://www.ruby-lang.org/en/documentation/installation/">Ruby installation</a>. Remember to check “Add Ruby executables to your “PATH” during the installation.</p>
 
 <p>To install PatchKit Tools you need to download the package from <a href="https://github.com/patchkit-net/patchkit-tools/releases/tag/v1.3.0">GitHub</a>, unzip it and add the root location to the <code class="highlighter-rouge">PATH</code> variable (<a href="http://stackoverflow.com/questions/14637979/how-to-permanently-set-path-on-linux">Linux</a>/<a href="http://www.howtogeek.com/118594/how-to-edit-your-system-path-for-easy-command-line-access/">Windows</a>)</p>
 
@@ -123,11 +123,11 @@
 </code></pre>
 </div>
 
-<p>This will assign the certificate and will allow you to download all the necessary assets. The certificate will remain assigned until the current terminal is closed.</p>
+<p>This will assign the certificate and will allow you to download all the necessary assets. The certificate will remain assigned until the current terminal session is closed.</p>
 
 <h2 id="usage">Usage</h2>
 
-<p>Every tool is started by <code class="highlighter-rouge">patchkit-tools</code> command. The working directory is set to location from which script was called.</p>
+<p>Every tool is started by <code class="highlighter-rouge">patchkit-tools</code> command. The working directory is set to the location from which the script was called.</p>
 
 <p><strong>Syntax</strong></p>
 
@@ -147,7 +147,7 @@
 </code></pre>
 </div>
 
-<p><strong>NOTE!</strong> The <code class="highlighter-rouge">patchkit-tools</code> commands have no tool for creating an application directly from the command line, so in order to create the application, please follow the steps in <strong>Create the application</strong> paragraph in the <a href="getting_started.html"><strong>Getting Started</strong></a> section.</p>
+<p><strong>NOTE!</strong> The <code class="highlighter-rouge">patchkit-tools</code> commands have no tools for creating an application directly from the command line, so in order to create the application, please follow the steps in <strong>Create the application</strong> paragraph in the <a href="getting_started.html"><strong>Getting Started</strong></a> section.</p>
 
 <h2 id="uploading-application-version-with-tools">Uploading application version with tools</h2>
 
@@ -162,12 +162,12 @@
 <p><strong>make-version examples</strong></p>
 
 <p>Adding new version</p>
-<div class="language-bash highlighter-rouge"><pre class="highlight"><code>patchkit-tools make-version -s aa11bb22cc33dd55ee66ff77gg88hh99 -a zz99yy88xx77ww66vv55uu44tt33ss22rr11 -l “Second version” -f BuildFolder
+<div class="language-bash highlighter-rouge"><pre class="highlight"><code>patchkit-tools make-version -s aa11bb22cc33dd55ee66ff77gg88hh99 -a zz99yy88xx77ww66vv55uu44tt33ss22rr11 -l <span class="s2">"Second version"</span> -f BuildFolder
 </code></pre>
 </div>
 
 <p>Adding new version and assigning the changelog</p>
-<div class="language-bash highlighter-rouge"><pre class="highlight"><code>patchkit-tools make-version -s aa11bb22cc33dd55ee66ff77gg88hh99 -a zz99yy88xx77ww66vv55uu44tt33ss22rr11 -l “Third version” -f BuildFolder -c <span class="s2">"-feature 1</span><span class="se">\n</span><span class="s2">-feature 2"</span>
+<div class="language-bash highlighter-rouge"><pre class="highlight"><code>patchkit-tools make-version -s aa11bb22cc33dd55ee66ff77gg88hh99 -a zz99yy88xx77ww66vv55uu44tt33ss22rr11 -l <span class="s2">"Third version"</span> -f BuildFolder -c <span class="s2">"-feature 1</span><span class="se">\n</span><span class="s2">-feature 2"</span>
 </code></pre>
 </div>
 

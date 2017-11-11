@@ -89,23 +89,23 @@
     <div class="row">
         <h1 id="processing-messages">Processing Messages</h1>
 
-<p>When your content processing is finished, you may be notified of progressing warnings or errors. On this page you will learn some more details about each of those.</p>
+<p>When your content processing is finished, you may be notified of progressing warnings or errors. On this page you will learn more details about both of them.</p>
 
 <h3 id="your-patch-file-size-is-nearly-the-same-as-your-content-file-size">Your patch file size is nearly the same as your content file size</h3>
 
-<p>When you’re uploading new application files, a patch file is created. Patch file is meant to be as small as possible, so if it happens to be nearly the same as your full application size, it is considered as a mistake.</p>
+<p>When you’re uploading new application files, a patch file is created. Patch file is meant to be as small as possible, so if it happens to be nearly the same as your full application size, it is considered a mistake.</p>
 
 <p>Reasons why this may happen:</p>
 
 <h4 id="youve-uploaded-zip-file-with-different-application">You’ve uploaded zip file with different application</h4>
 
-<p>If by mistake you will upload a zip file that is completely different application, there’s no chance that a valid patch would be created. Most probably this is not what you’d like to do, so look at the file listing to verify that those are the files that you’d like to upload.</p>
+<p>If by mistake you upload a zip file that is a completely different application, there’s no chance that a valid patch would be created. Most probably this is not what you’d like to do, so look at the file listing to verify that those are the files that you’d like to upload.</p>
 
-<h4 id="your-application-name-changes-so-its-directory-structure">Your application name changes so its directory structure</h4>
+<h4 id="your-application-name-changes-so-does-its-directory-structure">Your application name changes, so does it’s directory structure</h4>
 
-<p>Current patch builder implementation does not handle file renaming. If you will change your directory structure, there’s a good chance that the game size will increase.</p>
+<p>Current patch builder implementation does not handle file renaming. If you change your directory structure, there’s a good chance that the game size will increase.</p>
 
-<p>This is a note especially for <a href="https://unity3d.com">Unity</a> users. Your executable name defines your data directory name. If you will change your executable name, the whole directory structure will change too.</p>
+<p>This is a note especially for <a href="https://unity3d.com">Unity</a> users. Your executable name defines your data directory name. If you change your executable name, the whole directory structure will change too.</p>
 
 <p>Don’t worry though, future version of PatchKit will handle this case gracefully.</p>
 

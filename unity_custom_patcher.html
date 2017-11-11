@@ -89,15 +89,15 @@
     <div class="row">
         <h1 id="unity-custom-patcher">Unity Custom Patcher</h1>
 
-<p>Patcher is the first thing that your player sees when he wants to play the game. It downloads your game when launched for the first time and it updates it automatically whenever a new version is available.</p>
+<p>Patcher is the first thing your player sees when he wants to play the game. It downloads your game when launched for the first time and it updates it automatically whenever a new version is available.</p>
 
 <p><img src="/img/unity_custom_patcher/patcher_example.png" alt="Example patcher" /></p>
 
-<p>It’s an important thing for you to be able to customize the patcher however possible. That’s why <em>PatchKit Patcher</em> is available for anyone to download and customize at will.</p>
+<p>It’s an important thing for you to be able to customize the patcher in any way required. That’s why <em>PatchKit Patcher</em> is available for anyone to download and customize at will.</p>
 
 <h2 id="before-you-start">Before you start</h2>
 
-<p>Before you start using your patcher you first have to create your account and set up your game. You will find out how to do that in <a href="getting_started.html">Getting Started</a> page. As soon as you have one, please proceed further.</p>
+<p>Before you start using your patcher you first have to create your account and set up your game. You will find out how to do that in <a href="getting_started.html">Getting Started</a> page. As soon as you did that, please proceed further.</p>
 
 <h2 id="getting-hands-on-the-project">Getting hands on the project</h2>
 
@@ -114,7 +114,7 @@
 
 <h3 id="basic-look--feel">Basic look &amp; feel</h3>
 
-<p><strong>Before starting customizing your patcher, make sure to make a copy of the Patcher scene and do all the modifications on that new scene. If you will modify the supplied scene, any asset upgrade will overwrite your changes!</strong></p>
+<p><strong>Before starting customization of your patcher, make sure to make a copy of the Patcher scene and do all the modifications on that new scene. If you modify the supplied scene, any asset upgrade will overwrite your changes!</strong></p>
 
 <p>The patcher layout is done entirely in Unity UI. Feel free to change it however you want, but make sure to keep all the attached scripts in place.</p>
 
@@ -124,7 +124,7 @@
 
 <h2 id="building">Building</h2>
 
-<p>The patcher can be build exactly in the same way as any other Unity project:</p>
+<p>The patcher can be built exactly the same way as any other Unity project:</p>
 
 <ol>
   <li>Open <strong>File / Build Settings</strong> from the main menu.</li>
@@ -136,7 +136,7 @@
 
 <p><sup>1</sup> - If you do otherwise, the patcher may crash shortly after the start or it won’t work correctly.</p>
 
-<p>It’s not important how you would name your executable. Information about it will be stored in <strong>patcher.manifest</strong> file.</p>
+<p>It’s not important how you name your executable. Information about it will be stored in <strong>patcher.manifest</strong> file.</p>
 
 <h2 id="uploading">Uploading</h2>
 
@@ -144,15 +144,15 @@
 
 <ol>
   <li>Navigate to <a href="http://panel.patchkit.net/apps">publisher panel applications page</a>.</li>
-  <li>Click on the <strong>New Patcher</strong> button.</li>
-  <li>In new application form name your patcher (e.g. <code class="highlighter-rouge">My Patcher Windows 64</code>) and click on the <strong>Create</strong> button. Shortly after you should be able to see your new application.</li>
-  <li>Now click on the <strong>New Version</strong> button.</li>
-  <li>Edit the new version <strong>Label</strong> to let’s say <code class="highlighter-rouge">1.0</code>.</li>
-  <li>Click on the <strong>Upload Content</strong> button.</li>
+  <li>Click the <strong>New Patcher</strong> button.</li>
+  <li>In new application form, name your patcher (e.g. <code class="highlighter-rouge">My Patcher Windows 64</code>) and click the <strong>Create</strong> button. Shortly after you should be able to see your new application.</li>
+  <li>Now click the <strong>New Version</strong> button.</li>
+  <li>Edit the new version <strong>Label</strong> to, let’s say, <code class="highlighter-rouge">1.0</code>.</li>
+  <li>Click the <strong>Upload Content</strong> button.</li>
   <li>Compress the directory of your patcher into the zip file. Make sure that the <strong>patcher.manifest</strong> file can be found next to the patcher executable.</li>
   <li>Choose that newly created zip file as your application content.</li>
   <li>Wait for the upload and version processing to finish.</li>
-  <li>If there won’t be any errors, click on the <strong>Publish</strong> button.</li>
+  <li>If there are no errors, click the <strong>Publish</strong> button.</li>
   <li>After the version is published, navigate back to your patcher application page.</li>
   <li>Copy your patcher secret into your clipboard.</li>
 </ol>
