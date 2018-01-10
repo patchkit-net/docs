@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <!-- Add Your favicon here -->
+    <!--<link rel="icon" href="img/favicon.ico">-->
+
+    <title>PatchKit Documentation</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Animation CSS -->
+    <link href="css/animate.min.css" rel="stylesheet">
+
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Custom styles for this template -->
+    <link href="css/style.css" rel="stylesheet">
+
+    <!-- Style for zoho contact form -->
+    <link href="css/zoho-form-style.css" rel="stylesheet">
+
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-NWRJMWN');</script>
+    <!-- End Google Tag Manager -->
+</head>
+<body id="page-top">
+
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NWRJMWN"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
+    <div class="navbar-wrapper">
+        <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+            <div class="container">
+                <div class="navbar-header page-scroll">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="/">
+                        <img src="img/patchkit_logo_black.png">
+                    </a>
+                </div>
+                <div id="navbar" class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a class="page-scroll" href="https://patchkit.net">Go to patchkit.net</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <div id="inSlider" class="carousel carousel-fade" data-ride="carousel">
+        <div class="carousel-inner" role="listbox">
+            <div class="item active">
+                <div class="container">
+                    <div class="carousel-caption">
+                        <h1><a href="/" class="page-title">Support</a></h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<ol class="breadcrumb">
+  <li><a href="/">Home</a></li>
+  <li><a href="#">Channels - Importing Version</a></li>
+</ol>
+
+<section id="content" class="container">
+    <div class="row">
+        <h1 id="channels---importing-version">Channels - Importing Version</h1>
+
+<div class="alert alert-warning" role="alert">
+	This feature is available only for accounts with channels feature enabled. Please <a href="/contact.html">contact us</a> if you'd like to get access to it.
+</div>
+
+<p>Importing versions feature allows you to migrate already published version of one application to another without the need of re-uploading the data and with guarantee that after the process, both applications will present the same content.</p>
+
+<h2 id="use-case">Use case</h2>
+
+<p>When releasing a game, you need to make sure that the content you’re about to release is free of critical bugs. To achieve that, you may have a team of test players who are willing to play new game releases before any of these goes public. An application setup may look like this:</p>
+
+<ul>
+  <li>My Game</li>
+  <li>My Game - Public Testing</li>
+  <li>My Game - Private Testing</li>
+</ul>
+
+<p>The workflow may look like this:</p>
+
+<ol>
+  <li>Upload and publish <em>My Game - Private Testing</em> version</li>
+  <li>Collect feedback, fix bugs, repeat step 1 if necessary</li>
+  <li>Upload working version to <em>My Game - Public Testing</em></li>
+  <li>Collect feedback, fix bugs, repeat step 1 or 2 if necessary</li>
+  <li>Upload working version to <em>My Game</em></li>
+</ol>
+
+<p>With <em>Importing Version</em> feature, you can migrate working versions between applications without the need of re-uploading the content.</p>
+
+<h2 id="how-to-import-version">How to import version</h2>
+
+<p>Make sure that:</p>
+
+<ul>
+  <li>The source application is set to the same platform as the target application</li>
+  <li>The source application has at least one version published</li>
+</ul>
+
+<div class="alert alert-info">
+	Usually you will be able to import only the latest published version (always) and one version before (for a limited time).
+</div>
+
+<ol>
+  <li>Navigate to <strong>Applications</strong> tab.</li>
+  <li>Click on your target application name.</li>
+  <li>Click on <strong>New Version</strong> button to create a new version or <strong>Draft Version</strong> if you have a draft version already.</li>
+  <li>Click on <strong>Import Content</strong> button.</li>
+  <li>Select <strong>Import Version from Another Application</strong> option.</li>
+  <li>In new form choose your source application in <strong>Application</strong> dropdown.</li>
+  <li>In <strong>Version</strong> dropdown select a version you’d like to import.</li>
+  <li>Click on the <strong>Import Now</strong> button.</li>
+  <li>Wait until version importing is finished.</li>
+</ol>
+
+<div class="alert alert-warning" role="alert">
+	If you don't see the option mentioned on step 5, this may mean your account don't have channels feature enabled. Please <a href="/contact.html">contact us</a> if you'd like to get access to it.
+</div>
+
+<p>When the process is finished, your version is now imported and it’s ready to be published.</p>
+
+<h2 id="troubleshoting">Troubleshoting</h2>
+
+<p>In case of any internal errors, please <a href="https://panel.patchkit.net/support/contact">contact us</a>.</p>
+
+    </div>
+</section>
+
+<section id="gooter" class="gray-section gooter">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 text-center m-t-lg m-b-lg">
+                <p><strong>Copyright © 2015 - 2017 Upsoft<br>All Rights Reserved.</strong><br/></p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<script src="js/jquery-2.1.1.js"></script>
+<script src="js/jquery.encoder.min.js"></script>
+<script src="js/zoho-contact-form.js"></script>
+<script src="js/pace.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/classie.js"></script>
+<script src="js/cbpAnimatedHeader.js"></script>
+<script src="js/wow.min.js"></script>
+<script src="js/inspinia.js"></script>
+</body>
+</html>
