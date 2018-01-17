@@ -90,34 +90,44 @@
         <h1 id="tools">Tools</h1>
 
 <p>PatchKit Tools is a set of scripts that can be used to access PatchKit capabilities from the command line. With PatchKit Tools you can:</p>
+
 <ul>
   <li>Upload new app version</li>
   <li>Change any version label or changelog</li>
   <li>Publish new app version</li>
 </ul>
 
-<p>The most important PatchKit tools feature is uploading &amp; publishing newly created version at once. For this task you can use <code class="highlighter-rouge">patchkit-tools make-version</code> command with or without parameters.</p>
-
-<h1 id="prerequirements">Prerequirements</h1>
-
-<p>You need to have at least basic knowledge of command line (Windows) or bash (Mac OSX, Linux). If you don’t know how to work with those tools, please read the resources listed below:</p>
-<ul>
-  <li><a href="https://www.computerhope.com/issues/chusedos.htm">How to use the Windows command line</a></li>
-  <li><a href="http://www.macworld.co.uk/feature/mac-software/how-use-terminal-on-mac-3608274/">How to use Terminal on Mac</a></li>
-  <li><a href="https://www.howtogeek.com/140679/beginner-geek-how-to-start-using-the-linux-terminal/">How to start Using the Linux Terminal</a></li>
-</ul>
+<p>The most important PatchKit tools feature is the ability to upload &amp; publish newly created version at once. For this task you can use <code class="highlighter-rouge">patchkit-tools make-version</code> command with or without parameters.</p>
 
 <h2 id="installation">Installation</h2>
 
-<ol>
-  <li>Download PatchKit tools distribution for your operating system from <a href="https://github.com/patchkit-net/patchkit-tools/releases">GitHub</a> - remember to pick the <strong>latest release</strong>.</li>
-  <li>Unzip it it any suitable directory.</li>
-  <li>(Optionally) Set up your PATH variable to point to that directory. (<a href="http://www.howtogeek.com/118594/how-to-edit-your-system-path-for-easy-command-line-access/">Windows</a>, <a href="https://www.cyberciti.biz/faq/appleosx-bash-unix-change-set-path-environment-variable/">OSX</a> and <a href="http://stackoverflow.com/questions/14637979/how-to-permanently-set-path-on-linux">Linux</a> instructions)</li>
-</ol>
+<p>PatchKit Tools require <a href="https://www.ruby-lang.org/en/documentation/installation/">Ruby installation</a>. Remember to check “Add Ruby executables to your “PATH” during the installation.</p>
+
+<p>To install PatchKit Tools you need to download the package from <a href="https://github.com/patchkit-net/patchkit-tools/releases/tag/v1.3.0">GitHub</a>, unzip it and add the root location to the <code class="highlighter-rouge">PATH</code> variable (<a href="http://stackoverflow.com/questions/14637979/how-to-permanently-set-path-on-linux">Linux</a>/<a href="http://www.howtogeek.com/118594/how-to-edit-your-system-path-for-easy-command-line-access/">Windows</a>)</p>
+
+<p>Then you need to install required gems. Open console and start with</p>
+<div class="language-bash highlighter-rouge"><pre class="highlight"><code>gem install bundler
+</code></pre>
+</div>
+
+<p>Then go to the repository <code class="highlighter-rouge">patchkit-tools/src</code> folder and perform</p>
+<div class="highlighter-rouge"><pre class="highlight"><code>bundler install
+</code></pre>
+</div>
+
+<p><strong>In case of certificate failure</strong></p>
+
+<p>Trying to install the bundler, some users may encounter SSL certificate failure. In this case we’d suggest you to download <a href="cacert.pem">this certificate file</a> (cacert.pem) and put it in any directory (eg. C:\RailsInstaller\cacert.pem). Then open a command line and type:</p>
+
+<div class="language-bash highlighter-rouge"><pre class="highlight"><code><span class="nb">set </span><span class="nv">SSL_CERT_FILE</span><span class="o">=</span>C:<span class="se">\R</span>ailsInstaller<span class="se">\c</span>acert.pem
+</code></pre>
+</div>
+
+<p>This will assign the certificate and will allow you to download all the necessary assets. The certificate will remain assigned until the current terminal session is closed.</p>
 
 <h2 id="usage">Usage</h2>
 
-<p>Every tool is executed by <code class="highlighter-rouge">patchkit-tools</code> script (for Windows it is <code class="highlighter-rouge">patchkit-tools.bat</code>).</p>
+<p>Every tool is started by <code class="highlighter-rouge">patchkit-tools</code> command. The working directory is set to the location from which the script was called.</p>
 
 <p><strong>Syntax</strong></p>
 
@@ -137,11 +147,11 @@
 </code></pre>
 </div>
 
-<p><strong>NOTE!</strong> The <code class="highlighter-rouge">patchkit-tools</code> commands have no tool for creating an application directly from the command line, so in order to create the application please follow the steps in <strong>Create the application</strong> paragraph in the <a href="getting_started.html"><strong>Getting Started</strong></a> section.</p>
+<p><strong>NOTE!</strong> The <code class="highlighter-rouge">patchkit-tools</code> commands have no tools for creating an application directly from the command line, so in order to create the application, please follow the steps in <strong>Create the application</strong> paragraph in the <a href="getting_started.html"><strong>Getting Started</strong></a> section.</p>
 
 <h2 id="uploading-application-version-with-tools">Uploading application version with tools</h2>
 
-<p><code class="highlighter-rouge">make-version</code> tool allows you to create a new version of your project by uploading only the diff files. It means you don’t have to upload the entirely new version of your project to PatchKit. If <code class="highlighter-rouge">make-version</code> is executed for uploading the very first version of the project, then the whole project content will be uploaded.</p>
+<p><code class="highlighter-rouge">make-version</code> tool allows you to create a new version of your project by uploading only the diff files. It means you don’t have to upload the whole new version of your project to PatchKit. If <code class="highlighter-rouge">make-version</code> is executed for uploading the very first version of the project, then the whole project content will be uploaded.</p>
 
 <p><strong>make-version syntax</strong></p>
 
@@ -152,12 +162,12 @@
 <p><strong>make-version examples</strong></p>
 
 <p>Adding new version</p>
-<div class="language-bash highlighter-rouge"><pre class="highlight"><code>patchkit-tools make-version -s aa11bb22cc33dd55ee66ff77gg88hh99 -a zz99yy88xx77ww66vv55uu44tt33ss22rr11 -l “Second version” -f BuildFolder
+<div class="language-bash highlighter-rouge"><pre class="highlight"><code>patchkit-tools make-version -s aa11bb22cc33dd55ee66ff77gg88hh99 -a zz99yy88xx77ww66vv55uu44tt33ss22rr11 -l <span class="s2">"Second version"</span> -f BuildFolder
 </code></pre>
 </div>
 
 <p>Adding new version and assigning the changelog</p>
-<div class="language-bash highlighter-rouge"><pre class="highlight"><code>patchkit-tools make-version -s aa11bb22cc33dd55ee66ff77gg88hh99 -a zz99yy88xx77ww66vv55uu44tt33ss22rr11 -l “Third version” -f BuildFolder -c <span class="s2">"-feature 1</span><span class="se">\n</span><span class="s2">-feature 2"</span>
+<div class="language-bash highlighter-rouge"><pre class="highlight"><code>patchkit-tools make-version -s aa11bb22cc33dd55ee66ff77gg88hh99 -a zz99yy88xx77ww66vv55uu44tt33ss22rr11 -l <span class="s2">"Third version"</span> -f BuildFolder -c <span class="s2">"-feature 1</span><span class="se">\n</span><span class="s2">-feature 2"</span>
 </code></pre>
 </div>
 
