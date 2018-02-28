@@ -91,7 +91,7 @@
 <li class="toc-entry toc-h2"><a href="#how-license-keys-are-working">How license keys are working?</a></li>
 <li class="toc-entry toc-h2"><a href="#enabling-license-keys">Enabling license keys</a></li>
 <li class="toc-entry toc-h2"><a href="#setup-overview">Setup Overview</a></li>
-<li class="toc-entry toc-h2"><a href="#distributing-a-collection">Distributing a collection</a></li>
+<li class="toc-entry toc-h2"><a href="#distributing-collection">Distributing collection</a></li>
 <li class="toc-entry toc-h2"><a href="#distributing-individual-keys">Distributing individual keys</a></li>
 <li class="toc-entry toc-h2"><a href="#blocking-collections-and-keys">Blocking collections and keys</a></li>
 <li class="toc-entry toc-h2"><a href="#limitations">Limitations</a></li>
@@ -104,7 +104,7 @@
 </li>
 </ul><h1 id="license-keys">License Keys</h1>
 
-<p>PatchKit allows you to use license keys with your games. If you’re looking for a way to limit who should be allowed to play your game and who shouldn’t, license keys may be the best option available.</p>
+<p>PatchKit allows you to use license keys with your games. If you’re looking for a way of limiting who should be allowed to play your game, license keys may be the best available option.</p>
 
 <p><img src="/img/license_keys/question.png" alt="Patcher asking for a license key"></p>
 
@@ -124,9 +124,9 @@
 
 <ol>
   <li>Go to <a href="http://panel.patchkit.net/apps">Applications</a> listing.</li>
-  <li>Click on your game’s name.</li>
-  <li>Click on the <em>Keys</em> option that can be found on the upper navigation bar.</li>
-  <li>Click on <em>Enable License Keys</em> button.</li>
+  <li>Click on the name of your game.</li>
+  <li>Click on the <em>Keys</em> option - itcan be found on the upper navigation bar.</li>
+  <li>Click on the <em>Enable License Keys</em> button.</li>
 </ol>
 
 <h2 id="setup-overview">
@@ -141,27 +141,27 @@
 
 <p>License keys can be split into <strong>collections</strong>. <em>Collection</em> is a named set of license keys and you may think of it as a box with keys created for a certain purpose. It’s a lot easier to work with collections rather than with individual keys.</p>
 
-<p>There are several properties of <em>collections</em>:</p>
+<p>There are several properties that <em>collections</em> may have:</p>
 
 <ol>
   <li>
-<strong>Distributed</strong> - This flag tells you if a collection has been distributed. <strong>This flag is set manually and exists only for organizational purposes</strong>.</li>
+<strong>Distributed</strong> - This flag tells you whether the collection has been distributed. <strong>This flag is set manually and exists only for organizational purposes</strong>.</li>
   <li>
 <strong>In Use</strong> - The number of keys that have been used at least once. When a key has been used more than once, this number won’t change.</li>
   <li>
-<strong>Blocked</strong> - Indicates that particular <em>collection</em> has been blocked from further use. Blocked keys can no longer be used by players, however, you can unblock any previously blocked collection.</li>
+<strong>Blocked</strong> - Tells whether this <em>collection</em> has been blocked from further use. Blocked keys can no longer be used by players. You can always unblock any previously blocked collections.</li>
   <li>
-<strong>Status</strong> - Keys generation status. After ordering a large number of keys, you will have to wait some time before the collection will be ready to use.</li>
+<strong>Status</strong> - Keys generation status. If you order a large number of keys, you will have to wait some time before the collection is ready to be used.</li>
 </ol>
 
-<h2 id="distributing-a-collection">
-<a id="distributing-a-collection" class="anchor" href="#distributing-a-collection" aria-hidden="true"><span class="octicon octicon-link"></span></a>Distributing a collection</h2>
+<h2 id="distributing-collection">
+<a id="distributing-collection" class="anchor" href="#distributing-collection" aria-hidden="true"><span class="octicon octicon-link"></span></a>Distributing collection</h2>
 
 <p>There are two ways to distribute keys from a collection. You can:</p>
 
 <ol>
-  <li>Click on the name of the collection and copy individual keys from the listing.</li>
-  <li>Get a CSV file that contains all the keys.</li>
+  <li>Click on the collection name and copy individual keys from the listing.</li>
+  <li>Get a CSV file containing all the keys.</li>
 </ol>
 
 <div class="bs-callout bs-callout-info">
@@ -176,14 +176,14 @@
 <h2 id="distributing-individual-keys">
 <a id="distributing-individual-keys" class="anchor" href="#distributing-individual-keys" aria-hidden="true"><span class="octicon octicon-link"></span></a>Distributing individual keys</h2>
 
-<p>When you want to distribute a small amount of <em>license keys</em>, go into a collection and then:</p>
+<p>If you’d like to distribute a small amount of <em>license keys</em>, go into a collection and:</p>
 
 <ol>
-  <li>Select the keys you want to mark as distributed using the checkbox on the left.
+  <li>Select keys you want to mark as distributed using the checkbox on the left.
 <img src="/img/license_keys/checkbox.png" alt="License key checkbox">
 </li>
   <li>Click on the <em>With selected…</em> button that can be found at the bottom of the page.</li>
-  <li>Choose <em>Mark as distributed</em> option from the dropdown menu.
+  <li>From the dropdown menu choose <em>Mark as distributed</em> option.
 <img src="/img/license_keys/with_selected.png" alt="License key checkbox">
 </li>
 </ol>
@@ -191,12 +191,12 @@
 <h2 id="blocking-collections-and-keys">
 <a id="blocking-collections-and-keys" class="anchor" href="#blocking-collections-and-keys" aria-hidden="true"><span class="octicon octicon-link"></span></a>Blocking collections and keys</h2>
 
-<p>Collections and keys can be blocked from further use in the manner similar to marking collections and keys as distributed. Note that blocking keys and collections will have a real effect on the players, as it will forbid them from downloading the game and updates.</p>
+<p>Collections and keys can be blocked from further use in the manner similar to marking collections and keys as distributed. Note that blocking keys and collections will have a real effect on the players by forbidding them from downloading the game and updates.</p>
 
 <h2 id="limitations">
 <a id="limitations" class="anchor" href="#limitations" aria-hidden="true"><span class="octicon octicon-link"></span></a>Limitations</h2>
 
-<p>Currently license keys are designed only to forbid the game from downloading or updating (depending on whether the player has already downloaded the game or not). It does not disallow the player to play the game in any way. To contain the player from playing the game, you have to implement license key checking within your game’s code. Currently there’s no simple way of doing it, so if you’re interested in making this kind of implementation, please <a href="mailto:contact@patchkit.net">contact us</a> directly.</p>
+<p>Currently license keys are designed only to forbid the game from being downloaded or updated (depending on whether or not the player has already downloaded the game). It’s not disallowing the player to play the game in any way. To forbid the player from playing the game, you have to implement license key checking within yours game’s code. Currently there’s no simple way of doing it, so if you’re interested in making this kind of implementation, please <a href="mailto:contact@patchkit.net">contact us</a> directly.</p>
 
 <h2 id="securing-the-game-from-being-played">
 <a id="securing-the-game-from-being-played" class="anchor" href="#securing-the-game-from-being-played" aria-hidden="true"><span class="octicon octicon-link"></span></a>Securing the game from being played</h2>
