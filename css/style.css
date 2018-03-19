@@ -212,10 +212,10 @@ h1 {
 .carousel-caption {
   position: absolute;
   top: 40px;
-  left: 100px;
+  left: 0;
   bottom: auto;
-  right: auto;
-  text-align: left;
+  right: 0;
+  text-align: center;
 }
 .carousel-caption.blank {
   top: 140px;
@@ -451,7 +451,7 @@ fieldset[disabled] .btn-primary.active {
 @media (max-width: 768px) {
   .carousel-caption,
   .carousel-caption.blank {
-    left: 5%;
+    left: 0;
     top: 70px;
   }
   .carousel-caption h1 {
@@ -1035,11 +1035,6 @@ section.comments {
 #content img.no-border {
   box-shadow: none;
   margin: 15px;
-}
-
-a.page-title {
-  color: white;
-  text-decoration: none;
 }
 
 /* Fixes the issue with anchor and fixed header - clicked anchor was not visible on jump */
