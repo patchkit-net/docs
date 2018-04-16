@@ -94,7 +94,7 @@
 <ul id="markdown-toc">
   <li><a href="#processing-messages" id="markdown-toc-processing-messages">Processing Messages</a>    <ul>
       <li><a href="#your-patch-file-size-is-nearly-the-same-as-your-content-file-size" id="markdown-toc-your-patch-file-size-is-nearly-the-same-as-your-content-file-size">Your patch file size is nearly the same as your content file size</a></li>
-      <li><a href="#cannot-find-executable-file" id="markdown-toc-cannot-find-executable-file">Cannot find executable file</a></li>
+      <li><a href="#cannot-find-the-executable-file" id="markdown-toc-cannot-find-the-executable-file">Cannot find the executable file</a></li>
       <li><a href="#application-platform-mismatch" id="markdown-toc-application-platform-mismatch">Application platform mismatch</a></li>
       <li><a href="#compression-method-set-to-lz4-or-lz4hc-unity-builds" id="markdown-toc-compression-method-set-to-lz4-or-lz4hc-unity-builds">Compression Method set to LZ4 or LZ4HC (Unity builds)</a></li>
     </ul>
@@ -103,7 +103,7 @@
 
 <h3 id="your-patch-file-size-is-nearly-the-same-as-your-content-file-size">Your patch file size is nearly the same as your content file size</h3>
 
-<p>When you’re uploading new application files, a patch file is created. Patch file is meant to be as small as possible, so if it happens to be nearly the same as your full application size, it is considered a mistake.</p>
+<p>When you’re uploading new application files, a patch file is created. Patch file is meant to be as small as possible, so if it is similar to your full application size, it is considered a mistake.</p>
 
 <p><strong>Why is it bad?</strong></p>
 
@@ -114,12 +114,12 @@
 <p>There may be several reasons:</p>
 
 <ol>
-  <li>You’ve uploaded zip file with different application. If by mistake you upload a zip file that is a completely different application, there’s no chance that a valid patch would be created. Most probably this is not what you’d like to do, so look at the file listing to verify that those are the files that you’d like to upload.</li>
+  <li>You’ve uploaded zip file with different application. If you upload a zip file that is a completely different application by mistake, there’s no chance of creating a valid patch. Look at the file listing to make sure that you’ve chosen the files that you’d like to upload.</li>
   <li>You’ve changed the name of files or directories. PatchKit currently does not support path changes, so it treats every rename as a delete/add operation.</li>
-  <li>You’re working with Unity and you did change your build name. Changing a build name in Unity also changes <code class="highlighter-rouge">*_Data</code> directory name. This is similar situation to point 2. Please make sure to name your builds the same on each release.</li>
+  <li>You’re working with Unity and you’ve changed your build name. Changing a build name in Unity also changes <code class="highlighter-rouge">*_Data</code> directory name. This is a similar situation to the one from point 2. Please make sure to name your builds in the same manner on each release.</li>
 </ol>
 
-<h3 id="cannot-find-executable-file">Cannot find executable file</h3>
+<h3 id="cannot-find-the-executable-file">Cannot find the executable file</h3>
 
 <p>PatchKit cannot find an executable file within your application files.</p>
 
@@ -129,17 +129,17 @@
 
 <p><strong>How to fix it?</strong></p>
 
-<p>PatchKit is looking automatically for executable files, so if it cannot find it, most probably you did one of these mistakes:</p>
+<p>PatchKit is automatically looking for executable files, so if it cannot find it, most probably you’ve made one of these mistakes:</p>
 
 <ol>
-  <li>You’ve set your <em>Target Platform</em> to something else that your application is build to. For instance you’re sending a <em>Windows</em> build, but your target platform is set to <em>Linux</em>.</li>
-  <li>You did not include executable file in top directory of your content.</li>
+  <li>You’ve set your <em>Target Platform</em> to something else that your application is build to. For instance, you’re sending a <em>Windows</em> build, but your target platform is set to <em>Linux</em>.</li>
+  <li>You did not include an executable file in the top directory of your content.</li>
   <li>Your executable file is corrupted.</li>
 </ol>
 
 <h3 id="application-platform-mismatch">Application platform mismatch</h3>
 
-<p>This errors means that PatchKit has found files that belongs to different platform that your <em>Target Platform</em> option is set to.</p>
+<p>This errors means that PatchKit has found files that belong to a different platform than the one your <em>Target Platform</em> option is set to.</p>
 
 <p><strong>Why is it bad?</strong></p>
 
@@ -147,27 +147,28 @@
 
 <p><strong>How to fix it?</strong></p>
 
-<p>In some cases these files are safe to be removed because it may mean that you’re making a multi-platform application but you did a configuration mistake and now these files can be found in your target build. Also if you’re sure that you did build your application properly, leaving these files be shouldn’t do much harm.</p>
+<p>In some cases these files are safe to be removed because it may mean that you’re making a multi-platform application but you did a configuration mistake and these files can be found in your target build. Also, if you’re sure that you’ve built your application properly, leaving these files shouldn’t do much harm.</p>
 
-<p>Make sure to consider this case carefully and decide if you want to make any action or just ignore it.</p>
+<p>Make sure to take that into consideration and decide if you want to make any action or just ignore it.</p>
 
 <h3 id="compression-method-set-to-lz4-or-lz4hc-unity-builds">Compression Method set to LZ4 or LZ4HC (Unity builds)</h3>
 
-<p>Starting from <em>Unity 2017.2</em> there’s a new option in <em>Build Settings</em> called <em>Compression Method</em>. If you’re receiving this message then most probably your application has been build with <em>Compression Method</em> set to <code class="highlighter-rouge">LZ4</code> or <code class="highlighter-rouge">LZ4HC</code>.</p>
+<p>Starting from <em>Unity 2017.2</em> there’s a new option in <em>Build Settings</em> called <em>Compression Method</em>. If you’re receiving this message then most probably your application has been built with <em>Compression Method</em> set to <code class="highlighter-rouge">LZ4</code> or <code class="highlighter-rouge">LZ4HC</code>.</p>
 
 <p><img src="/img/processing_messages/compression_method.png" alt="Compression method" /></p>
 
 <p><strong>Why is it bad?</strong></p>
 
-<p>Compressing your’s game build breaks the binary patch file creating algorithm. This algorithm is looking for differences in your binary files, so it can be as small as possible. For example changing a texture should result in patch file that closely resembles this texture size.</p>
+<p>Compressing your game build breaks the binary patch file by creating an algorithm. This algorithm is looking for differences in your binary files, so it can be as small as possible. For example, changing a texture should result in a patch file that closely resembles this texture size.</p>
 
-<p>By enabling compression you’re making these kind of changes impossible to detect. Compressions algorithms can generate totally different output even if there’s really small change.</p>
+<p>By enabling compression you’re making these kind of changes impossible to detect. Compression algorithms can generate a totally different output, even if the change is really small.</p>
 
-<p>On top of that, PatchKit on its own is applying compression on your files at the final stage of version processing, so you don’t have to worry about your build size.</p>
+<p>On top of that, PatchKit on its own is applying compression to your files at the final stage of version processing, so you don’t have to worry about your build size.</p>
 
 <p><strong>How to fix it?</strong></p>
 
-<p>Just go into <em>Files</em>/<em>Build Settings</em> window, set <em>Compression Method</em> to <code class="highlighter-rouge">None</code> and build your application once more time.</p>
+<p>Just go into the <em>Files</em>/<em>Build Settings</em> window, set <em>Compression Method</em> to <code class="highlighter-rouge">None</code> and build your application one more time.</p>
+
 
     </div>
 </section>
