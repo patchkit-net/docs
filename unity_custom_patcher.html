@@ -73,7 +73,7 @@
             <div class="item active">
                 <div class="container">
                     <div class="carousel-caption">
-                        <h1>Support</h1>
+                        <h1><a href="/" class="page-title">Support</a></h1>
                     </div>
                 </div>
             </div>
@@ -103,9 +103,12 @@
 
 <p>Currently <em>PatchKit Patcher</em> is a <a href="https://unity3d.com">Unity</a> project. This means that you are required to have at least basic <em>Unity</em> and <a href="https://unity3d.com/learn/tutorials/topics/user-interface-ui">Unity UI</a> knowledge.</p>
 
-<p>You can get the project source files from <a href="https://github.com/patchkit-net/patchkit-patcher-unity/releases/latest">GitHub</a>.</p>
+<p>You can get the project from:</p>
 
-<p>The project has been created and tested with <em>Unity 5.3.4</em>. We highly recommend to use that particular version too. You can get it through <a href="https://unity3d.com/get-unity/download/archive">Unity Archive</a>. If you have a newer Unity version installed, you don’t have to uninstall it, just follow <a href="https://support.unity3d.com/hc/en-us/articles/210001066-Can-I-activate-more-than-one-version-of-Unity-on-the-same-machine-">these instructions</a>.</p>
+<ul>
+  <li>The Asset Store (recommended, but not yet available)</li>
+  <li><a href="https://github.com/patchkit-net/patchkit-patcher-unity/releases">GitHub</a></li>
+</ul>
 
 <h2 id="making-changes">Making changes</h2>
 
@@ -150,11 +153,18 @@
   <li>Choose that newly created zip file as your application content.</li>
   <li>Wait for the upload and version processing to finish.</li>
   <li>If there are no errors, click the <strong>Publish</strong> button.</li>
-  <li>After the version is published, navigate to your game’s page.</li>
-  <li>Inside <strong>Configuration</strong> panel look for <strong>Custom Patcher</strong> field. Click on the <strong>Edit</strong> button right next to it.</li>
-  <li>From the dropdown select your new patcher.</li>
-  <li>Click on the <strong>Save</strong> button.</li>
+  <li>After the version is published, navigate back to your patcher application page.</li>
+  <li>Copy your patcher secret into your clipboard.</li>
 </ol>
+
+<p><img src="/guide_img/custom_patcher/secret.png" alt="Secret field" /></p>
+
+<ol>
+  <li>Navigate to the game page that you want to use your custom patcher for.</li>
+  <li>Edit <strong>Custom Patcher Secret</strong> and paste copied secret into it.</li>
+</ol>
+
+<p><img src="/guide_img/custom_patcher/custom_patcher_secret.png" alt="Custom Patcher Secret" /></p>
 
 <p>From now on your new application will use your custom patcher instead of the default one.</p>
 
@@ -172,20 +182,9 @@
 
 <p>Updating custom patcher is the same process as updating every application - you just need to upload a new version to your patcher application and publish it. Old patcher versions will be automatically replaced by the new version on the next start of the launcher.</p>
 
-<h2 id="troubleshooting">Troubleshooting</h2>
-
-<h3 id="the-patcher-crashes-right-away">The patcher crashes right away</h3>
-
-<p>First look into the <a href="debugging_patcher.html">logs</a>. A significant error message should be at the end of it. Usually there may be two reasons:</p>
-
-<ol>
-  <li>You’re trying to launch patcher directly - this is not allowed. You can only test it inside <em>Unity</em> editor. When it’s build, you have to upload it to PatchKit for further testing.</li>
-  <li>You did change application secret in inspector - For security reasons you have to reset application secret to default value which currently is <code class="highlighter-rouge">ac20fc855b75a7ea5f3e936dfd38ccd8</code>.</li>
-</ol>
-
 <h2 id="getting-help">Getting help</h2>
 
-<p>If you’d require any help with the custom patcher, please don’t hesitate to <a href="contact.html">contact us</a>. We will assist you the best as we can!</p>
+<p>If you’d require any help with the custom patcher, please don’t hesitate to contact us at <a href="mailto:contact@patchkit.net">contact@patchkit.net</a>. We will assist you the best as we can!</p>
 
     </div>
 </section>
@@ -194,7 +193,7 @@
     <div class="container">
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2 text-center m-t-lg m-b-lg">
-                <p><strong>Copyright © 2015 - 2018 Upsoft<br>All Rights Reserved.</strong><br/></p>
+                <p><strong>Copyright © 2015 - 2017 Upsoft<br>All Rights Reserved.</strong><br/></p>
             </div>
         </div>
     </div>
@@ -209,14 +208,5 @@
 <script src="js/cbpAnimatedHeader.js"></script>
 <script src="js/wow.min.js"></script>
 <script src="js/inspinia.js"></script>
-<script src="https://wchat.freshchat.com/js/widget.js"></script>
-
-<script>
-  window.fcWidget.init({
-    token: "5ea18b71-f1be-4f82-b3ca-fa632269ba46",
-    host: "https://wchat.freshchat.com"
-  });
-</script>
-
 </body>
 </html>

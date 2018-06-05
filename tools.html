@@ -73,7 +73,7 @@
             <div class="item active">
                 <div class="container">
                     <div class="carousel-caption">
-                        <h1>Support</h1>
+                        <h1><a href="/" class="page-title">Support</a></h1>
                     </div>
                 </div>
             </div>
@@ -110,16 +110,9 @@
 <h2 id="installation">Installation</h2>
 
 <ol>
-  <li>Download PatchKit tools distribution for your operating system from <a href="https://github.com/patchkit-net/patchkit-tools/releases/latest">GitHub</a>.</li>
+  <li>Download PatchKit tools distribution for your operating system from <a href="https://github.com/patchkit-net/patchkit-tools/releases">GitHub</a> - remember to pick the <strong>latest release</strong>.</li>
   <li>Unzip it it any suitable directory.</li>
   <li>(Optionally) Set up your PATH variable to point to that directory. (<a href="http://www.howtogeek.com/118594/how-to-edit-your-system-path-for-easy-command-line-access/">Windows</a>, <a href="https://www.cyberciti.biz/faq/appleosx-bash-unix-change-set-path-environment-variable/">OSX</a> and <a href="http://stackoverflow.com/questions/14637979/how-to-permanently-set-path-on-linux">Linux</a> instructions)</li>
-</ol>
-
-<h2 id="upgrading-from-previous-versions">Upgrading from previous versions</h2>
-
-<ol>
-  <li>Remove your previous installation directory.</li>
-  <li>Unzip newly downloaded distribution from <a href="https://github.com/patchkit-net/patchkit-tools/releases/latest">GitHub</a> to the same place.</li>
 </ol>
 
 <h2 id="usage">Usage</h2>
@@ -128,18 +121,21 @@
 
 <p><strong>Syntax</strong></p>
 
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>patchkit-tools <span class="o">[</span>tool_name] <span class="o">[</span>tool_arguments]
-</code></pre></div></div>
+<div class="language-bash highlighter-rouge"><pre class="highlight"><code>patchkit-tools <span class="o">[</span>tool_name] <span class="o">[</span>tool_arguments]
+</code></pre>
+</div>
 
 <p><strong>Displaying help and tools list</strong></p>
 
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>patchkit-tools <span class="nt">--help</span>
-</code></pre></div></div>
+<div class="language-bash highlighter-rouge"><pre class="highlight"><code>patchkit-tools --help
+</code></pre>
+</div>
 
 <p><strong>Displaying specific tool help</strong></p>
 
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>patchkit-tools <span class="o">[</span>tool_name] <span class="nt">--help</span>
-</code></pre></div></div>
+<div class="language-bash highlighter-rouge"><pre class="highlight"><code>patchkit-tools <span class="o">[</span>tool_name] --help
+</code></pre>
+</div>
 
 <p><strong>NOTE!</strong> The <code class="highlighter-rouge">patchkit-tools</code> commands have no tool for creating an application directly from the command line, so in order to create the application please follow the steps in <strong>Create the application</strong> paragraph in the <a href="getting_started.html"><strong>Getting Started</strong></a> section.</p>
 
@@ -149,18 +145,21 @@
 
 <p><strong>make-version syntax</strong></p>
 
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>patchkit-tools make-version <span class="o">[</span><span class="nt">-s</span> secret] <span class="o">[</span><span class="nt">-a</span> api_key] <span class="o">[</span><span class="nt">-l</span> label] <span class="o">[</span><span class="nt">-f</span> files] <span class="o">[</span><span class="nt">-c</span> changelog]
-</code></pre></div></div>
+<div class="language-bash highlighter-rouge"><pre class="highlight"><code>patchkit-tools make-version <span class="o">[</span>-s secret] <span class="o">[</span>-a api_key] <span class="o">[</span>-l label] <span class="o">[</span>-f files] <span class="o">[</span>-c changelog]
+</code></pre>
+</div>
 
 <p><strong>make-version examples</strong></p>
 
 <p>Adding new version</p>
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>patchkit-tools make-version <span class="nt">-s</span> aa11bb22cc33dd55ee66ff77gg88hh99 <span class="nt">-a</span> zz99yy88xx77ww66vv55uu44tt33ss22rr11 <span class="nt">-l</span> “Second version” <span class="nt">-f</span> BuildFolder
-</code></pre></div></div>
+<div class="language-bash highlighter-rouge"><pre class="highlight"><code>patchkit-tools make-version -s aa11bb22cc33dd55ee66ff77gg88hh99 -a zz99yy88xx77ww66vv55uu44tt33ss22rr11 -l “Second version” -f BuildFolder
+</code></pre>
+</div>
 
 <p>Adding new version and assigning the changelog</p>
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>patchkit-tools make-version <span class="nt">-s</span> aa11bb22cc33dd55ee66ff77gg88hh99 <span class="nt">-a</span> zz99yy88xx77ww66vv55uu44tt33ss22rr11 <span class="nt">-l</span> “Third version” <span class="nt">-f</span> BuildFolder <span class="nt">-c</span> <span class="s2">"-feature 1</span><span class="se">\n</span><span class="s2">-feature 2"</span>
-</code></pre></div></div>
+<div class="language-bash highlighter-rouge"><pre class="highlight"><code>patchkit-tools make-version -s aa11bb22cc33dd55ee66ff77gg88hh99 -a zz99yy88xx77ww66vv55uu44tt33ss22rr11 -l “Third version” -f BuildFolder -c <span class="s2">"-feature 1</span><span class="se">\n</span><span class="s2">-feature 2"</span>
+</code></pre>
+</div>
 
 <p>Type <code class="highlighter-rouge">patchkit-tools make-version --help</code> to learn syntax.</p>
 
@@ -171,7 +170,7 @@
     <div class="container">
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2 text-center m-t-lg m-b-lg">
-                <p><strong>Copyright © 2015 - 2018 Upsoft<br>All Rights Reserved.</strong><br/></p>
+                <p><strong>Copyright © 2015 - 2017 Upsoft<br>All Rights Reserved.</strong><br/></p>
             </div>
         </div>
     </div>
@@ -186,14 +185,5 @@
 <script src="js/cbpAnimatedHeader.js"></script>
 <script src="js/wow.min.js"></script>
 <script src="js/inspinia.js"></script>
-<script src="https://wchat.freshchat.com/js/widget.js"></script>
-
-<script>
-  window.fcWidget.init({
-    token: "5ea18b71-f1be-4f82-b3ca-fa632269ba46",
-    host: "https://wchat.freshchat.com"
-  });
-</script>
-
 </body>
 </html>
