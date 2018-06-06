@@ -73,7 +73,7 @@
             <div class="item active">
                 <div class="container">
                     <div class="carousel-caption">
-                        <h1><a href="/" class="page-title">Support</a></h1>
+                        <h1>Support</h1>
                     </div>
                 </div>
             </div>
@@ -125,7 +125,7 @@
     <tr>
       <td>Mac OSX</td>
       <td>Launcher.app</td>
-      <td>~/Library/Application Support/Launcher/launcher-log.txt</td>
+      <td>~/Library/Application Support/PatchKit/Apps/launcher-log.txt</td>
     </tr>
     <tr>
       <td>Mac OSX</td>
@@ -141,9 +141,8 @@
 
 <p>Patcher should be ran with following command line arguments:</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>patcher.exe --installdir "dir" --secret "secret" --readable
-</code></pre>
-</div>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>patcher.exe --installdir "dir" --secret "secret" --readable
+</code></pre></div></div>
 
 <p>You can try and launch it with your custom <em>installdir</em> and <em>secret</em>. Remember to always pass <em>readable</em>, because otherwise patcher will expect an encoded secret instead of a string.</p>
 
@@ -177,7 +176,7 @@
     <div class="container">
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2 text-center m-t-lg m-b-lg">
-                <p><strong>Copyright © 2015 - 2017 Upsoft<br>All Rights Reserved.</strong><br/></p>
+                <p><strong>Copyright © 2015 - 2018 Upsoft<br>All Rights Reserved.</strong><br/></p>
             </div>
         </div>
     </div>
@@ -192,5 +191,14 @@
 <script src="js/cbpAnimatedHeader.js"></script>
 <script src="js/wow.min.js"></script>
 <script src="js/inspinia.js"></script>
+<script src="https://wchat.freshchat.com/js/widget.js"></script>
+
+<script>
+  window.fcWidget.init({
+    token: "5ea18b71-f1be-4f82-b3ca-fa632269ba46",
+    host: "https://wchat.freshchat.com"
+  });
+</script>
+
 </body>
 </html>

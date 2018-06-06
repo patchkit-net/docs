@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <!-- Add Your favicon here -->
+    <!--<link rel="icon" href="img/favicon.ico">-->
+
+    <title>PatchKit Documentation</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Animation CSS -->
+    <link href="css/animate.min.css" rel="stylesheet">
+
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Custom styles for this template -->
+    <link href="css/style.css" rel="stylesheet">
+
+    <!-- Style for zoho contact form -->
+    <link href="css/zoho-form-style.css" rel="stylesheet">
+
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-NWRJMWN');</script>
+    <!-- End Google Tag Manager -->
+</head>
+<body id="page-top">
+
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NWRJMWN"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
+    <div class="navbar-wrapper">
+        <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+            <div class="container">
+                <div class="navbar-header page-scroll">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="/">
+                        <img src="img/patchkit_logo_black.png">
+                    </a>
+                </div>
+                <div id="navbar" class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a class="page-scroll" href="https://patchkit.net">Go to patchkit.net</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <div id="inSlider" class="carousel carousel-fade" data-ride="carousel">
+        <div class="carousel-inner" role="listbox">
+            <div class="item active">
+                <div class="container">
+                    <div class="carousel-caption">
+                        <h1>Support</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<ol class="breadcrumb">
+  <li><a href="/">Home</a></li>
+  <li><a href="#">Channels</a></li>
+</ol>
+
+<section id="content" class="container">
+    <div class="row">
+        <h1 id="channels">Channels</h1>
+
+<ul id="markdown-toc">
+  <li><a href="#channels" id="markdown-toc-channels">Channels</a>    <ul>
+      <li><a href="#pros-of-using-channels-instead-of-separate-applications" id="markdown-toc-pros-of-using-channels-instead-of-separate-applications">Pros of using channels instead of separate applications</a></li>
+      <li><a href="#example-use-case" id="markdown-toc-example-use-case">Example use case</a></li>
+      <li><a href="#getting-started" id="markdown-toc-getting-started">Getting started</a>        <ul>
+          <li><a href="#channels-list" id="markdown-toc-channels-list">Channels list</a></li>
+          <li><a href="#uploading-version-content" id="markdown-toc-uploading-version-content">Uploading version content</a></li>
+          <li><a href="#linking-a-version" id="markdown-toc-linking-a-version">Linking a version</a></li>
+          <li><a href="#giving-the-access-to-your-users" id="markdown-toc-giving-the-access-to-your-users">Giving the access to your users</a></li>
+        </ul>
+      </li>
+      <li><a href="#troubleshoting" id="markdown-toc-troubleshoting">Troubleshoting</a></li>
+    </ul>
+  </li>
+</ul>
+
+<div class="alert alert-warning" role="alert">
+	This feature is available only for accounts with channels feature enabled. Please <a href="/contact.html">contact us</a> if you'd like to get access to it.
+</div>
+
+<p>Channels feature allows you to create multiple branches of your application that can be targeted to different set of users. With this feature you can upload your application content once and then link it to many channels from the web panel without the need of transferring it again.</p>
+
+<h2 id="pros-of-using-channels-instead-of-separate-applications">Pros of using channels instead of separate applications</h2>
+
+<ul>
+  <li>You don’t need to upload the same data for each application separately, just do it once</li>
+  <li>Version linking is less error-prone than files uploading - if you feel confident about any version you have, you can link it to public channel easily</li>
+  <li>Easy version reverting - if you made a mistake, just create a new version and link it back to working game content</li>
+  <li>Shared data - channels and version are sharing the same settings, you don’t need to copy version labels or changelogs</li>
+  <li>Extended access control - each channel can have separate set of license keys</li>
+</ul>
+
+<h2 id="example-use-case">Example use case</h2>
+
+<p>You may have an application called <em>My Game</em>. It’s released publicly and you’re planning to release its new version with lots of changes, but you’re unsure if there won’t be any serious bugs inside of it. To solve that problem, you may want to release the new release only to limited audience.</p>
+
+<p>With channels you can create a setup like this:</p>
+
+<ul>
+  <li>My Game
+    <ul>
+      <li>Public Release</li>
+      <li>Testing Release</li>
+    </ul>
+  </li>
+</ul>
+
+<p>The work flow may look like this:</p>
+
+<ol>
+  <li>Create new version inside <em>My Game</em> group.</li>
+  <li>Upload application content to <em>My Game</em> group.</li>
+  <li>Create new version inside <em>Testing Release</em> channel.</li>
+  <li>Link it to a version created inside <em>My Game</em> group.</li>
+  <li>Publish it.</li>
+  <li>Collect feedback.</li>
+  <li>If everything looks good, create new version inside <em>Public Release</em> channel.</li>
+  <li>Link the same version as before.</li>
+  <li>Publish it to a wider audience.</li>
+</ol>
+
+<h2 id="getting-started">Getting started</h2>
+
+<p>You can create a channel from your application’s page.</p>
+
+<ol>
+  <li>Go to <strong>Applications</strong> page.</li>
+  <li>Click on your application name. If you don’t have an application created yet, please visit <a href="getting_started.html">Getting Started</a> page to learn how to create one.</li>
+  <li>At top-right corner click on the <i class="fa fa-cog"></i> button.</li>
+  <li>From the drop-down menu choose <strong>New Channel</strong> option.</li>
+  <li>On the new form enter your new channel name.</li>
+  <li>Click on the <strong>Create</strong> button.</li>
+</ol>
+
+<p>You can repeat this process to create more channels if needed.</p>
+
+<div class="alert alert-info" role="alert">
+	Creating first channel will convert your existing application into a <i>group</i> with built-in <i>main</i> channel, so in result you will end up with a channel that name you're choosing and a <i>main</i> channel.
+</div>
+
+<div class="alert alert-info" role="alert">
+	A <i>group</i> is a entry on your applications list that includes multiple channels. It works like an application, but you cannot publish your versions directly from a group - you have to link a version to an existing channel and then publish it on that channel.
+</div>
+
+<h3 id="channels-list">Channels list</h3>
+
+<p>If you now navigate to your application group you will see a brief list of channels on that page.</p>
+
+<p><img src="/img/channels/channels_list.png" alt="Channels list" /></p>
+
+<p>From there you can:</p>
+
+<ul>
+  <li>Navigate to channel’s page by clicking on the channel name or <strong>Edit</strong> button</li>
+  <li>Navigate to channel’s published version if available</li>
+  <li>Navigate to channel’s draft version if available</li>
+  <li>Delete the channel by clicking on <strong>Delete</strong> button</li>
+</ul>
+
+<h3 id="uploading-version-content">Uploading version content</h3>
+
+<p>You can upload version content by creating a new version from your’s application <em>group</em> page. This is the same one that is listing a brief channel list above.</p>
+
+<ol>
+  <li>Navigate to <strong>Applications</strong> page.</li>
+  <li>Click on your application name.</li>
+  <li>Click on <strong>New Version</strong> button.</li>
+  <li>Click on <strong>Import Content</strong> button.</li>
+  <li>If asked, choose that you want to upload a ZIP file.</li>
+  <li>On the upload form select a ZIP file with your game’s content.</li>
+  <li>The upload and version processing will start automatically. Wait until it’s finished.</li>
+  <li>Click on the <strong>Edit</strong> next to <em>Label</em> property and enter a label (e.g. <em>1.0</em>)</li>
+  <li>Click on the <strong>Persist</strong> button to persist this version.</li>
+</ol>
+
+<div class="alert alert-info" role="alert">
+	Persisting a version means that it's ready to be linked with a channel. It's not available to anyone unless you do that.
+</div>
+
+<h3 id="linking-a-version">Linking a version</h3>
+
+<p>Now when your version is persisted, you can now navigate to your channel and link it. Linking a version means assigning and eventually publishing it on a channel. It’s required if you’d like to make your content available.</p>
+
+<ol>
+  <li>Click on the <strong>Overview</strong> tab or navigate to your application just like before.</li>
+  <li>Click on your channel name. This channel will publish your newly created version.</li>
+  <li>Click on <strong>New Version</strong> button.</li>
+  <li>Click on <strong>Link to version</strong> button.</li>
+  <li>From the <strong>Select Version</strong> drop-down choose a version that you’ve just created.</li>
+  <li>Click on the <strong>Link</strong> button.</li>
+</ol>
+
+<p>Now you will see a processing progress. It’s needed to be done since different channels are using separate encryption keys. When finished, you will see the information that version has been linked.</p>
+
+<p><img src="/img/channels/linked_version.png" alt="Linked version" /></p>
+
+<p>Now you can decide to either…</p>
+
+<ol>
+  <li><strong>Link to different version</strong> if you do not want to publish this link, or</li>
+  <li><strong>Publish</strong> this version to make it available to the players.</li>
+</ol>
+
+<h3 id="giving-the-access-to-your-users">Giving the access to your users</h3>
+
+<p>When your channel’s version is published then you may want to make it available to certain users. To do that you have to navigate back to your channel’s page.</p>
+
+<ol>
+  <li>Go to <strong>Applications</strong> page.</li>
+  <li>Locate your application on the list.</li>
+  <li>Click on the channel name you’d like to share.</li>
+  <li>On the channel’s page click on the <strong>Get Launcher</strong> button.</li>
+</ol>
+
+<p>The launcher that you now have allows to access that specific channel. This also means that if you’d like anyone to use different channel, you need to share with them a new launcher.</p>
+
+<div class="alert alert-info" role="alert">
+	You just need to share the launcher once to those who don't have it. Launcher will automatically upgrade locally installed applications when new version is available on a channel.
+</div>
+
+<div class="alert alert-warning" role="alert">
+	Please be aware that having the access to two or more channels requires to install the application in separate locations on your disk drive. Do not try to overwrite existing launcher with a new one.
+</div>
+
+<h2 id="troubleshoting">Troubleshoting</h2>
+
+<p>In case of any errors, issues or questions, please <a href="https://panel.patchkit.net/support/contact">contact us</a> directly.</p>
+
+    </div>
+</section>
+
+<section id="gooter" class="gray-section gooter">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 text-center m-t-lg m-b-lg">
+                <p><strong>Copyright © 2015 - 2018 Upsoft<br>All Rights Reserved.</strong><br/></p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<script src="js/jquery-2.1.1.js"></script>
+<script src="js/jquery.encoder.min.js"></script>
+<script src="js/zoho-contact-form.js"></script>
+<script src="js/pace.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/classie.js"></script>
+<script src="js/cbpAnimatedHeader.js"></script>
+<script src="js/wow.min.js"></script>
+<script src="js/inspinia.js"></script>
+<script src="https://wchat.freshchat.com/js/widget.js"></script>
+
+<script>
+  window.fcWidget.init({
+    token: "5ea18b71-f1be-4f82-b3ca-fa632269ba46",
+    host: "https://wchat.freshchat.com"
+  });
+</script>
+
+</body>
+</html>

@@ -73,7 +73,7 @@
             <div class="item active">
                 <div class="container">
                     <div class="carousel-caption">
-                        <h1><a href="/" class="page-title">Support</a></h1>
+                        <h1>Support</h1>
                     </div>
                 </div>
             </div>
@@ -98,6 +98,12 @@
 		</div>
 	</div>
 </div>
+
+<h3 id="more-tutorial-videos">More tutorial videos</h3>
+
+<ul>
+  <li><a href="https://www.youtube.com/watch?v=nhC5Y2CXWek">PatchKit Tutorial</a> by <a href="https://www.youtube.com/channel/UCJRwb5W4ZzG43J5_dViL6Fw">Tuto Unity FR</a> (French with English subtitles)</li>
+</ul>
 
 <h2 id="creating-new-account">Creating new account</h2>
 
@@ -168,31 +174,28 @@
 
 <p>In this example there are two executables, but only one is located at the top-level position.</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>/game.exe
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>/game.exe
 /data.dat
 /tools/editor.exe
-</code></pre>
-</div>
+</code></pre></div></div>
 
 <p><strong>Example 2 - Good</strong></p>
 
 <p>Here’s a valid example of Mac OSX application.</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>/Game.app
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>/Game.app
 /Game.app/Contents/MacOS/Game
 /Game.app/Contents/Resources/data.dat
-</code></pre>
-</div>
+</code></pre></div></div>
 
 <p><strong>Example 3 - Bad</strong></p>
 
 <p>In this example there are two executable files at top-level position. PatchKit wouldn’t know which one is your main executable.</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>/editor.exe
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>/editor.exe
 /game.exe
 /data.dat
-</code></pre>
-</div>
+</code></pre></div></div>
 
 <h2 id="uploading-your-zip-file">Uploading your ZIP file</h2>
 
@@ -226,7 +229,7 @@ You will be asked if you’re absolutely sure about that. Think about it twice, 
     <div class="container">
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2 text-center m-t-lg m-b-lg">
-                <p><strong>Copyright © 2015 - 2017 Upsoft<br>All Rights Reserved.</strong><br/></p>
+                <p><strong>Copyright © 2015 - 2018 Upsoft<br>All Rights Reserved.</strong><br/></p>
             </div>
         </div>
     </div>
@@ -241,5 +244,14 @@ You will be asked if you’re absolutely sure about that. Think about it twice, 
 <script src="js/cbpAnimatedHeader.js"></script>
 <script src="js/wow.min.js"></script>
 <script src="js/inspinia.js"></script>
+<script src="https://wchat.freshchat.com/js/widget.js"></script>
+
+<script>
+  window.fcWidget.init({
+    token: "5ea18b71-f1be-4f82-b3ca-fa632269ba46",
+    host: "https://wchat.freshchat.com"
+  });
+</script>
+
 </body>
 </html>
