@@ -104,6 +104,7 @@
       <li><a href="#what-are-some-common-use-cases" id="markdown-toc-what-are-some-common-use-cases">What are some common use cases?</a></li>
       <li><a href="#what-is-the-difference-between-launcher-and-patcher" id="markdown-toc-what-is-the-difference-between-launcher-and-patcher">What is the difference between launcher and patcher?</a></li>
       <li><a href="#why-do-we-need-a-launcher" id="markdown-toc-why-do-we-need-a-launcher">Why do we need a launcher?</a></li>
+      <li><a href="#id-like-to-use-patchkit-behind-a-firewall-which-domain-names-and-ports-should-i-add-to-my-whitelist" id="markdown-toc-id-like-to-use-patchkit-behind-a-firewall-which-domain-names-and-ports-should-i-add-to-my-whitelist">I’d like to use PatchKit behind a firewall. Which domain names and ports should I add to my whitelist?</a></li>
     </ul>
   </li>
 </ul>
@@ -188,6 +189,22 @@
 <h2 id="why-do-we-need-a-launcher">Why do we need a launcher?</h2>
 
 <p><strong>Launcher</strong> allows us to release any potential updates for the patcher. It doesn’t use any patching algorithms to update the patcher - it simply redownloads the whole patcher to <strong>keep it as simple as possible.</strong></p>
+
+<h2 id="id-like-to-use-patchkit-behind-a-firewall-which-domain-names-and-ports-should-i-add-to-my-whitelist">I’d like to use PatchKit behind a firewall. Which domain names and ports should I add to my whitelist?</h2>
+
+<p>Basically you should whitelist all <code class="highlighter-rouge">*.patchkit.net</code> domains (using a wildcard). Make sure to open the following ports:</p>
+
+<ul>
+  <li>Outgoing TCP 80</li>
+  <li>Outgoing TCP 443</li>
+</ul>
+
+<p><em>It’s highly recommended</em> to open these ports as well for the best performance possible:</p>
+
+<ul>
+  <li>Outgoing TCP 9292 to any *.patchkit.net</li>
+  <li>Outgoing UDP 443 to any IP</li>
+</ul>
 
     </div>
 </section>
