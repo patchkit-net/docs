@@ -105,6 +105,7 @@
       <li><a href="#what-is-the-difference-between-launcher-and-patcher" id="markdown-toc-what-is-the-difference-between-launcher-and-patcher">What is the difference between launcher and patcher?</a></li>
       <li><a href="#why-do-we-need-a-launcher" id="markdown-toc-why-do-we-need-a-launcher">Why do we need a launcher?</a></li>
       <li><a href="#id-like-to-use-patchkit-behind-a-firewall-which-domain-names-and-ports-should-i-add-to-my-whitelist" id="markdown-toc-id-like-to-use-patchkit-behind-a-firewall-which-domain-names-and-ports-should-i-add-to-my-whitelist">I’d like to use PatchKit behind a firewall. Which domain names and ports should I add to my whitelist?</a></li>
+      <li><a href="#what-arguments-are-passed-by-launcherpatcher-to-my-application" id="markdown-toc-what-arguments-are-passed-by-launcherpatcher-to-my-application">What arguments are passed by launcher/patcher to my application?</a></li>
     </ul>
   </li>
 </ul>
@@ -205,6 +206,13 @@
   <li>Outgoing TCP 9292 to any *.patchkit.net</li>
   <li>Outgoing UDP 443 to any IP</li>
 </ul>
+
+<h2 id="what-arguments-are-passed-by-launcherpatcher-to-my-application">What arguments are passed by launcher/patcher to my application?</h2>
+
+<ol>
+  <li>Built-in arguments pairs starting with <code class="highlighter-rouge">+</code> character. It can look like <code class="highlighter-rouge">+key value</code>. If your application is relying on passed argument list, make sure to ignore these pairs.</li>
+  <li>Custom arguments provided by you. These are added right after built-in argument list.</li>
+</ol>
 
     </div>
 </section>
