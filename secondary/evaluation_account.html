@@ -82,92 +82,35 @@
 
 <ol class="breadcrumb">
   <li><a href="/">Home</a></li>
-  <li><a href="#">Debugging Launcher and Patcher</a></li>
+  <li><a href="#">Evaluation Account</a></li>
 </ol>
 
 <section id="content" class="container">
     <div class="row">
-        <h1 id="debugging-launcher-and-patcher">Debugging Launcher and Patcher</h1>
+        <h1 id="evaluation-account">Evaluation Account</h1>
 
-<h2 id="getting-the-logs">Getting the logs</h2>
+<p>PatchKit free evaluation account allows you to start using PatchKit immediately without the need of providing a credit card number or any other payment method. All you have to do is register and start using it.</p>
 
-<p>Launcher and Patcher logs are usually the first thing you should be looking into. Here’s the list of where Launcher and Patcher logs can be found.</p>
+<p>Evaluation account has some limitations though. While we’re not strictly limiting the time you can use it, there are some soft and hard limits you need to be aware.</p>
 
-<table>
-  <thead>
-    <tr>
-      <th>Operating System</th>
-      <th>Application</th>
-      <th>Location</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>Windows</td>
-      <td>launcher.exe</td>
-      <td>launcher-log.txt</td>
-    </tr>
-    <tr>
-      <td>Windows</td>
-      <td>patcher\Patcher.exe</td>
-      <td>patcher\Patcher_Data\output_log.txt</td>
-    </tr>
-    <tr>
-      <td>GNU/Linux</td>
-      <td>launcher</td>
-      <td>launcher-log.txt next to launcher binary</td>
-    </tr>
-    <tr>
-      <td>GNU/Linux</td>
-      <td>patcher/Patcher</td>
-      <td>~/.config/unity3d/UpSoft/PatchKit Patcher/Player.log</td>
-    </tr>
-    <tr>
-      <td>Mac OSX</td>
-      <td>Launcher.app</td>
-      <td>~/Library/Application Support/PatchKit/Apps/launcher-log.txt</td>
-    </tr>
-    <tr>
-      <td>Mac OSX</td>
-      <td>Launcher.app/Contents/Resources/patcher/Patcher.app</td>
-      <td>~/Library/Logs/Unity/Player.log</td>
-    </tr>
-  </tbody>
-</table>
+<h2 id="hard-limits">Hard limits</h2>
 
-<p>Watch out, since both launcher and patcher logs will get overwritten as soon as you start your game again. If you want to keep them (to send them to support@patchkit.net for example), you have to make copies.</p>
+<ul>
+  <li>3 Applications + 1 Patcher</li>
+  <li>1 License key collection</li>
+  <li>100 License keys limit</li>
+</ul>
 
-<h2 id="command-line-arguments">Command line arguments</h2>
+<h2 id="soft-limits">Soft limits</h2>
 
-<p>Patcher should be ran with following command line arguments:</p>
+<ul>
+  <li>150 GB of monthly data transfer</li>
+  <li>For continuous usage it is required to switch to a higher plan</li>
+</ul>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>patcher.exe --installdir "dir" --secret "secret" --readable
-</code></pre></div></div>
+<p>Our service does not enforce soft limits. You can distribute more than 150 GB of data if you need to try it out, but you may be asked to switch to a higher plan.</p>
 
-<p>You can try and launch it with your custom <em>installdir</em> and <em>secret</em>. Remember to always pass <em>readable</em>, because otherwise patcher will expect an encoded secret instead of a string.</p>
-
-<h2 id="environment-variables">Environment variables</h2>
-
-<p>Patcher behavior can be overriden by setting up those environment variables.</p>
-
-<table>
-  <thead>
-    <tr>
-      <th>Variable Name</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>PK_PATCHER_FORCE_SECRET</td>
-      <td>Set it to application secret to forcefully change what game should be downloaded.</td>
-    </tr>
-    <tr>
-      <td>PK_PATCHER_FORCE_VERSION</td>
-      <td>Change the latest game version to given one. This is internal version id starting from 1.</td>
-    </tr>
-  </tbody>
-</table>
+<p>Would you like to switch to a higher plan or do you have any questions regarding those limits? Please <a href="/contact.html">contact us</a>.</p>
 
     </div>
 </section>
