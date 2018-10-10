@@ -1,4 +1,4 @@
 {
   "version": 1,
-  "questions": [{"title":"First question","answer":"First answer"},{"title":"Second question","answer":"Second answer"}]
+  "questions": [{"title":"Where can I input my billing information?","answer":"Navigate to the panel, go to your Account settings and then look for Billing Information tab. You will find there a form to fill in.\n"},{"title":"Are there custom plans available?","answer":"Yes, we're offering custom plans. We recommend using our [configurator form](https://panel.patchkit.net/pricing.html) or contacting us directly by [email](mailto:contact@patchkit.net)\n"}]
 }
