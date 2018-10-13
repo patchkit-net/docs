@@ -99,6 +99,71 @@
 
 <p>Instead of paying more for the data transfer just in case of higher usage, we introduce a feature called Spike Guard. It nullifies your data usage up to 3 times over your desired limit.</p>
 
+<h3 id="limitations">Limitations</h3>
+
+<p>Please note that Spike Guard will be enabled only if on your previous month data transfer usage is within your standard limits. It means that if you exceed your initial data transfer in two months in a row, Spike Guard won’t reduce your second-month expanses. Its functionality gets back to normal if any following month data transfer gets back to normal.</p>
+
+<p>Below you may find an example table of how it may work for an account with 10 TiB data transfer plan.</p>
+
+<table>
+  <tbody>
+    <tr>
+      <td>Month</td>
+      <td>Transfered Data</td>
+      <td>Spike Guard</td>
+      <td>Overuse</td>
+    </tr>
+    <tr>
+      <td>January</td>
+      <td>5 TiB</td>
+      <td>Off (under limit)</td>
+      <td>0 TiB</td>
+    </tr>
+    <tr>
+      <td>February</td>
+      <td>15 TiB</td>
+      <td>-5 TiB</td>
+      <td>0 TiB</td>
+    </tr>
+    <tr>
+      <td>March</td>
+      <td>8 TiB</td>
+      <td>Off (colling down)</td>
+      <td>0 TiB</td>
+    </tr>
+    <tr>
+      <td>April</td>
+      <td>20 TiB</td>
+      <td>-10 TiB</td>
+      <td>0 TiB</td>
+    </tr>
+    <tr>
+      <td>May</td>
+      <td>20 TiB</td>
+      <td>Off (cooling down)</td>
+      <td>10 TiB</td>
+    </tr>
+    <tr>
+      <td>June</td>
+      <td>15 TiB</td>
+      <td>Off (cooling down)</td>
+      <td>5 TiB</td>
+    </tr>
+    <tr>
+      <td>July</td>
+      <td>5 TiB</td>
+      <td>Off (under limit)</td>
+      <td>0 TiB</td>
+    </tr>
+    <tr>
+      <td>August</td>
+      <td>45 TiB</td>
+      <td>-30 TiB</td>
+      <td>5 TiB</td>
+    </tr>
+  </tbody>
+</table>
+
     </div>
 </section>
 
