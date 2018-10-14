@@ -96,9 +96,9 @@
   <li>Publish new app version</li>
 </ul>
 
-<p>The most important PatchKit tools feature is uploading &amp; publishing newly created version at once. For this task you can use <code class="highlighter-rouge">patchkit-tools make-version</code> command with or without parameters.</p>
+<p>One of most critical PatchKit Tools features is uploading &amp; publishing newly created version at once. For this task, you may use <code class="highlighter-rouge">patchkit-tools make-version</code> command with or without parameters.</p>
 
-<h1 id="prerequirements">Prerequirements</h1>
+<h2 id="prerequirements">Prerequirements</h2>
 
 <p>You need to have at least basic knowledge of command line (Windows) or bash (Mac OSX, Linux). If you don’t know how to work with those tools, please read the resources listed below:</p>
 <ul>
@@ -111,7 +111,7 @@
 
 <ol>
   <li>Download PatchKit tools distribution for your operating system from <a href="https://github.com/patchkit-net/patchkit-tools/releases/latest">GitHub</a>.</li>
-  <li>Unzip it it any suitable directory.</li>
+  <li>Unzip it into any suitable directory.</li>
   <li>(Optionally) Set up your PATH variable to point to that directory. (<a href="http://www.howtogeek.com/118594/how-to-edit-your-system-path-for-easy-command-line-access/">Windows</a>, <a href="https://www.cyberciti.biz/faq/appleosx-bash-unix-change-set-path-environment-variable/">OSX</a> and <a href="http://stackoverflow.com/questions/14637979/how-to-permanently-set-path-on-linux">Linux</a> instructions)</li>
 </ol>
 
@@ -154,7 +154,7 @@
 
 <p><strong>make-version examples</strong></p>
 
-<p>Adding new version</p>
+<p>Adding a new version</p>
 <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>patchkit-tools make-version <span class="nt">-s</span> aa11bb22cc33dd55ee66ff77gg88hh99 <span class="nt">-a</span> zz99yy88xx77ww66vv55uu44tt33ss22rr11 <span class="nt">-l</span> “Second version” <span class="nt">-f</span> BuildFolder
 </code></pre></div></div>
 
@@ -163,6 +163,48 @@
 </code></pre></div></div>
 
 <p>Type <code class="highlighter-rouge">patchkit-tools make-version --help</code> to learn syntax.</p>
+
+<h2 id="working-with-channels">Working with channels</h2>
+
+<p>Starting from version 3.0.0, PatchKit Tools are supporting <a href="/additional_features.html#channels">Channels</a>. Here you can find how to work with those.</p>
+
+<p>If you’re not sure how channels are working, please visit <a href="/channels.html">Channels</a> documentation page.</p>
+
+<h3 id="uploading-a-version">Uploading a version</h3>
+
+<p>Channels are working very similar to regular applications. To upload a new version using PatchKit Tools, you need to upload and publish it to a <em>channel group</em> as you would for any other application. Please note that publishing the version to a <em>channel group</em> won’t publish it to any specific channel. Instead, it will persist it so it can be linked later.</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>patchkit-tools make-version -a API_KEY -s SECRET -l "1.0" -f path/to/build/folder
+</code></pre></div></div>
+
+<h3 id="linking-version-to-a-channel">Linking version to a channel</h3>
+
+<p>When a version is persisted in a group, you may link and publish it using <code class="highlighter-rouge">channel-make-version</code>. It works very similar to standard <code class="highlighter-rouge">make-version</code>, but uploading your local files to PatchKit servers, it links your group version just as you would do using the Web UI.</p>
+
+<p><strong>channel-make-version basic syntax</strong></p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>patchkit-tools channel-make-version -s &lt;secret&gt; -a &lt;api_key&gt; -l &lt;label&gt;
+</code></pre></div></div>
+
+<ul>
+  <li>api_key - your API Key</li>
+  <li>secret - your channel secret</li>
+  <li>label - the label of a new version created on your channel</li>
+</ul>
+
+<p>This basic command will create and link the latest persisted group version for you. It’s the safest option because you may navigate to <em>PatchKit Panel</em>, validate it, and publish when needed.</p>
+
+<p><strong>Selecting a version to link to</strong></p>
+
+<p>You may want to link to a different than the latest version. To do that, you can pass <code class="highlighter-rouge">--group-version &lt;version_id&gt;</code> parameter. If you don’t know what version ID to import, use <code class="highlighter-rouge">list-versions</code> with your group secret to get a nice view of all your versions data.</p>
+
+<p><strong>Providing a changelog</strong></p>
+
+<p>You can easily provide a changelog using <code class="highlighter-rouge">--changelog &lt;content&gt;</code> or <code class="highlighter-rouge">--changelog-file &lt;path&gt;</code>.</p>
+
+<p><strong>Publishing automatically</strong></p>
+
+<p>To get your version published right after the linkage, pass the <code class="highlighter-rouge">--publish</code> parameter.</p>
 
     </div>
 </section>
