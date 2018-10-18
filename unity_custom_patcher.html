@@ -87,31 +87,31 @@
 
 <section id="content" class="container">
     <div class="row">
-        <h1 id="unity-custom-patcher">Unity Custom Patcher</h1>
-
-<p>Patcher is the first thing your player sees when he wants to play the game. It downloads your game when launched for the first time and it updates it automatically whenever a new version is available.</p>
+        <h1>Unity Custom Patcher</h1>
+        
+        <p>Patcher is the first thing your player sees when he wants to play the game. It downloads your game when launched for the first time, and it updates it automatically whenever a new version is available.</p>
 
 <p><img src="/img/unity_custom_patcher/patcher_example.png" alt="Example patcher" /></p>
 
-<p>It’s an important thing for you to be able to customize the patcher in any way required. That’s why <em>PatchKit Patcher</em> is available for anyone to download and customize at will.</p>
+<p>It’s an essential thing for you to be able to customize the patcher in any way required. That’s why <em>PatchKit Patcher</em> is available for anyone to download and customize at will.</p>
 
 <h2 id="before-you-start">Before you start</h2>
 
-<p>Before you start using your patcher you first have to create your account and set up your game. You will find out how to do that in <a href="getting_started.html">Getting Started</a> page. As soon as you did that, please proceed further.</p>
+<p>Before you start using your patcher, you first have to create your account and set up your game. You may find out how to do that in <a href="getting_started.html">Getting Started</a> page. As soon as you did that, please proceed further.</p>
 
 <h2 id="getting-hands-on-the-project">Getting hands on the project</h2>
 
-<p>Currently <em>PatchKit Patcher</em> is a <a href="https://unity3d.com">Unity</a> project. This means that you are required to have at least basic <em>Unity</em> and <a href="https://unity3d.com/learn/tutorials/topics/user-interface-ui">Unity UI</a> knowledge.</p>
+<p>Currently <em>PatchKit Patcher</em> is a <a href="https://unity3d.com">Unity</a> project. It means that you are required to have at least fundamental <em>Unity</em> and <a href="https://unity3d.com/learn/tutorials/topics/user-interface-ui">Unity UI</a> knowledge.</p>
 
 <p>You can get the project source files from <a href="https://github.com/patchkit-net/patchkit-patcher-unity/releases/latest">GitHub</a>.</p>
 
-<p>The project has been created and tested with <em>Unity 5.3.4</em>. We highly recommend to use that particular version too. You can get it through <a href="https://unity3d.com/get-unity/download/archive">Unity Archive</a>. If you have a newer Unity version installed, you don’t have to uninstall it, just follow <a href="https://support.unity3d.com/hc/en-us/articles/210001066-Can-I-activate-more-than-one-version-of-Unity-on-the-same-machine-">these instructions</a>.</p>
+<p>The project has been created and tested with <em>Unity 5.3.4</em>. We highly recommend using that particular version too. You can get it through <a href="https://unity3d.com/get-unity/download/archive">Unity Archive</a>. If you have a newer Unity version installed, you don’t have to uninstall it, follow <a href="https://support.unity3d.com/hc/en-us/articles/210001066-Can-I-activate-more-than-one-version-of-Unity-on-the-same-machine-">these instructions</a>.</p>
 
 <h2 id="making-changes">Making changes</h2>
 
 <h3 id="basic-look--feel">Basic look &amp; feel</h3>
 
-<p><strong>Before starting customization of your patcher, make sure to make a copy of the Patcher scene and do all the modifications on that new scene. If you modify the supplied scene, any asset upgrade will overwrite your changes!</strong></p>
+<p><strong>Before starting customization of your patcher, make sure to make a copy of the Patcher scene and do all the modifications on that new scene. If you modify the supplied scene, any asset upgrade overwrites your changes!</strong></p>
 
 <p>The patcher layout is done entirely in Unity UI. Feel free to change it however you want, but make sure to keep all the attached scripts in place.</p>
 
@@ -121,19 +121,19 @@
 
 <h2 id="building">Building</h2>
 
-<p>The patcher can be built exactly the same way as any other Unity project:</p>
+<p>The patcher can be built the same way as any other Unity project:</p>
 
 <ol>
   <li>Open <strong>File / Build Settings</strong> from the main menu.</li>
   <li>Choose <strong>PC, Mac &amp; Linux Standalone</strong> as a Platform.</li>
-  <li>Choose your <strong>Target Platform</strong> and <strong>Architecture</strong>. IMPORTANT: For Mac you have to choose <strong>x86_64</strong> as <strong>Architecture</strong>. <sup>1</sup></li>
+  <li>Choose your <strong>Target Platform</strong> and <strong>Architecture</strong>. IMPORTANT: For Mac, you have to choose <strong>x86_64</strong> as <strong>Architecture</strong>. <sup>1</sup></li>
   <li>Make sure that <strong>Development Build</strong> is turned off.</li>
   <li>Click on the <strong>Build</strong> button and choose your target build location.</li>
 </ol>
 
-<p><sup>1</sup> - If you do otherwise, the patcher may crash shortly after the start or it won’t work correctly.</p>
+<p><sup>1</sup> - If you do otherwise, the patcher may crash shortly after the start, or it won’t work correctly.</p>
 
-<p>It’s not important how you name your executable. Information about it will be stored in <strong>patcher.manifest</strong> file.</p>
+<p>It’s not important how you name your executable. Information about it is stored in <strong>patcher.manifest</strong> file.s</p>
 
 <h2 id="uploading">Uploading</h2>
 
@@ -142,7 +142,7 @@
 <ol>
   <li>Navigate to <a href="http://panel.patchkit.net/apps">publisher panel applications page</a>.</li>
   <li>Click the <strong>New Patcher</strong> button.</li>
-  <li>In new application form, name your patcher (e.g. <code class="highlighter-rouge">My Patcher Windows 64</code>) and click the <strong>Create</strong> button. Shortly after you should be able to see your new application.</li>
+  <li>In the new application form, name your patcher (e.g.,<code class="highlighter-rouge">My Patcher Windows 64</code>) and click the <strong>Create</strong> button. Shortly after you should be able to see your new application.</li>
   <li>Now click the <strong>New Version</strong> button.</li>
   <li>Edit the new version <strong>Label</strong> to, let’s say, <code class="highlighter-rouge">1.0</code>.</li>
   <li>Click the <strong>Upload Content</strong> button.</li>
@@ -152,11 +152,11 @@
   <li>If there are no errors, click the <strong>Publish</strong> button.</li>
   <li>After the version is published, navigate to your game’s page.</li>
   <li>Inside <strong>Configuration</strong> panel look for <strong>Custom Patcher</strong> field. Click on the <strong>Edit</strong> button right next to it.</li>
-  <li>From the dropdown select your new patcher.</li>
+  <li>From the drop-down select your new patcher.</li>
   <li>Click on the <strong>Save</strong> button.</li>
 </ol>
 
-<p>From now on your new application will use your custom patcher instead of the default one.</p>
+<p>From now on your new application is using your custom patcher instead of the default one.</p>
 
 <h2 id="updating">Updating</h2>
 
@@ -170,16 +170,16 @@
 
 <p>Some releases may include <em>migration guidelines</em> since new changes can break yours.</p>
 
-<p>Updating custom patcher is the same process as updating every application - you just need to upload a new version to your patcher application and publish it. Old patcher versions will be automatically replaced by the new version on the next start of the launcher.</p>
+<p>Updating custom patcher is the same process as updating every application - you need to upload a new version to your patcher application and publish it. Old patcher versions are replaced by the new version on the next start of the launcher.</p>
 
 <h2 id="troubleshooting">Troubleshooting</h2>
 
 <h3 id="the-patcher-crashes-right-away">The patcher crashes right away</h3>
 
-<p>First look into the <a href="debugging_patcher.html">logs</a>. A significant error message should be at the end of it. Usually there may be two reasons:</p>
+<p>First look into the <a href="debugging_patcher.html">logs</a>. A significant error message should be at the end of it. Usually, there may be two reasons:</p>
 
 <ol>
-  <li>You’re trying to launch patcher directly - this is not allowed. You can only test it inside <em>Unity</em> editor. When it’s build, you have to upload it to PatchKit for further testing.</li>
+  <li>You’re trying to launch patcher directly - this is not allowed. You can only test it inside <em>Unity</em> editor. When it’s built, you have to upload it to PatchKit for further testing.</li>
   <li>You did change application secret in inspector - For security reasons you have to reset application secret to default value which currently is <code class="highlighter-rouge">ac20fc855b75a7ea5f3e936dfd38ccd8</code>.</li>
 </ol>
 

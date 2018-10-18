@@ -1112,3 +1112,6 @@ h2[id]::before,h3[id]::before {
 .bs-callout-info h4 {
     color: #5bc0de;
 }
+#markdown-toc {
+    margin-bottom: 30px !important;
+}

@@ -87,74 +87,72 @@
 
 <section id="content" class="container">
     <div class="row">
-        <ul class="section-nav">
-<li class="toc-entry toc-h2"><a href="#how-license-keys-are-working">How license keys are working?</a></li>
-<li class="toc-entry toc-h2"><a href="#enabling-license-keys">Enabling license keys</a></li>
-<li class="toc-entry toc-h2"><a href="#setup-overview">Setup Overview</a></li>
-<li class="toc-entry toc-h2"><a href="#distributing-collection">Distributing collection</a></li>
-<li class="toc-entry toc-h2"><a href="#distributing-individual-keys">Distributing individual keys</a></li>
-<li class="toc-entry toc-h2"><a href="#blocking-collections-and-keys">Blocking collections and keys</a></li>
-<li class="toc-entry toc-h2"><a href="#securing-the-game-from-being-played">Securing the game from being played</a>
-<ul>
-<li class="toc-entry toc-h3"><a href="#reading-the-license-key">Reading the license key</a></li>
-<li class="toc-entry toc-h3"><a href="#verifying-the-license-key">Verifying the license key</a></li>
-<li class="toc-entry toc-h3"><a href="#tolerance-to-errors">Tolerance to errors</a></li>
+        <h1>License Keys</h1>
+        
+        <ul id="markdown-toc">
+  <li><a href="#how-license-keys-are-working" id="markdown-toc-how-license-keys-are-working">How license keys are working?</a></li>
+  <li><a href="#enabling-license-keys" id="markdown-toc-enabling-license-keys">Enabling license keys</a></li>
+  <li><a href="#setup-overview" id="markdown-toc-setup-overview">Setup Overview</a></li>
+  <li><a href="#distributing-collection" id="markdown-toc-distributing-collection">Distributing collection</a></li>
+  <li><a href="#distributing-individual-keys" id="markdown-toc-distributing-individual-keys">Distributing individual keys</a></li>
+  <li><a href="#blocking-collections-and-keys" id="markdown-toc-blocking-collections-and-keys">Blocking collections and keys</a></li>
+  <li><a href="#securing-the-game-from-being-played" id="markdown-toc-securing-the-game-from-being-played">Securing the game from being played</a>    <ul>
+      <li><a href="#reading-the-license-key" id="markdown-toc-reading-the-license-key">Reading the license key</a></li>
+      <li><a href="#verifying-the-license-key" id="markdown-toc-verifying-the-license-key">Verifying the license key</a></li>
+      <li><a href="#tolerance-to-errors" id="markdown-toc-tolerance-to-errors">Tolerance to errors</a>        <ul>
+          <li><a href="#missing-patcher-data-location-parameter" id="markdown-toc-missing-patcher-data-location-parameter">Missing +patcher-data-location parameter</a></li>
+          <li><a href="#invalid-app_datajson-content" id="markdown-toc-invalid-app_datajson-content">Invalid app_data.json content</a></li>
+          <li><a href="#keys-server-not-reachable" id="markdown-toc-keys-server-not-reachable">Keys server not reachable</a></li>
+        </ul>
+      </li>
+    </ul>
+  </li>
 </ul>
-</li>
-</ul><h1 id="license-keys">License Keys</h1>
 
 <p>PatchKit allows you to use license keys with your games. If you’re looking for a way of limiting who should be allowed to play your game, license keys may be the best available option.</p>
 
-<p><img src="/img/license_keys/question.png" alt="Patcher asking for a license key"></p>
+<p><img src="/img/license_keys/question.png" alt="Patcher asking for a license key" /></p>
 
-<h2 id="how-license-keys-are-working">
-<a id="how-license-keys-are-working" class="anchor" href="#how-license-keys-are-working" aria-hidden="true"><span class="octicon octicon-link"></span></a>How license keys are working?</h2>
+<h2 id="how-license-keys-are-working">How license keys are working?</h2>
 
-<p>As soon as license keys are enabled for your game, your players will be prompted to enter a license key by the <em>Patcher</em>. Failing to do so will prevent the player from downloading the game.</p>
+<p>As soon as license keys are enabled for your game, your players will be prompted to enter a license key by the <em>Patcher</em>. Failing to do so prevents the player from downloading the game.</p>
 
-<p>As you can clearly see, having license keys enabled for your game will only prevent the player from downloading your game and its updates. As soon as your game is on the hard drive, it can be played without the need of having a valid license key if the player is smart enough to go into the installation directory and launch the game from its executable instead of using the <em>Launcher</em>. We call this approach a non-intrusive DRM, since it requires the player to be fair without any negative impact on the game’s mechanics.</p>
+<p>As you can see, having license keys enabled for your game only prevents the player from downloading your game and its updates. As soon as your game is on the hard drive, it can be played without the need of having a valid license key if the player is smart enough to go into the installation directory and launch the game from its executable instead of using the <em>Launcher</em>. We call this approach a non-intrusive DRM since it requires the player to be fair without any negative impact on the game’s mechanics.</p>
 
 <p>If you find this method of validation insufficient, it’s recommended to implement additional keys check inside of your game’s code. Details of how to do that can be found inside <a href="#securing-the-game-from-being-played">Securing the game from being played</a> section.</p>
 
-<h2 id="enabling-license-keys">
-<a id="enabling-license-keys" class="anchor" href="#enabling-license-keys" aria-hidden="true"><span class="octicon octicon-link"></span></a>Enabling license keys</h2>
+<h2 id="enabling-license-keys">Enabling license keys</h2>
 
 <p>License keys are disabled for all new games by default. To enable license keys:</p>
 
 <ol>
   <li>Go to <a href="http://panel.patchkit.net/apps">Applications</a> listing.</li>
   <li>Click on the name of your game.</li>
-  <li>Click on the <em>Keys</em> option - itcan be found on the upper navigation bar.</li>
+  <li>Click on the <em>Keys</em> option - it can be found on the upper navigation bar.</li>
   <li>Click on the <em>Enable License Keys</em> button.</li>
 </ol>
 
-<h2 id="setup-overview">
-<a id="setup-overview" class="anchor" href="#setup-overview" aria-hidden="true"><span class="octicon octicon-link"></span></a>Setup Overview</h2>
+<h2 id="setup-overview">Setup Overview</h2>
 
 <div class="bs-callout bs-callout-info">
   <h4>Info</h4>
-  You will be prompted on whether you are absolutely sure to enable license keys. Enabling license keys means that no one without a license key will be able to download or upgrade your game.
+  You will be prompted on whether you are sure to enable license keys. Enabling license keys means that no one without a license key can download or upgrade your game.
 </div>
 
-<p><img src="/img/license_keys/overview.png" alt="License keys collections table"></p>
+<p><img src="/img/license_keys/overview.png" alt="License keys collections table" /></p>
 
-<p>License keys can be split into <strong>collections</strong>. <em>Collection</em> is a named set of license keys and you may think of it as a box with keys created for a certain purpose. It’s a lot easier to work with collections rather than with individual keys.</p>
+<p>License keys can be split into <strong>collections</strong>. <em>Collection</em> is a named set of license keys, and you may think of it as a box with keys created for a particular purpose. It’s a lot easier to work with collections rather than with individual keys.</p>
 
 <p>There are several properties that <em>collections</em> may have:</p>
 
 <ol>
-  <li>
-<strong>Distributed</strong> - This flag tells you whether the collection has been distributed. <strong>This flag is set manually and exists only for organizational purposes</strong>.</li>
-  <li>
-<strong>In Use</strong> - The number of keys that have been used at least once. When a key has been used more than once, this number won’t change.</li>
-  <li>
-<strong>Blocked</strong> - Tells whether this <em>collection</em> has been blocked from further use. Blocked keys can no longer be used by players. You can always unblock any previously blocked collections.</li>
-  <li>
-<strong>Status</strong> - Keys generation status. If you order a large number of keys, you will have to wait some time before the collection is ready to be used.</li>
+  <li><strong>Distributed</strong> - This flag tells you whether the collection has been distributed. <strong>This flag is set manually and exists only for organizational purposes</strong>.</li>
+  <li><strong>In Use</strong> - The number of keys that have been used at least once. When a key has been used more than once, this number won’t change.</li>
+  <li><strong>Blocked</strong> - Tells whether this <em>collection</em> has been blocked from further use. Players can no longer use blocked keys. You can always unblock any previously blocked collections.</li>
+  <li><strong>Status</strong> - Keys generation status. If you order a large number of keys, you will have to wait sometime before the collection is ready to be used.</li>
 </ol>
 
-<h2 id="distributing-collection">
-<a id="distributing-collection" class="anchor" href="#distributing-collection" aria-hidden="true"><span class="octicon octicon-link"></span></a>Distributing collection</h2>
+<h2 id="distributing-collection">Distributing collection</h2>
 
 <p>There are two ways to distribute keys from a collection. You can:</p>
 
@@ -165,47 +163,41 @@
 
 <div class="bs-callout bs-callout-info">
   <h4>Info</h4>
-  PatchKit will not distribute your keys in any particular way. If you want your keys to be delivered to your players, you have to do it on your own. Most probably you may want to integrate it with your game store.
+  PatchKit won't distribute your keys in any particular way. If you want your keys to be delivered to your players, you have to do it on your own. Most probably you may want to integrate it with your game store.
 </div>
 
-<p>As soon as a <em>collection</em> or a <em>license key</em> is distributed, it’s recommended to set <strong>distributed</strong> flag to <em>true</em>, so you don’t distribute it twice by mistake. To mark collection as <em>distributed</em>, click the <em>Action</em> button and then select <em>Mark as distributed</em> from the dropdown menu.</p>
+<p>As soon as a <em>collection</em> or a <em>license key</em> is distributed, it’s recommended to set <strong>distributed</strong> flag to <em>true</em>, so you don’t distribute it twice by mistake. To mark the collection as <em>distributed</em>, click the <em>Action</em> button and then select <em>Mark as distributed</em> from the drop-down menu.</p>
 
-<p><img src="/img/license_keys/collection_actions.png" alt="Collection actions dropdown menu"></p>
+<p><img src="/img/license_keys/collection_actions.png" alt="Collection actions dropdown menu" /></p>
 
-<h2 id="distributing-individual-keys">
-<a id="distributing-individual-keys" class="anchor" href="#distributing-individual-keys" aria-hidden="true"><span class="octicon octicon-link"></span></a>Distributing individual keys</h2>
+<h2 id="distributing-individual-keys">Distributing individual keys</h2>
 
 <p>If you’d like to distribute a small amount of <em>license keys</em>, go into a collection and:</p>
 
 <ol>
-  <li>Select keys you want to mark as distributed using the checkbox on the left.
-<img src="/img/license_keys/checkbox.png" alt="License key checkbox">
-</li>
+  <li>Select the keys you want to mark as distributed using the checkbox on the left.
+<img src="/img/license_keys/checkbox.png" alt="License key checkbox" /></li>
   <li>Click on the <em>With selected…</em> button that can be found at the bottom of the page.</li>
-  <li>From the dropdown menu choose <em>Mark as distributed</em> option.
-<img src="/img/license_keys/with_selected.png" alt="License key checkbox">
-</li>
+  <li>From the drop-down menu choose <em>Mark as distributed</em> option.
+<img src="/img/license_keys/with_selected.png" alt="License key checkbox" /></li>
 </ol>
 
-<h2 id="blocking-collections-and-keys">
-<a id="blocking-collections-and-keys" class="anchor" href="#blocking-collections-and-keys" aria-hidden="true"><span class="octicon octicon-link"></span></a>Blocking collections and keys</h2>
+<h2 id="blocking-collections-and-keys">Blocking collections and keys</h2>
 
-<p>Collections and keys can be blocked from further use in the manner similar to marking collections and keys as distributed. Note that blocking keys and collections will have a real effect on the players by forbidding them from downloading the game and updates.</p>
+<p>Collections and keys can be blocked from further use in the manner similar to marking collections and keys as distributed. Note that blocking keys and collections have a real effect on the players by forbidding them from downloading the game and updates.</p>
 
-<h2 id="securing-the-game-from-being-played">
-<a id="securing-the-game-from-being-played" class="anchor" href="#securing-the-game-from-being-played" aria-hidden="true"><span class="octicon octicon-link"></span></a>Securing the game from being played</h2>
+<h2 id="securing-the-game-from-being-played">Securing the game from being played</h2>
 
-<p>License keys are preventing from game from being downloaded by default, as soon as it resides on the hard drive it can be played without any additional checks. Here you will find the instructions on how to make sure that player won’t be able to play the game without a valid license key.</p>
+<p>License keys are preventing the game from being downloaded by default, as soon as it resides on the hard drive it can be played without any additional checks. Here you can find the instructions on how to make sure that player won’t be able to play the game without a valid license key.</p>
 
-<h3 id="reading-the-license-key">
-<a id="reading-the-license-key" class="anchor" href="#reading-the-license-key" aria-hidden="true"><span class="octicon octicon-link"></span></a>Reading the license key</h3>
+<h3 id="reading-the-license-key">Reading the license key</h3>
 
-<p>You can read the entered license key from your game. <em>Patcher</em> will pass to your game an argument that will look similarly to this:</p>
+<p>You can read the entered license key from your game. <em>Patcher</em> is passing to your game an argument that looks similar to this:</p>
 
 <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>+patcher-data-location app_data.json
 </code></pre></div></div>
 
-<p>The <code class="highlighter-rouge">app_data.json</code> file contents looks like this:</p>
+<p>The <code class="highlighter-rouge">app_data.json</code> file contents look like this:</p>
 
 <div class="language-json highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">{</span><span class="w">
   </span><span class="s2">"file_id"</span><span class="p">:</span><span class="s2">"patcher_data"</span><span class="p">,</span><span class="w">
@@ -222,10 +214,9 @@
   License key encryption is a feature that is not available yet. By default, it will always be set to <code class="highlighter-rouge">none</code> and you will be able to set the encryption method in the game's configuration panel.
 </div>
 
-<h3 id="verifying-the-license-key">
-<a id="verifying-the-license-key" class="anchor" href="#verifying-the-license-key" aria-hidden="true"><span class="octicon octicon-link"></span></a>Verifying the license key</h3>
+<h3 id="verifying-the-license-key">Verifying the license key</h3>
 
-<p>To verify a license key you need one more thing - your application secret. Make sure to hard-code it within your game. Then do a GET request to:</p>
+<p>To verify a license key, you need one more thing - your application secret. Make sure to hard-code it within your game. Then make a GET request to:</p>
 
 <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>https://keys2.patchkit.net/v2/keys/LICENSE_KEY?app_secret=APP_SECRET
 </code></pre></div></div>
@@ -234,23 +225,22 @@
 
 <div class="bs-callout bs-callout-info">
   <h4>Info</h4>
-  Depending on the condition of the network, it may take up to 15 seconds to get a response from the license keys server. With good network connection it should not take more than 3 seconds.
+  Depending on the condition of the network, it may take up to 15 seconds to get a response from the license keys server. With a good network connection, it should not take more than 3 seconds.
 </div>
 
-<h3 id="tolerance-to-errors">
-<a id="tolerance-to-errors" class="anchor" href="#tolerance-to-errors" aria-hidden="true"><span class="octicon octicon-link"></span></a>Tolerance to errors</h3>
+<h3 id="tolerance-to-errors">Tolerance to errors</h3>
 
 <h4 id="missing-patcher-data-location-parameter">Missing +patcher-data-location parameter</h4>
 
-<p>If you cannot find this parameter within your application arguments,the player could’ve launched the game directly from the executable. You can try to locate this file manually or display an error with a request to start the game using the <em>Launcher</em>.</p>
+<p>If you cannot find this parameter within your application arguments, the player could’ve launched the game directly from the executable. You can try to locate this file manually or display an error with a request to start the game using the <em>Launcher</em>.</p>
 
 <h4 id="invalid-app_datajson-content">Invalid app_data.json content</h4>
 
-<p>If the content of <code class="highlighter-rouge">app_data.json</code> file is different that you’ve expected,somebody might’ve tried to point your game to a different file. You should terminate the game immediately and inspect the cause.</p>
+<p>If the content of <code class="highlighter-rouge">app_data.json</code> file is different than you’ve expected, somebody might’ve tried to point your game to a different file. You should terminate the game immediately and inspect the cause.</p>
 
 <h4 id="keys-server-not-reachable">Keys server not reachable</h4>
 
-<p>Usually a lack of Internet connection may be the reason. Then it’s up to you to decide if you will allow the player to play the game. It may be a good approach to allow to play the game offline at all times or for a limited amount of time.</p>
+<p>Usually, a lack of Internet connection may be the reason. Then it’s up to you to decide if you allow the player to play the game. It may be a right approach to allow to play the game offline at all times or for a limited amount of time.</p>
 
 
     </div>

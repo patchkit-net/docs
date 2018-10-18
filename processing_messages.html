@@ -87,69 +87,66 @@
 
 <section id="content" class="container">
     <div class="row">
-        <h1 id="processing-messages">Processing Messages</h1>
-
-<p>When your content processing is finished, you may be notified of progressing warnings or errors. On this page you will learn more details about both of them.</p>
+        <h1>Processing Messages</h1>
+        
+        <p>When your content processing is finished, you may be notified of progressing warnings or errors. On this page, you may learn more details about both of them.</p>
 
 <ul id="markdown-toc">
-  <li><a href="#processing-messages" id="markdown-toc-processing-messages">Processing Messages</a>    <ul>
-      <li><a href="#your-patch-file-size-is-nearly-the-same-as-your-content-file-size" id="markdown-toc-your-patch-file-size-is-nearly-the-same-as-your-content-file-size">Your patch file size is nearly the same as your content file size</a></li>
-      <li><a href="#cannot-find-the-executable-file" id="markdown-toc-cannot-find-the-executable-file">Cannot find the executable file</a></li>
-      <li><a href="#application-platform-mismatch" id="markdown-toc-application-platform-mismatch">Application platform mismatch</a></li>
-      <li><a href="#compression-method-set-to-lz4-or-lz4hc-unity-builds" id="markdown-toc-compression-method-set-to-lz4-or-lz4hc-unity-builds">Compression Method set to LZ4 or LZ4HC (Unity builds)</a></li>
-    </ul>
-  </li>
+  <li><a href="#your-patch-file-size-is-nearly-the-same-as-your-content-file-size" id="markdown-toc-your-patch-file-size-is-nearly-the-same-as-your-content-file-size">Your patch file size is nearly the same as your content file size</a></li>
+  <li><a href="#cannot-find-the-executable-file" id="markdown-toc-cannot-find-the-executable-file">Cannot find the executable file</a></li>
+  <li><a href="#application-platform-mismatch" id="markdown-toc-application-platform-mismatch">Application platform mismatch</a></li>
+  <li><a href="#compression-method-set-to-lz4-or-lz4hc-unity-builds" id="markdown-toc-compression-method-set-to-lz4-or-lz4hc-unity-builds">Compression Method set to LZ4 or LZ4HC (Unity builds)</a></li>
 </ul>
 
 <h3 id="your-patch-file-size-is-nearly-the-same-as-your-content-file-size">Your patch file size is nearly the same as your content file size</h3>
 
-<p>When you’re uploading new application files, a patch file is created. Patch file is meant to be as small as possible, so if it is similar to your full application size, it is considered a mistake.</p>
+<p>When you’re uploading new application files, a patch file is created. The patch file is meant to be as small as possible, so if it is similar to your full application size, it is considered a mistake.</p>
 
-<p><strong>Why is it bad?</strong></p>
+<p><strong>Why is it wrong?</strong></p>
 
-<p>Big patch file means that every update will require from your users to download a lot of unnecessary data. That would take a lot of time and may frustrate your users.</p>
+<p>Big patch file means that every update requires from your users to download a lot of unnecessary data. That would take much time and may frustrate your users.</p>
 
 <p><strong>How to fix it?</strong></p>
 
 <p>There may be several reasons:</p>
 
 <ol>
-  <li>You’ve uploaded zip file with different application. If you upload a zip file that is a completely different application by mistake, there’s no chance of creating a valid patch. Look at the file listing to make sure that you’ve chosen the files that you’d like to upload.</li>
+  <li>You’ve uploaded a zip file with the different application. If you upload a zip file that is an entirely different application by mistake, there’s no chance of creating a valid patch. Look at the file listing to make sure that you’ve chosen the files that you’d like to upload.</li>
   <li>You’ve changed the name of files or directories. PatchKit currently does not support path changes, so it treats every rename as a delete/add operation.</li>
-  <li>You’re working with Unity and you’ve changed your build name. Changing a build name in Unity also changes <code class="highlighter-rouge">*_Data</code> directory name. This is a similar situation to the one from point 2. Please make sure to name your builds in the same manner on each release.</li>
+  <li>You’re working with Unity, and you’ve changed your build name. Changing a build name in Unity also changes <code class="highlighter-rouge">*_Data</code> directory name. That is a similar situation to the one from point 2. Please make sure to name your builds in the same manner on each release.</li>
 </ol>
 
 <h3 id="cannot-find-the-executable-file">Cannot find the executable file</h3>
 
 <p>PatchKit cannot find an executable file within your application files.</p>
 
-<p><strong>Why is it bad?</strong></p>
+<p><strong>Why is it wrong?</strong></p>
 
-<p>PatchKit needs to know which file is an executable to launch your application when it is downloaded.</p>
+<p>PatchKit needs to know which file is executable to launch your application when it is downloaded.</p>
 
 <p><strong>How to fix it?</strong></p>
 
 <p>PatchKit is automatically looking for executable files, so if it cannot find it, most probably you’ve made one of these mistakes:</p>
 
 <ol>
-  <li>You’ve set your <em>Target Platform</em> to something else that your application is build to. For instance, you’re sending a <em>Windows</em> build, but your target platform is set to <em>Linux</em>.</li>
+  <li>You’ve set your <em>Target Platform</em> to something else that your application is built for. For instance, you’re sending a <em>Windows</em> build, but your target platform is set to <em>Linux</em>.</li>
   <li>You did not include an executable file in the top directory of your content.</li>
   <li>Your executable file is corrupted.</li>
 </ol>
 
 <h3 id="application-platform-mismatch">Application platform mismatch</h3>
 
-<p>This errors means that PatchKit has found files that belong to a different platform than the one your <em>Target Platform</em> option is set to.</p>
+<p>This error means that PatchKit has found files that belong to a different platform than the one your <em>Target Platform</em> option is set to.</p>
 
-<p><strong>Why is it bad?</strong></p>
+<p><strong>Why is it wrong?</strong></p>
 
-<p>Files that are not prepared for your target platform are unusable. Your application may throw an error when you will try to do something with them.</p>
+<p>Files that are not prepared for your target platform are unusable. Your application may throw an error when you try to do something with them.</p>
 
 <p><strong>How to fix it?</strong></p>
 
-<p>In some cases these files are safe to be removed because it may mean that you’re making a multi-platform application but you did a configuration mistake and these files can be found in your target build. Also, if you’re sure that you’ve built your application properly, leaving these files shouldn’t do much harm.</p>
+<p>In some cases, these files are safe to be removed because it may mean that you’re making a multi-platform application but you made a configuration mistake and these files can be found in your target build. Also, if you’re sure that you’ve built your application correctly, leaving these files shouldn’t do much harm.</p>
 
-<p>Make sure to take that into consideration and decide if you want to make any action or just ignore it.</p>
+<p>Make sure to consider that and decide if you want to make any action or ignore it.</p>
 
 <h3 id="compression-method-set-to-lz4-or-lz4hc-unity-builds">Compression Method set to LZ4 or LZ4HC (Unity builds)</h3>
 
@@ -157,11 +154,11 @@
 
 <p><img src="/img/processing_messages/compression_method.png" alt="Compression method" /></p>
 
-<p><strong>Why is it bad?</strong></p>
+<p><strong>Why is it wrong?</strong></p>
 
-<p>Compressing your game build breaks the binary patch file by creating an algorithm. This algorithm is looking for differences in your binary files, so it can be as small as possible. For example, changing a texture should result in a patch file that closely resembles this texture size.</p>
+<p>Compressing your game build breaks the binary patch file by creating an algorithm. This algorithm is looking for differences in your binary files so that it can be as small as possible. For example, changing a texture should result in a patch file that closely resembles this texture size.</p>
 
-<p>By enabling compression you’re making these kind of changes impossible to detect. Compression algorithms can generate a totally different output, even if the change is really small.</p>
+<p>By enabling compression, you’re making these kinds of changes impossible to detect. Compression algorithms can generate entirely different output, even if the change is minimal.</p>
 
 <p>On top of that, PatchKit on its own is applying compression to your files at the final stage of version processing, so you don’t have to worry about your build size.</p>
 
