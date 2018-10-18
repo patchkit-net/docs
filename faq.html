@@ -104,7 +104,8 @@
       <li><a href="#where-can-my-players-download-my-game" id="markdown-toc-where-can-my-players-download-my-game">Where can my players download my game?</a></li>
       <li><a href="#will-my-players-need-to-re-download-my-game-when-a-new-version-is-published" id="markdown-toc-will-my-players-need-to-re-download-my-game-when-a-new-version-is-published">Will my players need to re-download my game when a new version is published?</a></li>
       <li><a href="#should-i-prepare-patches" id="markdown-toc-should-i-prepare-patches">Should I prepare patches?</a></li>
-      <li><a href="#my-patch-size-is-pretty-big-why" id="markdown-toc-my-patch-size-is-pretty-big-why">My patch size is pretty big. Why?</a></li>
+      <li><a href="#my-patch-size-is-quite-big-why" id="markdown-toc-my-patch-size-is-quite-big-why">My patch size is quite big. Why?</a></li>
+      <li><a href="#every-time-i-launch-my-application-it-re-downloads-a-broken-file" id="markdown-toc-every-time-i-launch-my-application-it-re-downloads-a-broken-file">Every time I launch my application, it re-downloads a broken file.</a></li>
       <li><a href="#how-big-games-can-patchkit-handle" id="markdown-toc-how-big-games-can-patchkit-handle">How big games can PatchKit handle?</a></li>
       <li><a href="#what-are-some-everyday-use-cases" id="markdown-toc-what-are-some-everyday-use-cases">What are some everyday use cases?</a></li>
       <li><a href="#what-is-the-difference-between-launcher-and-patcher" id="markdown-toc-what-is-the-difference-between-launcher-and-patcher">What is the difference between launcher and patcher?</a></li>
@@ -182,7 +183,7 @@
 
 <p>No, you shouldn’t. Patches are built by PatchKit servers. Everything is fully automated and you will be notified of the patch size we managed to achieve.</p>
 
-<h2 id="my-patch-size-is-pretty-big-why">My patch size is pretty big. Why?</h2>
+<h2 id="my-patch-size-is-quite-big-why">My patch size is quite big. Why?</h2>
 
 <p>There may be several reasons:</p>
 
@@ -191,6 +192,14 @@
   <li>You’ve uploaded a wrong game by mistake.</li>
   <li>You’ve renamed your files or directories. PatchKit currently does not support this kind of scenario very well.</li>
 </ol>
+
+<h2 id="every-time-i-launch-my-application-it-re-downloads-a-broken-file">Every time I launch my application, it re-downloads a broken file.</h2>
+
+<p>That usually means that your build includes files that are being modified by your application. Log files maybe? Make sure to remove those before sending the build.</p>
+
+<p>Patcher assumes that any installed file has changed its contents may be corrupted, and it’s safer to re-download it. It takes the same action if a file is missing, but ignores any files created after the installation procedure.</p>
+
+<p>If your use case requires to modify files that are included in the build, try generating those on the first launch or install a template somewhere more buried in the directory tree to make a copy later.</p>
 
 <h2 id="how-big-games-can-patchkit-handle">How big games can PatchKit handle?</h2>
 
