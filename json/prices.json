@@ -1,0 +1,4 @@
+{
+  "version": 1,
+  "prices": {"payg":{"zone_1":{"label":"Europe, US","price":0.04},"zone_2":{"label":"Asia & Pacific","price":0.06},"zone_3":{"label":"Latin America","price":0.09}},"monthly":{"monthly_4":{"label":"Monthly 4","tib":4,"price":99,"effective":0.024,"overages":0.035},"monthly_15":{"label":"Monthly 15","tib":15,"price":349,"effective":0.023,"overages":0.03},"monthly_50":{"label":"Monthly 50","tib":50,"price":1099,"effective":0.021,"overages":0.025}},"additional_features":{"channels":{"price":50},"custom_patcher":{"price":25},"product_keys":{"price":50},"lzma2":{"price":100},"spike_guard":{"price":25},"premium_support":{"price":100},"whitelabel":{"price":100}}}
+}
