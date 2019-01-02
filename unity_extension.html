@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <!-- Add Your favicon here -->
+    <!--<link rel="icon" href="img/favicon.ico">-->
+
+    <title>PatchKit Documentation</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Animation CSS -->
+    <link href="/css/animate.min.css" rel="stylesheet">
+
+    <link href="/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Custom styles for this template -->
+    <link href="/css/style.css" rel="stylesheet">
+
+    <!-- Style for zoho contact form -->
+    <link href="/css/zoho-form-style.css" rel="stylesheet">
+
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-NWRJMWN');</script>
+    <!-- End Google Tag Manager -->
+</head>
+<body id="page-top">
+
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NWRJMWN"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
+    <div class="navbar-wrapper">
+        <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+            <div class="container">
+                <div class="navbar-header page-scroll">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="/">
+                        <img src="/img/patchkit_logo_black.png">
+                    </a>
+                </div>
+                <div id="navbar" class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a class="page-scroll" href="https://patchkit.net">Go to patchkit.net</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <div id="inSlider" class="carousel carousel-fade" data-ride="carousel">
+        <div class="carousel-inner" role="listbox">
+            <div class="item active">
+                <div class="container">
+                    <div class="carousel-caption">
+                        <h1>Support</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<ol class="breadcrumb">
+  <li><a href="/">Home</a></li>
+  <li><a href="#">Unity Extension</a></li>
+</ol>
+
+<section id="content" class="container">
+    <div class="row">
+        <h1>Unity Extension</h1>
+        
+        <ul id="markdown-toc">
+  <li><a href="#downloading-and-installation" id="markdown-toc-downloading-and-installation">Downloading and Installation</a>    <ul>
+      <li><a href="#installation-steps" id="markdown-toc-installation-steps">Installation steps</a></li>
+    </ul>
+  </li>
+  <li><a href="#windows" id="markdown-toc-windows">Windows</a></li>
+  <li><a href="#about" id="markdown-toc-about">About</a></li>
+  <li><a href="#account" id="markdown-toc-account">Account</a></li>
+  <li><a href="#build-and-upload" id="markdown-toc-build-and-upload">Build and Upload</a></li>
+  <li><a href="#actions" id="markdown-toc-actions">Actions</a>    <ul>
+      <li><a href="#connecting-an-account" id="markdown-toc-connecting-an-account">Connecting an account</a></li>
+      <li><a href="#building-and-uploading-application" id="markdown-toc-building-and-uploading-application">Building and uploading application</a>        <ul>
+          <li><a href="#choosing-an-application" id="markdown-toc-choosing-an-application">Choosing an application</a>            <ul>
+              <li><a href="#new-application" id="markdown-toc-new-application">New application</a></li>
+              <li><a href="#existing-application" id="markdown-toc-existing-application">Existing application</a></li>
+              <li><a href="#creating-and-uploading-a-build" id="markdown-toc-creating-and-uploading-a-build">Creating and uploading a build</a></li>
+              <li><a href="#uploading" id="markdown-toc-uploading">Uploading</a></li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+</ul>
+
+<p>The PatchKit Unity Editor Extension is a Unity tool for direct, automatic application distribution from the Unity Editor. Provide a fast, comfortable and safe connection with API PatchKit. The Extension allows uploading without leaving the editor, all you have to do is log in and make the build. After that, version is being sent to PatchKit.</p>
+
+<h2 id="downloading-and-installation">Downloading and Installation</h2>
+
+<p>The extension is available for download from <a href="https://github.com/patchkit-net/patchkit-unity-editor-extension/releases/latest">GitHub</a>, for free.
+It’s compatible with Unity 2017.x version and higher.</p>
+
+<h3 id="installation-steps">Installation steps</h3>
+
+<ol>
+  <li>Download unitypackage from GitHub.</li>
+  <li>Choose Assets / Import Package / Custom Package from the Unity menu and select the unitypackage file from the file browser.</li>
+  <li>Confirm importing all the assets by clicking on the Import button.</li>
+</ol>
+
+<p>After importing the PatchKit Unity Editor Extension, you should see it in your Project window, and there should be a new entry called PatchKit in the Tools main menu.</p>
+
+<h2 id="windows">Windows</h2>
+
+<p>The extension can be accessed by opening one of three windows from the Tools / PatchKit main menu.</p>
+
+<h2 id="about">About</h2>
+
+<p>This window contains information about PatchKit Unity Editor Extension and actual version. Includes also shortcuts to Support: Contact and Documentation pages.</p>
+
+<p><img src="/img/unity_extension/image3.png" alt="About" /></p>
+
+<h2 id="account">Account</h2>
+
+<p>This window allows you to login to your PatchKit account using your API Key. You can switch account by clicking on the RESET button and changing the API Key.</p>
+
+<p><img src="/img/unity_extension/image9.png" alt="Account" /></p>
+
+<h2 id="build-and-upload">Build and Upload</h2>
+
+<p><em>Shortcut: Ctrl+Alt+Shift+B</em></p>
+
+<p>This window allows you to make a build of your project and send it directly to PatchKit with the confidence that everything is set up correctly.</p>
+
+<p><img src="/img/unity_extension/image11.png" alt="Build and Upload window" /></p>
+
+<h2 id="actions">Actions</h2>
+
+<h3 id="connecting-an-account">Connecting an account</h3>
+
+<p>To connect with your PatchKit account, you need to use your <a href="https://panel.patchkit.net/users/profile">API Key</a>. 
+API key is a key to your account features. You can get if from the <a href="https://panel.patchkit.net/account">Account</a> page in the PatchKit panel (quick open by clicking magnifier icon).</p>
+
+<p><img src="/img/unity_extension/image4.png" alt="Link Account" /></p>
+
+<p><img src="/img/unity_extension/image13.png" alt="Account" /></p>
+
+<h3 id="building-and-uploading-application">Building and uploading application</h3>
+
+<p><em>Make sure to connect your PatchKit account first.</em></p>
+
+<h4 id="choosing-an-application">Choosing an application</h4>
+
+<p>Before you can build anything, you must first select a target PatchKit application. You can either create a new application or choose an existing application.</p>
+
+<p><img src="/img/unity_extension/image10.png" alt="Account" /></p>
+
+<h5 id="new-application">New application</h5>
+
+<p>This option creates a new application on your PatchKit account. It is required to provide its name* and choose build target platform**.</p>
+
+<p>* Name may include English-only characters and ‘:’, ‘_’ or ‘-‘, and must be unique.</p>
+
+<p>** Build target platform is set automatically from the current Unity project build target platform. To change PatchKit’s application platform, you need to switch your Unity build target first.</p>
+
+<p><img src="/img/unity_extension/image4.png" alt="Build and Upload Window" /></p>
+
+<h5 id="existing-application">Existing application</h5>
+
+<p>This option displays a list of applications that are already existing on your PatchKit account. All you have to do is select the one you’d like to use. The list can display either all applications or the filter these by your current Unity target platform</p>
+
+<p><img src="/img/unity_extension/image7.png" alt="Connect App Window" /></p>
+
+<h5 id="creating-and-uploading-a-build">Creating and uploading a build</h5>
+
+<p>After the application is chosen, this is the next step to prepare your build. Before proceeding, you have to select a disk location where the build will be compiled (it’s recommended to be an empty directory) and scene list that you wish to be included in the build.</p>
+
+<p><img src="/img/unity_extension/image8.png" alt="Build and Upload Window" /></p>
+
+<p>The last step is a form with version description consisting of two *text fields: Label and Changelog field. Label field is a “title” of the current version, changelog lists the changes that have been introduced in the version and can be left blank. Version can be automatically published by checking the Automatically publish after upload button.  If there’s an existing draft version, you have to acknowledge it by selecting Override draft version if it exists, otherwise, uploading operation will be rejected to avoid any unwanted damage.</p>
+
+<p>* These text fields allows only English characters and ‘:’, ‘_’ or ‘-‘, if you need to enter other characters, please use the PatchKit panel.</p>
+
+<p><img src="/img/unity_extension/image6.png" alt="Version Details Window" /></p>
+
+<h5 id="uploading">Uploading</h5>
+
+<p>Uploading is the final operation of application publishing, when the built version is being sent to PatchKit, including provided details.  During the process, a system console may be opened, just leave it open until you see a “Done” message. When you do, it can be safely closed. Your version has just been correctly transferred to PatchKit!</p>
+
+<p><img src="/img/unity_extension/image1.png" alt="Confirmation Popup" /></p>
+
+<p><img src="/img/unity_extension/image5.png" alt="Console Log Window" /></p>
+
+    </div>
+    <div class="p-md"></div>
+    <div class="row">
+        <div class="alert alert-success">
+            <b>Did this page help you?</b> For questions about this part, please use the chatbox on the right or contact support <a href="/contact.html">here</a>.
+        </div>
+    </div>
+</section>
+
+<section id="gooter" class="gray-section gooter">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 text-center m-t-lg m-b-lg">
+                <p><strong>Copyright © 2015 - 2019 Upsoft<br>All Rights Reserved.</strong><br/></p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<script src="/js/jquery-2.1.1.js"></script>
+<script src="/js/jquery.encoder.min.js"></script>
+<script src="/js/zoho-contact-form.js"></script>
+<script src="/js/pace.min.js"></script>
+<script src="/js/bootstrap.min.js"></script>
+<script src="/js/classie.js"></script>
+<script src="/js/cbpAnimatedHeader.js"></script>
+<script src="/js/wow.min.js"></script>
+<script src="/js/inspinia.js"></script>
+<script src="https://wchat.freshchat.com/js/widget.js"></script>
+
+
+
+<script>
+  window.fcWidget.init({
+    token: "5ea18b71-f1be-4f82-b3ca-fa632269ba46",
+    host: "https://wchat.freshchat.com"
+  });
+</script>
+
+</body>
+</html>

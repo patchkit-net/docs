@@ -120,25 +120,28 @@
   <li>Click on the <strong>Create</strong> button. Your new application is now created.</li>
 </ol>
 
-<p><img src="/guide_img/getting_started/app_panel.png" alt="Application Panel" /></p>
+<p><img src="/img/getting_started/app_panel.png" alt="Application Panel" /></p>
 
-<p>Application panel allows you to do several things:</p>
+<p>Application panel allows you to do several useful things:</p>
 
 <ul>
-  <li>Change the application name (internal)</li>
+  <li>Change the application name (internally)</li>
   <li>Change the application display name</li>
-  <li>Change application author</li>
-  <li>Change the target platform (this shouldn’t be done when an app is already published)</li>
+  <li>Change the application author</li>
+  <li>Set the application icon (useful for Windows and OSX distributions)</li>
+  <li>Set the patcher banner</li>
+  <li>Set the Custom Patcher*</li>
+  <li>Set the Compression method*</li>
 </ul>
+
+<p>* - Some features are available only for paid or special type of accounts</p>
 
 <p>You can also:</p>
 
 <ul>
   <li>Create a new version</li>
-  <li>Get the launcher</li>
+  <li>Download the launcher (available only after publishing the first application version)</li>
 </ul>
-
-<p>Let’s now focus on…</p>
 
 <h2 id="creating-a-new-version">Creating a new version</h2>
 
@@ -151,6 +154,10 @@
 <p><img src="/guide_img/getting_started/upload_content_form.png" alt="Upload Content Form" /></p>
 
 <p>Here you can choose a <a href="http://www.wikihow.com/Make-a-Zip-File">ZIP file</a> with your game content. It is required to have a particular file structure, however.</p>
+
+<div class="alert alert-warning" role="alert">
+    Do not confuse ZIP file format with 7-ZIP. PatchKit supports ZIP-files only.
+</div>
 
 <h2 id="zip-file-structure">ZIP file structure</h2>
 
@@ -197,6 +204,10 @@
 /data.dat
 </code></pre></div></div>
 
+<div class="alert alert-warning" role="alert">
+    Make sure that your application file names does not contain non-english characters. While mostly it works perfectly fine, in some cases it may result in processing error.
+</div>
+
 <h2 id="uploading-your-zip-file">Uploading your ZIP file</h2>
 
 <p>When your ZIP file is ready, put it into the upload form, and the upload starts automatically. Don’t close your web browser window until the uploading finishes. You will get notified when it is safe to close it.</p>
@@ -204,6 +215,10 @@
 <p>After successful upload, your application files will be processed. This process may take a couple of minutes depending on the size of your application. After it’s done, you may get some messages regarding the results. It can be something that you have to fix and upload the ZIP file again. Don’t worry about it, and try again when that happens!</p>
 
 <p><img src="/guide_img/getting_started/messages.png" alt="Messages" /></p>
+
+<div class="alert alert-info" role="alert">
+    If you encounter a <i>Processing Error</i> without an error message, please do not hesitate to <a href="/contact.html">contact us</a>. This may be bug in our processing algorithm.
+</div>
 
 <h2 id="publishing-your-application">Publishing your application</h2>
 
