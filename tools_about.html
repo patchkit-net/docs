@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <!-- Add Your favicon here -->
+    <!--<link rel="icon" href="img/favicon.ico">-->
+
+    <title>PatchKit Documentation</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Animation CSS -->
+    <link href="/css/animate.min.css" rel="stylesheet">
+
+    <link href="/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Custom styles for this template -->
+    <link href="/css/style.css" rel="stylesheet">
+
+    <!-- Style for zoho contact form -->
+    <link href="/css/zoho-form-style.css" rel="stylesheet">
+
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-NWRJMWN');</script>
+    <!-- End Google Tag Manager -->
+</head>
+<body id="page-top">
+
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NWRJMWN"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
+    <div class="navbar-wrapper">
+        <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+            <div class="container">
+                <div class="navbar-header page-scroll">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="/">
+                        <img src="/img/patchkit_logo_black.png">
+                    </a>
+                </div>
+                <div id="navbar" class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a class="page-scroll" href="https://patchkit.net">Go to patchkit.net</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <div id="inSlider" class="carousel carousel-fade" data-ride="carousel">
+        <div class="carousel-inner" role="listbox">
+            <div class="item active">
+                <div class="container">
+                    <div class="carousel-caption">
+                        <h1>Support</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<ol class="breadcrumb">
+  <li><a href="/">Home</a></li>
+  <li><a href="#">Command Line Tools</a></li>
+</ol>
+
+<section id="content" class="container">
+    <div class="row">
+        <h1>Command Line Tools</h1>
+        
+        <h1 id="about-tools">About Tools</h1>
+<p>Patchkit Tools is a set of scripts allowing for a fast and convenient access to the most of Patchkit application-relevant features from the command line.
+It lets you create a new version without the need for uploading all files. It is possible thanks to the use of a differential files mechanics.</p>
+
+<p>Tools compare the new application files with the ones that already exist on the server and they create a lightweight file called a differential file (Diff), which contains all the changes occuring between the two versions.
+Such file has to be sent to the app as a new version and voilà! The server receives only the information about what has really been changed.</p>
+
+<h3 id="installation">Installation</h3>
+<ol>
+  <li>Download PatchKit tools distribution for your operating system from <a href="https://github.com/patchkit-net/patchkit-tools/releases/latest">GitHub</a>.</li>
+  <li>Unzip it to any suitable directory.</li>
+  <li>Run StartTools file</li>
+</ol>
+
+<p>Optionally, if you want to make your console more comfortable, you can set up your PATH variable to point to that directory. (<a href="http://www.howtogeek.com/118594/how-to-edit-your-system-path-for-easy-command-line-access/">Windows</a>, <a href="https://www.cyberciti.biz/faq/appleosx-bash-unix-change-set-path-environment-variable/">OSX</a> and <a href="http://stackoverflow.com/questions/14637979/how-to-permanently-set-path-on-linux">Linux</a> instructions) but it’ s not mandatory.</p>
+
+<h3 id="upgrading">Upgrading</h3>
+<ol>
+  <li>Remove your previous installation directory.</li>
+  <li>Unzip newly downloaded distribution from GitHub to the same place.</li>
+</ol>
+
+<hr />
+
+<h1 id="usage">Usage</h1>
+<h3 id="prerequirements">Prerequirements</h3>
+<p>You need to have at least basic knowledge of the command line (Windows) or bash (Mac OSX, Linux). If you don’t know how to work with these tools, please read the resources listed below:</p>
+<ul>
+  <li><a href="https://www.computerhope.com/issues/chusedos.htm">How to use the Windows command line</a></li>
+  <li><a href="http://www.macworld.co.uk/feature/mac-software/how-use-terminal-on-mac-3608274/">How to use Terminal on Mac</a></li>
+  <li><a href="https://www.howtogeek.com/140679/beginner-geek-how-to-start-using-the-linux-terminal/">How to start Using the Linux Terminal</a></li>
+</ul>
+
+<p>To use tools functionalities, you need to enter a specific tool in the command line or terminal. Some tools may require additional parameters. You may use <code class="highlighter-rouge">patchkit-tools \--help</code> to list all of the available tools or <code class="highlighter-rouge">patchkit-tools tool \--help</code> to display a list of parameters and description of a specific tool.
+You may also find the information about these on <a href="tools_commands.html">this page</a>.</p>
+
+<h3 id="getting-apikey-and-secret">Getting ApiKey and Secret</h3>
+
+<p>The API Key is needed to authenticate your PatchKit account from the PatchKit Tools. You can acquire it on your <a href="https://panel.patchkit.net/account">Account page</a>.</p>
+
+<p><img src="/img/tools/apikey.jpg" alt="Example patcher" /></p>
+
+<p>The Secret is a unique identifier of your application. You may find it on your application’s page.</p>
+
+<p><img src="/img/tools/secret.jpg" alt="Example patcher" /></p>
+
+<h3 id="basic-usage">Basic usage</h3>
+<p>PatchKit Tools consist of several commands that are meant for advanced usage. In most cases, you won’t need to use more than one particular tool that does most of the work for you. That tool is called <code class="highlighter-rouge">make-version</code>.</p>
+
+<p><code class="highlighter-rouge">Make-version</code> tool creates a new version of your application (or overwrites a draft when asked to do so) by uploading your latest version delta files (diffs). It’s a clever mechanism that can significantly reduce the time needed to upload your data. Also, it can be easily implemented with your continuous integration toolset.</p>
+
+<p>To use it just enter:</p>
+
+<p><code class="highlighter-rouge">patchkit-tools make-version</code></p>
+
+<p>You will be asked to provide multiple pieces of information required to upload your new version contents, including your secret, API key and data directory location. You may also provide all of these parameters as arguments, so <code class="highlighter-rouge">make-version</code> tool will do its work without asking a single question. For more details, please see <code class="highlighter-rouge">patchkit-tools make-version --help</code>.</p>
+
+<h3 id="help-syntax">Help syntax</h3>
+<p>Display information about  tools and builtin commands.
+<br /></p>
+
+<p><code class="highlighter-rouge">patchkit-tools [tool_name] [tool_arguments]</code></p>
+
+<p><strong>Displaying help and tools list</strong></p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>patchkit-tools <span class="nt">--help</span>
+</code></pre></div></div>
+
+<p><strong>Displaying specific tool help</strong></p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>patchkit-tools <span class="o">[</span>tool_name] <span class="nt">--help</span>
+</code></pre></div></div>
+<h3 id="commands-list">Commands list</h3>
+<p>Learn more about commands <a href="tools_commands.html">on this page</a>.</p>
+
+    </div>
+    <div class="p-md"></div>
+    <div class="row">
+        <div class="alert alert-success">
+            <b>Did this page help you?</b> For questions about this part, please use the chatbox on the right or contact support <a href="/contact.html">here</a>.
+        </div>
+    </div>
+</section>
+
+<section id="gooter" class="gray-section gooter">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 text-center m-t-lg m-b-lg">
+                <p><strong>Copyright © 2015 - 2019 Upsoft<br>All Rights Reserved.</strong><br/></p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<script src="/js/jquery-2.1.1.js"></script>
+<script src="/js/jquery.encoder.min.js"></script>
+<script src="/js/zoho-contact-form.js"></script>
+<script src="/js/pace.min.js"></script>
+<script src="/js/bootstrap.min.js"></script>
+<script src="/js/classie.js"></script>
+<script src="/js/cbpAnimatedHeader.js"></script>
+<script src="/js/wow.min.js"></script>
+<script src="/js/inspinia.js"></script>
+<script src="https://wchat.freshchat.com/js/widget.js"></script>
+
+
+
+<script>
+  window.fcWidget.init({
+    token: "5ea18b71-f1be-4f82-b3ca-fa632269ba46",
+    host: "https://wchat.freshchat.com"
+  });
+</script>
+
+</body>
+</html>
