@@ -83,35 +83,47 @@
 
 <ol class="breadcrumb">
   <li><a href="/">Home</a></li>
-  <li><a href="#">Evaluation Account</a></li>
+  <li><a href="#">Application Version</a></li>
 </ol>
 
 <section id="content" class="container">
     <div class="row">
-        <h1>Evaluation Account</h1>
+        <h1>Application Version</h1>
         
-        <p>PatchKit free evaluation account allows you to start using PatchKit immediately without the need of providing a credit card number or any other payment method. All you have to do is register and start using it.</p>
+        <p>Application version page is where you can configure and upload your content before releasing it.</p>
 
-<p>Evaluation account has some limitations though. While we’re not strictly limiting the time you can use it, there are some soft and hard limits you need to be aware.</p>
+<h2 id="importing-content">Importing Content</h2>
 
-<h2 id="hard-limits">Hard limits</h2>
+<p>A version requires content files. To upload the files, you may click on the <strong>Import Content</strong> button. Depending on your account features, you may be asked if you want to import the content using a ZIP file or by choosing another app’s version.</p>
+
+<h3 id="importing-using-a-zip-file">Importing using a ZIP file</h3>
+
+<p>To import a version using a ZIP file, you need to prepare a valid zip file first. It’s pretty , and in most cases, it requires packing your application’s directory into a ZIP using built-in or 3rd party archiving applications. You can learn more about valid zip file structure TODO <a href="">here</a>.</p>
+
+<p>When you choose your ZIP file, upload and processing operation is started automatically. You may also decide to switch TODO</p>
+
+<h3 id="version-properties">Version Properties</h3>
+
+<h2 id="executable-file">Executable File</h2>
+
+<p>Allows you to select which executable file should be executed by the Patcher. The list includes only a set of files that are recognized as a valid executable for a target file system. That means that those will be <code class="highlighter-rouge">*.exe</code> files for Windows, <code class="highlighter-rouge">*.app</code> bundles for OSX and executable <code class="highlighter-rouge">ELF</code> binaries for Linux.</p>
+
+<p>When a new version content is sent, PatchKit sets the executable file to either:</p>
 
 <ul>
-  <li>3 Applications</li>
-  <li>1 License key collection</li>
-  <li>100 License keys limit</li>
+  <li>The same that was set for the previous version if exists</li>
+  <li>The first executable file found in the content files</li>
 </ul>
 
-<h2 id="soft-limits">Soft limits</h2>
+<p>Changing the executable file have an immediate effect and can be modified even for alredy published releases.</p>
 
-<ul>
-  <li>150 GB of monthly data transfer</li>
-  <li>For continuous usage it is required to switch to a higher plan</li>
-</ul>
+<h2 id="execution-arguments">Execution Arguments</h2>
 
-<p>Our service does not enforce soft limits. You can distribute more than 150 GB of data if you need to try it out, but you may be asked to switch to a higher plan.</p>
+<p>List of arguments passed to the executable file at the launch. You may pass any number of arguments to change the behavior of the application. It’s usable if you need to dynamically change the behavior of your application. It’s especially usable if you distribute your application on multiple channels.</p>
 
-<p>Would you like to switch to a higher plan or do you have any questions regarding those limits? Please <a href="/contact.html">contact us</a>.</p>
+<p>Creating a new draft version copies execution arguments from the previous one, so you don’t need to set it every time a new version is released.</p>
+
+<p>Changing the execution arguments have an immediate effect and can be modified even for already published releases.</p>
 
     </div>
     <div class="p-md"></div>
