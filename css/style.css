@@ -1256,3 +1256,11 @@ h2[id]::before,h3[id]::before {
   margin-top: 4px;
   color: #9e0000;
 }
+
+.g-recaptcha {
+  margin: 10px 0;
+  display: flex;
+  justify-content: flex-end;
+}
+
+

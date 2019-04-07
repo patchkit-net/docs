@@ -28,6 +28,8 @@
 
     <!-- Custom styles for this template -->
     <link href="/css/style.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 
     <!-- Style for zoho contact form -->
     <link href="/css/zoho-form-style.css" rel="stylesheet">
@@ -92,8 +94,21 @@
 
         
         
-        <div id="zohoSupportWebToCase" align="center">
-    <form name="zsWebToCase_206385000000085001" id="zsWebToCase_206385000000085001" action="https://desk.zoho.com/support/WebToCase" method="POST" onsubmit="return zsValidateMandatoryFields()" enctype="multipart/form-data" class="form">
+        <script>
+    function checked() {
+        var action = 'https://desk.zoho.com/support/WebToCase';
+        var submit =
+            'zsSubmitButton_206385000000085001 form-submit';
+        if (grecaptcha.getResponse() != "") {
+            $('form').attr('action', action);
+            $('#form-submit').removeAttr('disabled');
+            $('#form-submit').attr('id', submit);
+        }
+    }
+</script>
+
+<div id="zohoSupportWebToCase" align="center">
+    <form name="zsWebToCase_206385000000085001" id="zsWebToCase_206385000000085001" action="" method="POST" onsubmit="return zsValidateMandatoryFields()" enctype="multipart/form-data" class="form">
         <input type="hidden" name="xnQsjsdp" value="*cik-ppFEQUHNNhSsQ1qxg$$" />
         <input type="hidden" name="xmIwtLD" value="y9fS6NgeTxah7r4ul8Kb32-*B6-MHnNR" />
         <input type="hidden" name="actionType" value="Q2FzZXM=" />
@@ -139,11 +154,12 @@
                 </div>
             </div>
 
-            <div class="col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2 text-right">
-                <input type="submit" id="zsSubmitButton_206385000000085001" class="zsFontClass btn" value="Submit" />
+            <div class="col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2 text-right" style="padding-bottom: 80px">
+                <div class="g-recaptcha" id="captcha" data-callback="checked" data-sitekey="6LcKjpsUAAAAADLbOZlOckd_QY4kW7NFzFMOGHR1"></div>
+                <input type="submit" id="form-submit" class="zsFontClass btn" value="Submit" disabled="" />
             </div>
         </div>
-        
+
     </form>
 </div>
 
