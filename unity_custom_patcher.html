@@ -120,7 +120,7 @@
 
 <h3 id="basic-look--feel">Basic look &amp; feel</h3>
 
-<p><strong>Before starting customization of your patcher, make sure to make a copy of the Patcher scene and do all the modifications on that new scene. If you modify the supplied scene, any asset upgrade overwrites your changes!</strong></p>
+<p><strong>Before starting the customization of your patcher, make sure to make a copy of the Patcher scene and do all the modifications on that new scene. If you modify the supplied scene, any asset upgrade overwrites your changes!</strong></p>
 
 <p>The patcher layout is done entirely in Unity UI. Feel free to change it however you want, but make sure to keep all the attached scripts in place.</p>
 
@@ -130,19 +130,15 @@
 
 <h2 id="building">Building</h2>
 
-<p>The patcher can be built the same way as any other Unity project:</p>
-
 <ol>
-  <li>Open <strong>File / Build Settings</strong> from the main menu.</li>
-  <li>Choose <strong>PC, Mac &amp; Linux Standalone</strong> as a Platform.</li>
-  <li>Choose your <strong>Target Platform</strong> and <strong>Architecture</strong>. IMPORTANT: For Mac, you have to choose <strong>x86_64</strong> as <strong>Architecture</strong>. <sup>1</sup></li>
-  <li>Make sure that <strong>Development Build</strong> is turned off.</li>
-  <li>Click on the <strong>Build</strong> button and choose your target build location.</li>
+  <li>Choose <strong>Tools / Build / PLATFORM_NAME</strong> from the main menu, where <strong>PLATFORM_NAME</strong> is your target platform for which you’re building your Patcher.</li>
+  <li>Select an empty directory and name your build. We recommend naming it “Patcher”.</li>
+  <li>Remember where the Patcher has been built. You will need those files in a moment.</li>
 </ol>
 
-<p><sup>1</sup> - If you do otherwise, the patcher may crash shortly after the start, or it won’t work correctly.</p>
+<p><strong>Building the Patcher using Unity’s Build Settings window or File / Build And Run option may result in a corrupted build. In result, your Patcher may not work at all</strong>.</p>
 
-<p>It’s not important how you name your executable. Information about it is stored in <strong>patcher.manifest</strong> file.s</p>
+<p>Do not be surprised that Patcher is not working when you run it from the desktop. It needs to be uploaded to the PatchKit’s panel first.</p>
 
 <h2 id="uploading">Uploading</h2>
 
@@ -161,15 +157,15 @@
   <li>If there are no errors, click the <strong>Publish</strong> button.</li>
   <li>After the version is published, navigate to your game’s page.</li>
   <li>Inside <strong>Configuration</strong> panel look for <strong>Custom Patcher</strong> field. Click on the <strong>Edit</strong> button right next to it.</li>
-  <li>From the drop-down select your new patcher.</li>
+  <li>From the drop-down, select your new patcher.</li>
   <li>Click on the <strong>Save</strong> button.</li>
 </ol>
 
-<p>From now on your new application is using your custom patcher instead of the default one.</p>
+<p>From now on, your new application is using your custom patcher instead of the default one.</p>
 
 <h2 id="updating">Updating</h2>
 
-<p><em>Unity Patcher</em> will be getting updates from time to time introducing new features and bug fixes. If you’re using a custom patcher make sure to either:</p>
+<p><em>Unity Patcher</em> will be getting updates from time to time introducing new features and bug fixes. If you’re using a custom patcher, make sure to either:</p>
 
 <ul>
   <li>Follow our <a href="http://blog.patchkit.net/">Blog</a></li>
@@ -191,7 +187,7 @@
 
 <h3 id="the-patcher-crashes-right-away">The patcher crashes right away</h3>
 
-<p>First look into the <a href="debugging_patcher.html">logs</a>. A significant error message should be at the end of it. Usually, there may be two reasons:</p>
+<p>First, look into the <a href="debugging_patcher.html">logs</a>. A significant error message should be at the end of it. Usually, there may be two reasons:</p>
 
 <ol>
   <li>You’re trying to launch patcher directly - this is not allowed. You can only test it inside <em>Unity</em> editor. When it’s built, you have to upload it to PatchKit for further testing.</li>
