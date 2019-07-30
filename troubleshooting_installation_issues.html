@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <!-- Add Your favicon here -->
+    <!--<link rel="icon" href="img/favicon.ico">-->
+
+    <title>PatchKit Documentation</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Animation CSS -->
+    <link href="/css/animate.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Custom styles for this template -->
+    <link href="/css/style.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+
+    <!-- Style for zoho contact form -->
+    <link href="/css/zoho-form-style.css" rel="stylesheet">
+
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-NWRJMWN');</script>
+    <!-- End Google Tag Manager -->
+</head>
+<body id="page-top">
+
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NWRJMWN"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
+    <div class="navbar-wrapper">
+        <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+            <div class="container">
+                <div class="navbar-header page-scroll">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="/">
+                        <img src="/img/patchkit_logo_black.png">
+                    </a>
+                </div>
+                <div id="navbar" class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a class="page-scroll" href="https://patchkit.net">Go to patchkit.net</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <div id="inSlider" class="carousel carousel-fade" data-ride="carousel">
+        <div class="carousel-inner" role="listbox">
+            <div class="item active">
+                <div class="container">
+                    <div class="carousel-caption">
+                        <h1>Support</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<ol class="breadcrumb">
+  <li><a href="/">Home</a></li>
+  <li><a href="#">Troubleshooting Installation Issues</a></li>
+</ol>
+
+<section id="content" class="container">
+    <div class="row">
+        <h1>Troubleshooting Installation Issues</h1>
+
+        
+        
+        <ul id="markdown-toc">
+  <li><a href="#downloading-issues" id="markdown-toc-downloading-issues">Downloading Issues</a>    <ul>
+      <li><a href="#possible-reason-isp-hardware-issues" id="markdown-toc-possible-reason-isp-hardware-issues">Possible Reason: ISP Hardware Issues</a></li>
+      <li><a href="#possible-reason-wi-fi" id="markdown-toc-possible-reason-wi-fi">Possible Reason: Wi-Fi</a></li>
+      <li><a href="#possible-reason-routing-issues" id="markdown-toc-possible-reason-routing-issues">Possible Reason: Routing Issues</a></li>
+      <li><a href="#possible-reason-malcious-or-packet-inspection-software" id="markdown-toc-possible-reason-malcious-or-packet-inspection-software">Possible Reason: Malcious or Packet Inspection Software</a></li>
+      <li><a href="#possible-reason-firewall-configuration" id="markdown-toc-possible-reason-firewall-configuration">Possible Reason: Firewall Configuration</a></li>
+      <li><a href="#nothing-helps" id="markdown-toc-nothing-helps">Nothing Helps?</a></li>
+    </ul>
+  </li>
+  <li><a href="#installation--patching-issues" id="markdown-toc-installation--patching-issues">Installation / Patching Issues</a>    <ul>
+      <li><a href="#possible-reason-anti-virus-software" id="markdown-toc-possible-reason-anti-virus-software">Possible Reason: Anti-Virus Software</a></li>
+      <li><a href="#possible-reason-malicious-software" id="markdown-toc-possible-reason-malicious-software">Possible Reason: Malicious Software</a></li>
+      <li><a href="#possible-reason-hardware-issue" id="markdown-toc-possible-reason-hardware-issue">Possible Reason: Hardware Issue</a></li>
+      <li><a href="#nothing-helps-1" id="markdown-toc-nothing-helps-1">Nothing Helps?</a></li>
+    </ul>
+  </li>
+  <li><a href="#application-running-issues" id="markdown-toc-application-running-issues">Application Running Issues</a>    <ul>
+      <li><a href="#possible-reason-wrong-executable-file" id="markdown-toc-possible-reason-wrong-executable-file">Possible Reason: Wrong Executable File</a></li>
+      <li><a href="#possible-reason-missing-application-files" id="markdown-toc-possible-reason-missing-application-files">Possible Reason: Missing Application Files</a></li>
+      <li><a href="#possible-reason-anti-virus-quarantine" id="markdown-toc-possible-reason-anti-virus-quarantine">Possible Reason: Anti-Virus Quarantine</a></li>
+      <li><a href="#possible-reason-malicious-software-1" id="markdown-toc-possible-reason-malicious-software-1">Possible Reason: Malicious Software</a></li>
+      <li><a href="#nothing-helps-2" id="markdown-toc-nothing-helps-2">Nothing helps?</a></li>
+    </ul>
+  </li>
+</ul>
+
+<p>While PatchKit desktop applications are basing on fail-safe architecture principles, there are several cases when something may go wrong during the initial installation or patching stage. On this page, you can learn what common issues your users may encounter.</p>
+
+<h2 id="downloading-issues">Downloading Issues</h2>
+
+<p>The most common issues are downloading issues. While worldwide Internet infrastructure is getting better every day, there’s still plenty of things that may slow down or completely prevent the user from downloading the application.</p>
+
+<h3 id="possible-reason-isp-hardware-issues">Possible Reason: ISP Hardware Issues</h3>
+
+<p>You should ask your user to check the Internet connection quality first. Speed tests are useful, but some ISPs are configuring separate routing rules to popular speed tests sites so that the results can be better than usual.</p>
+
+<ul>
+  <li>Ask the user to visit http://benchmark.patchkit.net/. See if results to their nearby servers are looking good.</li>
+  <li>Ask the user to perform ping test on this page: https://freeola.com/line-test/ high jitter or packet loss value may be the reason</li>
+  <li>If the user has a secondary internet connection, it should be examined</li>
+</ul>
+
+<h3 id="possible-reason-wi-fi">Possible Reason: Wi-Fi</h3>
+
+<p>Wi-fi hardware often causes trouble. It’s hard to find a router that does not need to be reset once in a while. That’s why you need to ask your user to try and reset the Wi-fi router is in use. Trying to connect via cable connection is recommended.</p>
+
+<h3 id="possible-reason-routing-issues">Possible Reason: Routing Issues</h3>
+
+<p>When connecting from point A to B, there’s plenty of cables and hardware in between.  The routing configuration of each of those is deciding where the connection should go through, and sometimes it may go through a suboptimal way. It can even fall-back to a slower route due to incidents like a power outage in a strategic point.</p>
+
+<ul>
+  <li>Ask the user to perform a benchmark http://benchmark.patchkit.net/ to see if the problem is with one or more mirrors.</li>
+  <li>Ask the user if the problem affects other services. If it does, the user should contact the ISP.</li>
+</ul>
+
+<h3 id="possible-reason-malcious-or-packet-inspection-software">Possible Reason: Malcious or Packet Inspection Software</h3>
+
+<p>We’ve observed that in some configurations, software that is tempering with the Internet connection may slow it down or prevent the user from downloading specific data.</p>
+
+<ul>
+  <li>Ask the user to try installing the application or another machine or operating system if possible</li>
+  <li>Ask the user to perform anti-virus scan and anti-malware scan. We recommend <a href="https://www.malwarebytes.com/mwb-download/">Malwarebytes</a> scanning software.</li>
+  <li>Ask the user to disable the anti-virus during the downloading procedure.</li>
+</ul>
+
+<h3 id="possible-reason-firewall-configuration">Possible Reason: Firewall Configuration</h3>
+
+<p>Depending on your user machine, there may be a firewall installed with the rules that effectively prevent downloading the data from untrusted sources.</p>
+
+<p>If the user is trying to install the software…</p>
+
+<ul>
+  <li>…on the home PC, suggest disabling the firewall.</li>
+  <li>…in the workplace, suggest contacting the administrator.</li>
+  <li>…in the school, suggest contacting the teacher or the administrator.</li>
+</ul>
+
+<h3 id="nothing-helps">Nothing Helps?</h3>
+
+<p>When the user tried everything but the issue is still there:</p>
+
+<ol>
+  <li>ask for launcher-log.txt and output_log.txt files. <a href="/debugging_patcher.html">Check here</a> where to find those.</li>
+  <li>Ask the user to visit <a href="http://benchmark.patchkit.net">http://benchmark.patchkit.net</a> and share the results using the share link.</li>
+  <li><a href="mailto:support@patchkit.net">Contact PatchKit’s support</a> by email providing all from above, along with the PatchKit’s account e-mail address and application’s name.</li>
+</ol>
+
+<h2 id="installation--patching-issues">Installation / Patching Issues</h2>
+
+<p>PatchKit packages are encrypted, compressed packages, so these need to be decrypted, unpacked, and saved to the disk drive. This process is called the installation process, and there several places where it can fail.</p>
+
+<h3 id="possible-reason-anti-virus-software">Possible Reason: Anti-Virus Software</h3>
+
+<p>Anti-virus software is meant to protect the user from installing any malicious software, but it can act extra-careful with launchers. While our launcher is doing its best to co-exist with most of the anti-viruses, it still can get in conflict with some of these.</p>
+
+<p>Ask the user to disable the anti-virus software during the process of installation.</p>
+
+<h3 id="possible-reason-malicious-software">Possible Reason: Malicious Software</h3>
+
+<p>Malicious software can hook-up to the system events in a similar manner like anti-virus software. These are often badly-written and may tamper with the operating system stability.</p>
+
+<p>Ask your user to perform a system scan using <a href="https://www.malwarebytes.com/mwb-download/">Malwarebytes</a> free scanner.</p>
+
+<h3 id="possible-reason-hardware-issue">Possible Reason: Hardware Issue</h3>
+
+<p>Faulty hardware like hard disk, RAM, or even CPU can affect the installation process. It is worth to ask the user if there were any strange issues with the PC lately. We recommend reading <a href="https://www.makeuseof.com/tag/how-to-test-your-pc-for-failing-hardware/">this article</a>.</p>
+
+<h3 id="nothing-helps-1">Nothing Helps?</h3>
+
+<ol>
+  <li>ask for launcher-log.txt and output_log.txt files. <a href="/debugging_patcher.html">Check here</a> where to find those.</li>
+  <li><a href="mailto:support@patchkit.net">Contact PatchKit’s support</a> by e-mail providing all from above, along with the PatchKit’s account e-mail address and application’s name.</li>
+</ol>
+
+<h2 id="application-running-issues">Application Running Issues</h2>
+
+<p>When the installation goes smoothly, but the application is not starting, do not panic. These issues are mostly easy to solve.</p>
+
+<h3 id="possible-reason-wrong-executable-file">Possible Reason: Wrong Executable File</h3>
+
+<p>When your game is first uploaded, PatchKit is trying to guess which executable file is the main application file. Make sure to verify it.</p>
+
+<ol>
+  <li>Navigate to https://panel.patchkit.net.</li>
+  <li>Log in into your account if needed.</li>
+  <li>Navigate to your application’s latest published version.</li>
+  <li>See if <em>Executable File</em> is set correctly.</li>
+</ol>
+
+<h3 id="possible-reason-missing-application-files">Possible Reason: Missing Application Files</h3>
+
+<p>While Patcher is making sure that all provided files are installed in the system, sometimes the application package may be incomplete. The usual reason is human mistake during the packaging process. Make sure to:</p>
+
+<ul>
+  <li>Zip the whole folder with the application. It’s OK to have one directory on top-level, and application executable in that directory.</li>
+  <li>Use continuous-integration tools whenever possible. We recommend integrating with <a href="/tools_about.html">patchkit-tools</a> as well.</li>
+</ul>
+
+<h3 id="possible-reason-anti-virus-quarantine">Possible Reason: Anti-Virus Quarantine</h3>
+
+<p>Sometimes Anti-virus software can quarantine your game files, restricting any access. Ask your user to disable anti-virus software before running your application. If it doesn’t help, ask the user to check the quarantine list.</p>
+
+<h3 id="possible-reason-malicious-software-1">Possible Reason: Malicious Software</h3>
+
+<p>Because of the variety of this kind of applications, there’s a probability that there’s an interference. Ask the user to scan the system. We recommend <a href="https://www.malwarebytes.com/mwb-download/">Malwarebytes</a> scanner.</p>
+
+<h3 id="nothing-helps-2">Nothing helps?</h3>
+
+<p>There may be plenty of reasons why your application may not be working correctly. If you’re out of options, try looking for any error messages and search it on the web. You can always <a href="/contact.html">contact</a> our support for the advice.</p>
+
+    </div>
+    <div class="p-md"></div>
+    <div class="row">
+        <div class="alert alert-success">
+            <b>Did this page help you?</b> For questions about this part, please use the chatbox on the right or contact support <a href="/contact.html">here</a>.
+        </div>
+    </div>
+</section>
+
+<section id="gooter" class="gray-section gooter">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 text-center m-t-lg m-b-lg">
+                <p><strong>Copyright © 2015 - 2019 Upsoft<br>All Rights Reserved.</strong><br/></p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<script src="/js/jquery-2.1.1.js"></script>
+<script src="/js/jquery.encoder.min.js"></script>
+<script src="/js/zoho-contact-form.js"></script>
+<script src="/js/pace.min.js"></script>
+<script src="/js/bootstrap.min.js"></script>
+<script src="/js/classie.js"></script>
+<script src="/js/cbpAnimatedHeader.js"></script>
+<script src="/js/wow.min.js"></script>
+<script src="/js/inspinia.js"></script>
+<script src="https://wchat.freshchat.com/js/widget.js"></script>
+
+
+
+<script>
+  window.fcWidget.init({
+    token: "5ea18b71-f1be-4f82-b3ca-fa632269ba46",
+    host: "https://wchat.freshchat.com"
+  });
+</script>
+
+</body>
+</html>
