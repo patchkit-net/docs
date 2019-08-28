@@ -134,7 +134,7 @@
   <li>Go to <a href="http://panel.patchkit.net/apps">Applications</a> listing.</li>
   <li>Click on the name of your game.</li>
   <li>Click on the <em>Keys</em> option - it can be found on the upper navigation bar.</li>
-  <li>Click on the <em>Enable License Keys</em> button.</li>
+  <li>Click on the *Enable License Keys * button.</li>
 </ol>
 
 <h2 id="setup-overview">Setup Overview</h2>
@@ -168,7 +168,7 @@
 
 <div class="bs-callout bs-callout-info">
   <h4>Info</h4>
-  PatchKit won't distribute your keys in any particular way. If you want your keys to be delivered to your players, you have to do it on your own. Most probably you may want to integrate it with your game store.
+  PatchKit won't distribute your keys in any particular way. If you want your keys to be delivered to your players, you have to do it on your own. Most probably, you may want to integrate it with your game store.
 </div>
 
 <p>As soon as a <em>collection</em> or a <em>license key</em> is distributed, it’s recommended to set <strong>distributed</strong> flag to <em>true</em>, so you don’t distribute it twice by mistake. To mark the collection as <em>distributed</em>, click the <em>Action</em> button and then select <em>Mark as distributed</em> from the drop-down menu.</p>
@@ -199,8 +199,9 @@
 
 <p>You can read the entered license key from your game. <em>Patcher</em> is passing to your game an argument that looks similar to this:</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>+patcher-data-location app_data.json
-</code></pre></div></div>
+<p><code class="highlighter-rouge">"
++patcher-data-location app_data.json
+</code>”</p>
 
 <p>The <code class="highlighter-rouge">app_data.json</code> file contents look like this:</p>
 
@@ -223,8 +224,9 @@
 
 <p>To verify a license key, you need one more thing - your application secret. Make sure to hard-code it within your game. Then make a GET request to:</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>https://keys2.patchkit.net/v2/keys/LICENSE_KEY?app_secret=APP_SECRET
-</code></pre></div></div>
+<p><code class="highlighter-rouge">"
+https://keys2.patchkit.net/v2/keys/LICENSE_KEY?app_secret=APP_SECRET
+</code>”</p>
 
 <p>Make sure to replace <code class="highlighter-rouge">LICENSE_KEY</code> with entered license key and <code class="highlighter-rouge">APP_SECRET</code> with your application secret string. Now expect to receive <a href="https://en.wikipedia.org/wiki/List_of_HTTP_status_codes#2xx_Success">HTTP 200 OK</a> response and ignore the body content. Any other response code would mean that something is wrong with the license key and player is most probably not authorized to play the game.</p>
 
