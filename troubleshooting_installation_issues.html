@@ -99,7 +99,7 @@
       <li><a href="#possible-reason-isp-hardware-issues" id="markdown-toc-possible-reason-isp-hardware-issues">Possible Reason: ISP Hardware Issues</a></li>
       <li><a href="#possible-reason-wi-fi" id="markdown-toc-possible-reason-wi-fi">Possible Reason: Wi-Fi</a></li>
       <li><a href="#possible-reason-routing-issues" id="markdown-toc-possible-reason-routing-issues">Possible Reason: Routing Issues</a></li>
-      <li><a href="#possible-reason-malcious-or-packet-inspection-software" id="markdown-toc-possible-reason-malcious-or-packet-inspection-software">Possible Reason: Malcious or Packet Inspection Software</a></li>
+      <li><a href="#possible-reason-malicious-or-packet-inspection-software" id="markdown-toc-possible-reason-malicious-or-packet-inspection-software">Possible Reason: Malicious or Packet Inspection Software</a></li>
       <li><a href="#possible-reason-firewall-configuration" id="markdown-toc-possible-reason-firewall-configuration">Possible Reason: Firewall Configuration</a></li>
       <li><a href="#nothing-helps" id="markdown-toc-nothing-helps">Nothing Helps?</a></li>
     </ul>
@@ -121,11 +121,11 @@
   </li>
 </ul>
 
-<p>While PatchKit desktop applications are basing on fail-safe architecture principles, there are several cases when something may go wrong during the initial installation or patching stage. On this page, you can learn what common issues your users may encounter.</p>
+<p>While PatchKit desktop applications are based on the fail-safe architecture principles, there are several cases when something may go wrong during the initial installation or patching stage. On this page, you can learn what common issues your users may encounter.</p>
 
 <h2 id="downloading-issues">Downloading Issues</h2>
 
-<p>The most common issues are downloading issues. While worldwide Internet infrastructure is getting better every day, there’s still plenty of things that may slow down or completely prevent the user from downloading the application.</p>
+<p>Downloading issues are the most common ones. While worldwide Internet infrastructure is getting better every day, there’s still plenty of things that may slow down or completely prevent the user from downloading the application.</p>
 
 <h3 id="possible-reason-isp-hardware-issues">Possible Reason: ISP Hardware Issues</h3>
 
@@ -139,7 +139,7 @@
 
 <h3 id="possible-reason-wi-fi">Possible Reason: Wi-Fi</h3>
 
-<p>Wi-fi hardware often causes trouble. It’s hard to find a router that does not need to be reset once in a while. That’s why you need to ask your user to try and reset the Wi-fi router is in use. Trying to connect via cable connection is recommended.</p>
+<p>Wi-fi hardware often causes trouble. It’s hard to find a router that does not need to be reset once in a while. That’s why you need to ask your user to try and reset the Wi-fi router in use. Trying to connect via cable connection is recommended.</p>
 
 <h3 id="possible-reason-routing-issues">Possible Reason: Routing Issues</h3>
 
@@ -150,12 +150,12 @@
   <li>Ask the user if the problem affects other services. If it does, the user should contact the ISP.</li>
 </ul>
 
-<h3 id="possible-reason-malcious-or-packet-inspection-software">Possible Reason: Malcious or Packet Inspection Software</h3>
+<h3 id="possible-reason-malicious-or-packet-inspection-software">Possible Reason: Malicious or Packet Inspection Software</h3>
 
 <p>We’ve observed that in some configurations, software that is tempering with the Internet connection may slow it down or prevent the user from downloading specific data.</p>
 
 <ul>
-  <li>Ask the user to try installing the application or another machine or operating system if possible</li>
+  <li>Ask the user to try installing the application on another machine or operating system if possible</li>
   <li>Ask the user to perform anti-virus scan and anti-malware scan. We recommend <a href="https://www.malwarebytes.com/mwb-download/">Malwarebytes</a> scanning software.</li>
   <li>Ask the user to disable the anti-virus during the downloading procedure.</li>
 </ul>
@@ -167,34 +167,34 @@
 <p>If the user is trying to install the software…</p>
 
 <ul>
-  <li>…on the home PC, suggest disabling the firewall.</li>
-  <li>…in the workplace, suggest contacting the administrator.</li>
-  <li>…in the school, suggest contacting the teacher or the administrator.</li>
+  <li>…on home PC, we suggest disabling the firewall.</li>
+  <li>…at workplace, we suggest contacting the administrator.</li>
+  <li>…at school, we suggest contacting the teacher or the administrator.</li>
 </ul>
 
 <h3 id="nothing-helps">Nothing Helps?</h3>
 
-<p>When the user tried everything but the issue is still there:</p>
+<p>When the user had tried everything but the issue is still there:</p>
 
 <ol>
-  <li>ask for launcher-log.txt and output_log.txt files. <a href="/debugging_patcher.html">Check here</a> where to find those.</li>
+  <li>Ask for launcher-log.txt and output_log.txt files. <a href="/debugging_patcher.html">Check here</a> where to find those.</li>
   <li>Ask the user to visit <a href="http://benchmark.patchkit.net">http://benchmark.patchkit.net</a> and share the results using the share link.</li>
-  <li><a href="mailto:support@patchkit.net">Contact PatchKit’s support</a> by email providing all from above, along with the PatchKit’s account e-mail address and application’s name.</li>
+  <li><a href="mailto:support@patchkit.net">Contact PatchKit’s support</a> by email providing all files mentioned  above, along with your PatchKit’s account e-mail address and application’s name.</li>
 </ol>
 
 <h2 id="installation--patching-issues">Installation / Patching Issues</h2>
 
-<p>PatchKit packages are encrypted, compressed packages, so these need to be decrypted, unpacked, and saved to the disk drive. This process is called the installation process, and there several places where it can fail.</p>
+<p>PatchKit packages are encrypted, compressed packages, so they need to be decrypted, unpacked, and saved to the disk drive. This process is called the installation process, and there are several places where it can fail.</p>
 
 <h3 id="possible-reason-anti-virus-software">Possible Reason: Anti-Virus Software</h3>
 
-<p>Anti-virus software is meant to protect the user from installing any malicious software, but it can act extra-careful with launchers. While our launcher is doing its best to co-exist with most of the anti-viruses, it still can get in conflict with some of these.</p>
+<p>Anti-virus software is meant to protect the user from installing any malicious software, but it can act extra-careful with launchers. While our launcher is doing its best to co-exist with most of the anti-viruses, it still can get in conflict with some of them.</p>
 
 <p>Ask the user to disable the anti-virus software during the process of installation.</p>
 
 <h3 id="possible-reason-malicious-software">Possible Reason: Malicious Software</h3>
 
-<p>Malicious software can hook-up to the system events in a similar manner like anti-virus software. These are often badly-written and may tamper with the operating system stability.</p>
+<p>Malicious software can hook-up to the system events in a similar manner to anti-virus software. These are often badly-written and may tamper with the operating system’s stability.</p>
 
 <p>Ask your user to perform a system scan using <a href="https://www.malwarebytes.com/mwb-download/">Malwarebytes</a> free scanner.</p>
 
@@ -205,8 +205,8 @@
 <h3 id="nothing-helps-1">Nothing Helps?</h3>
 
 <ol>
-  <li>ask for launcher-log.txt and output_log.txt files. <a href="/debugging_patcher.html">Check here</a> where to find those.</li>
-  <li><a href="mailto:support@patchkit.net">Contact PatchKit’s support</a> by e-mail providing all from above, along with the PatchKit’s account e-mail address and application’s name.</li>
+  <li>Ask for launcher-log.txt and output_log.txt files. <a href="/debugging_patcher.html">Check here</a> where to find those.</li>
+  <li><a href="mailto:support@patchkit.net">Contact PatchKit’s support</a> by e-mail providing all files mentioned above, along with your PatchKit’s account e-mail address and application’s name.</li>
 </ol>
 
 <h2 id="application-running-issues">Application Running Issues</h2>
@@ -221,15 +221,15 @@
   <li>Navigate to https://panel.patchkit.net.</li>
   <li>Log in into your account if needed.</li>
   <li>Navigate to your application’s latest published version.</li>
-  <li>See if <em>Executable File</em> is set correctly.</li>
+  <li>See if the <em>Executable File</em> is set correctly.</li>
 </ol>
 
 <h3 id="possible-reason-missing-application-files">Possible Reason: Missing Application Files</h3>
 
-<p>While Patcher is making sure that all provided files are installed in the system, sometimes the application package may be incomplete. The usual reason is human mistake during the packaging process. Make sure to:</p>
+<p>While Patcher is making sure that all provided files are installed in the system, sometimes the application package may be incomplete. The usual reason is a human mistake during the packaging process. Make sure to:</p>
 
 <ul>
-  <li>Zip the whole folder with the application. It’s OK to have one directory on top-level, and application executable in that directory.</li>
+  <li>Zip the whole folder with the application. It’s OK to have one directory on the top-level, and application executable in that directory.</li>
   <li>Use continuous-integration tools whenever possible. We recommend integrating with <a href="/tools_about.html">patchkit-tools</a> as well.</li>
 </ul>
 
@@ -239,11 +239,12 @@
 
 <h3 id="possible-reason-malicious-software-1">Possible Reason: Malicious Software</h3>
 
-<p>Because of the variety of this kind of applications, there’s a probability that there’s an interference. Ask the user to scan the system. We recommend <a href="https://www.malwarebytes.com/mwb-download/">Malwarebytes</a> scanner.</p>
+<p>Because of the variety of this kind of applications, there’s a possibility that there’s an interference. Ask the user to scan the system. We recommend <a href="https://www.malwarebytes.com/mwb-download/">Malwarebytes</a> scanner.</p>
 
 <h3 id="nothing-helps-2">Nothing helps?</h3>
 
-<p>There may be plenty of reasons why your application may not be working correctly. If you’re out of options, try looking for any error messages and search it on the web. You can always <a href="/contact.html">contact</a> our support for the advice.</p>
+<p>There may be a plenty of reasons why your application may not be working correctly. If you’re out of options, try looking for any error messages and search it on the web. You can always <a href="/contact.html">contact</a> our support for the advice.</p>
+
 
     </div>
     <div class="p-md"></div>
