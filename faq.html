@@ -84,7 +84,7 @@
     </div>
 
 <ol class="breadcrumb">
-  <li><a href="/">Home</a></li>
+  <li><a href="/">Index</a></li>
   <li><a href="#">FAQ</a></li>
 </ol>
 
@@ -102,7 +102,7 @@
       <li><a href="#upload-limits-hard" id="markdown-toc-upload-limits-hard">Upload limits (hard)</a></li>
     </ul>
   </li>
-  <li><a href="#do-i-need-to-build-a-patcher-application" id="markdown-toc-do-i-need-to-build-a-patcher-application">Do I need to build a patcher application?</a></li>
+  <li><a href="#do-i-need-to-build-a-launcher-application" id="markdown-toc-do-i-need-to-build-a-launcher-application">Do I need to build a launcher application?</a></li>
   <li><a href="#how-can-i-upload-my-game" id="markdown-toc-how-can-i-upload-my-game">How can I upload my game?</a></li>
   <li><a href="#how-can-i-publish-my-game" id="markdown-toc-how-can-i-publish-my-game">How can I publish my game?</a></li>
   <li><a href="#where-can-my-players-download-my-game" id="markdown-toc-where-can-my-players-download-my-game">Where can my players download my game?</a></li>
@@ -112,10 +112,10 @@
   <li><a href="#every-time-i-launch-my-application-it-re-downloads-a-broken-file" id="markdown-toc-every-time-i-launch-my-application-it-re-downloads-a-broken-file">Every time I launch my application, it re-downloads a broken file.</a></li>
   <li><a href="#how-big-games-can-patchkit-handle" id="markdown-toc-how-big-games-can-patchkit-handle">How big games can PatchKit handle?</a></li>
   <li><a href="#what-are-some-everyday-use-cases" id="markdown-toc-what-are-some-everyday-use-cases">What are some everyday use cases?</a></li>
-  <li><a href="#what-is-the-difference-between-launcher-and-patcher" id="markdown-toc-what-is-the-difference-between-launcher-and-patcher">What is the difference between launcher and patcher?</a></li>
-  <li><a href="#why-do-we-need-a-launcher" id="markdown-toc-why-do-we-need-a-launcher">Why do we need a launcher?</a></li>
+  <li><a href="#what-is-the-difference-between-runner-and-launcher" id="markdown-toc-what-is-the-difference-between-runner-and-launcher">What is the difference between runner and launcher?</a></li>
+  <li><a href="#why-do-we-need-a-runner" id="markdown-toc-why-do-we-need-a-runner">Why do we need a runner?</a></li>
   <li><a href="#id-like-to-use-patchkit-behind-a-firewall-which-domain-names-and-ports-should-i-add-to-my-whitelist" id="markdown-toc-id-like-to-use-patchkit-behind-a-firewall-which-domain-names-and-ports-should-i-add-to-my-whitelist">I’d like to use PatchKit behind a firewall. Which domain names and ports should I add to my whitelist?</a></li>
-  <li><a href="#what-arguments-are-passed-by-launcherpatcher-to-my-application" id="markdown-toc-what-arguments-are-passed-by-launcherpatcher-to-my-application">What arguments are passed by launcher/patcher to my application?</a></li>
+  <li><a href="#what-arguments-are-passed-by-runnerlauncher-to-my-application" id="markdown-toc-what-arguments-are-passed-by-runnerlauncher-to-my-application">What arguments are passed by runner/launcher to my application?</a></li>
 </ul>
 
 <h2 id="how-to-get-started-with-it">How to get started with it?</h2>
@@ -151,7 +151,7 @@
 
 <p>Reaching the upload limit won’t affect your existing application versions - you won’t be able to upload a new version. Currently, the upload limit equals to 20 GiB per month for evaluation accounts, and we set it to individual value for any other type of account.</p>
 
-<h2 id="do-i-need-to-build-a-patcher-application">Do I need to build a patcher application?</h2>
+<h2 id="do-i-need-to-build-a-launcher-application">Do I need to build a launcher application?</h2>
 
 <p><strong>Definitely not!</strong> PatchKit is a drop-in solution. If you have your game, just upload it, and you will be supplied with a <em>launcher</em> application. Download it and share it with anyone you want.</p>
 
@@ -199,7 +199,7 @@
 
 <p>That usually means that your build includes files that are being modified by your application. Log files maybe? Make sure to remove those before sending the build.</p>
 
-<p>Patcher assumes that any installed file has changed its contents may be corrupted, and it’s safer to re-download it. It takes the same action if a file is missing, but ignores any files created after the installation procedure.</p>
+<p>Launcher assumes that any installed file has changed its contents may be corrupted, and it’s safer to re-download it. It takes the same action if a file is missing, but ignores any files created after the installation procedure.</p>
 
 <p>If your use case requires to modify files that are included in the build, try generating those on the first launch or install a template somewhere more buried in the directory tree to make a copy later.</p>
 
@@ -217,20 +217,20 @@
   <li>Backend-side for game marketplaces</li>
 </ul>
 
-<h2 id="what-is-the-difference-between-launcher-and-patcher">What is the difference between launcher and patcher?</h2>
+<h2 id="what-is-the-difference-between-runner-and-launcher">What is the difference between runner and launcher?</h2>
 
 <ul>
   <li>
-    <p><strong>Launcher</strong> - a small application used for downloading the newest version of the <strong>patcher</strong>.</p>
+    <p><strong>Runner</strong> - a small application used for downloading the newest version of the <strong>launcher</strong>.</p>
   </li>
   <li>
-    <p><strong>Patcher</strong> - a bigger application used for downloading the newest version of target <strong>software</strong>.</p>
+    <p><strong>Launcher</strong> - a bigger application used for downloading the newest version of target <strong>software</strong>.</p>
   </li>
 </ul>
 
-<h2 id="why-do-we-need-a-launcher">Why do we need a launcher?</h2>
+<h2 id="why-do-we-need-a-runner">Why do we need a runner?</h2>
 
-<p><strong>Launcher</strong> allows us to release any potential updates for the patcher. It doesn’t use any patching algorithms to update the patcher - it simply redownloads the whole patcher to <strong>keep it as simple as possible.</strong></p>
+<p><strong>Runner</strong> allows us to release any potential updates for the launcher. It doesn’t use any patching algorithms to update the launcher - it simply redownloads the whole launcher to <strong>keep it as simple as possible.</strong></p>
 
 <h2 id="id-like-to-use-patchkit-behind-a-firewall-which-domain-names-and-ports-should-i-add-to-my-whitelist">I’d like to use PatchKit behind a firewall. Which domain names and ports should I add to my whitelist?</h2>
 
@@ -248,7 +248,7 @@
   <li>Outgoing UDP 443 to any IP</li>
 </ul>
 
-<h2 id="what-arguments-are-passed-by-launcherpatcher-to-my-application">What arguments are passed by launcher/patcher to my application?</h2>
+<h2 id="what-arguments-are-passed-by-runnerlauncher-to-my-application">What arguments are passed by runner/launcher to my application?</h2>
 
 <ol>
   <li>Built-in arguments pairs starting with a <code class="highlighter-rouge">+</code> character. It can look like <code class="highlighter-rouge">+key value</code>. If your application is relying on a passed argument list, make sure to ignore these pairs.</li>
@@ -259,7 +259,7 @@
     <div class="p-md"></div>
     <div class="row">
         <div class="alert alert-success">
-            <b>Did this page help you?</b> For questions about this part, please use the chatbox on the right or contact support <a href="/contact.html">here</a>.
+            <b>Did this page help you?</b> If you have any questions, please use the chatbox on the bottom-right or use our <a href="/contact.html">contact form</a>.
         </div>
     </div>
 </section>

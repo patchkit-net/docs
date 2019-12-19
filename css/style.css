@@ -8,14 +8,14 @@
 /* GLOBAL STYLES
 -------------------------------------------------- */
 body {
-  color: #676a6c;
+  color: #333;
   font-family: 'Open Sans', helvetica, arial, sans-serif;
 }
 span.navy {
   color: #1ab394;
 }
 p.text-color {
-  color: #676a6c;
+  color: #333;
 }
 a.navy-link {
   color: #1ab394;
@@ -25,7 +25,7 @@ a.navy-link:hover {
   color: #17a185;
 }
 section p {
-  color: #676a6c;
+  color: #333;
 }
 address {
   font-size: 13px;
@@ -1026,6 +1026,10 @@ section.comments {
   }
 }
 
+#content {
+  font-size: 1.2em;
+}
+
 #content img {
   max-width: 100%;
   box-shadow: 0px 0px 15px #888888;
@@ -1264,3 +1268,7 @@ h2[id]::before,h3[id]::before {
 }
 
 
+h1, .h1, h2, .h2, h3, .h3 {
+    margin-top: 30px;
+    margin-bottom: 10px;
+}

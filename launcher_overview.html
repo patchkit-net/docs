@@ -85,184 +85,176 @@
 
 <ol class="breadcrumb">
   <li><a href="/">Index</a></li>
-  <li><a href="#">Debugging Runner and Launcher</a></li>
+  <li><a href="#">Launchers Overview</a></li>
 </ol>
 
 <section id="content" class="container">
     <div class="row">
-        <h1>Debugging Runner and Launcher</h1>
+        <h1>Launchers Overview</h1>
 
         
         
-        <p>On this page, you will learn how to debug and report issues with the <em>runner</em> and the <em>launcher</em>. You might want to read <a href="/launcher_lifecycle.html">Launchers Lifecycle</a> first.</p>
+        <h2 id="what-is-a-launcher">What is a Launcher?</h2>
 
-<h2 id="getting-the-logs">Getting the logs</h2>
+<p>A launcher is a small application that is responsible for downloading your game/app and keeping it up to date. In most cases, they also handle user account management, news services, and even game settings. Most of the games distributed digitally are managed using some kind of a launcher.</p>
 
-<p>Runner and launcher logs are usually the first thing you should be looking into. Here’s the list of where runner and launcher logs can be found.</p>
+<p>Some launchers are dedicated to run only a single game (most of the MMORPG launchers), but most known are these that can install, manage and start multiple games, like <a href="https://store.steampowered.com/">Steam</a>, <a href="https://www.origin.com/pol/en-us/store/download">Origin</a> or <a href="https://www.blizzard.com/en-us/apps/battle.net/desktop">Battle.NET Desktop App</a>.</p>
 
-<p>Watch out, since both runner and launcher logs will get overwritten as soon as you start your game again. If you want to keep them (to send them to support@patchkit.net, for example), you have to make a copy before each run.</p>
-
-<h3 id="runner">Runner</h3>
-
-<table>
-  <thead>
-    <tr>
-      <th>Operating System</th>
-      <th>Location</th>
-      <th>Notes</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>Windows</td>
-      <td>launcher-log.txt</td>
-      <td>Next to launcher.exe</td>
-    </tr>
-    <tr>
-      <td>Windows</td>
-      <td>%APP_DATA%/Remote/patchkit-launcher/launcher-log.txt</td>
-      <td>&gt;= 1.5.1 if WORKDIR is restricted</td>
-    </tr>
-    <tr>
-      <td>GNU/Linux</td>
-      <td>launcher-log.txt</td>
-      <td>Next to launcher binary</td>
-    </tr>
-    <tr>
-      <td>Mac OSX</td>
-      <td>~/Library/Application Support/PatchKit/Apps/launcher-log.txt</td>
-      <td> </td>
-    </tr>
-  </tbody>
-</table>
-
-<h3 id="unity-based-single-launcher">Unity-based single-launcher</h3>
-
-<table>
-  <thead>
-    <tr>
-      <th>Operating System</th>
-      <th>Location</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>Windows</td>
-      <td>C:\Users\<strong>username</strong>\AppData\LocalLow\UpSoft\PatchKit Patcher\output_log.txt</td>
-    </tr>
-    <tr>
-      <td>GNU/Linux</td>
-      <td>~/.config/unity3d/UpSoft/PatchKit Patcher/Player.log</td>
-    </tr>
-    <tr>
-      <td>Mac OSX</td>
-      <td>~/Library/Logs/Unity/Player.log</td>
-    </tr>
-  </tbody>
-</table>
-
-<p>Note that if you’re using a custom launcher and you change <em>Company Name</em> and <em>Product Name</em> in it’s setting, the path may be different. For more information, please see <a href="https://docs.unity3d.com/Manual/LogFiles.html">Unity documentation</a>.</p>
-
-<h3 id="electron-based-single-launcher">Electron-based single-launcher</h3>
-
-<table>
-  <thead>
-    <tr>
-      <th>Operating System</th>
-      <th>Location</th>
-      <th> </th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>Windows</td>
-      <td>C:\Users\<strong>username</strong>\AppData\Roaming\patchkit-pathcer\<strong>secret</strong>\pk_logs\</td>
-      <td> </td>
-    </tr>
-    <tr>
-      <td>GNU/Linux</td>
-      <td>$XDG_CONFIG_HOME/patchkit-patcher/<strong>secret</strong>/pk_logs/</td>
-      <td>If <code class="highlighter-rouge">$XDG_CONFIG_HOME</code> is set</td>
-    </tr>
-    <tr>
-      <td>GNU/Linux</td>
-      <td>~/.config/patchkit-patcher/<strong>secret</strong>/pk_logs/</td>
-      <td> </td>
-    </tr>
-    <tr>
-      <td>Mac OSX</td>
-      <td>~/Library/Application Support/patchkit-patcher/<strong>secret</strong>/pk_logs/</td>
-      <td> </td>
-    </tr>
-  </tbody>
-</table>
+<h2 id="patchkit-multiple-games-launchers">PatchKit multiple games Launchers</h2>
 
 <h3 id="electron-based-multi-launcher">Electron-based multi-launcher</h3>
 
+<picture>
+    <source type="image/webp" srcset="img/launcher_overview/bossa_launcher.webp" />
+    <source type="image/jpeg" srcset="img/launcher_overview/bossa_launcher.jpg" />
+    <img src="img/launcher_overview/bossa_launcher.jpg" alt="Bossa Presents Game Launcher" class="shadow-5" />
+</picture>
+
+<p>Electron-based multi-launcher is the most advanced PatchKit launcher available. It allows to install and manage multiple games at once with screen-shots, news, and video support. It’s Electron-based, enabling heavy customization using well-known web technologies.</p>
+
+<p>The multi-launcher supports stream-based installation, allowing to install the game/app during the download, so it won’t require more disk space than actually required. Due to highly-extensible infrastructure, it makes it easy to implement any additional front-end features like user accounts or game purchases.</p>
+
+<h4 id="good-for">Good for</h4>
+
+<ul>
+  <li>Distributions of multiple games/apps</li>
+  <li>Game marketplaces</li>
+  <li>Rich HTML+CSS+JS content presentation</li>
+</ul>
+
+<h4 id="using-it">Using it</h4>
+
+<p>Currently, an Electron-based launcher can be enabled on demand. If you wish to use it, please <a href="/contact.html">contact us</a>.</p>
+
+<h2 id="patchkit-single-game-launchers">PatchKit single game Launchers</h2>
+
+<h3 id="unity-based-single-launcher">Unity-based single-launcher</h3>
+
+<p><img src="/img/launcher_overview/patcher.jpg" alt="Unity-based single-launcher screenshot" /></p>
+
+<p>Unity-based single-launcher is the most basic launcher available. It’s built on the Unity game engine, but it renders as a regular windowed application.</p>
+
+<h4 id="good-for-1">Good for</h4>
+
+<ul>
+  <li>Small games/apps (below 1 GiB)</li>
+  <li>Starting up</li>
+</ul>
+
+<h4 id="using-it-1">Using it</h4>
+
+<p>Unity-based single-launcher is included with all PatchKit applications by default. After publishing a game, click on <strong>Get Launcher</strong> button to download it. It’s also easy to <a href="/unity_custom_patcher.html">customize it</a>.</p>
+
+<h3 id="electron-based-single-launcher">Electron-based single-launcher</h3>
+
+<h4 id="good-for-2">Good for</h4>
+
+<ul>
+  <li>Big to large games/apps</li>
+  <li>Single-game installations</li>
+</ul>
+
+<h4 id="using-it-2">Using it</h4>
+
+<p>Electron-based single-launcher will be soon available for everyone to use by default. Before it happens, we will create a custom build for you on request. Please reach using our <a href="/contact.html">contact form</a>.</p>
+
+<h2 id="launchers-comparison">Launchers comparison</h2>
+
 <table>
   <thead>
     <tr>
-      <th>Operating System</th>
-      <th>Location</th>
-      <th>Notes</th>
+      <th> </th>
+      <th><strong>Unity-based single-launcher</strong></th>
+      <th><strong>Electron-based single-launcher</strong></th>
+      <th><strong>Electron-based multi-launcher</strong></th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <td>Windows</td>
-      <td>C:\Users\<strong>username</strong>\AppData\Roaming\<strong>launcher-name</strong>\pk_logs\</td>
-      <td> </td>
+      <td>Automatic updates</td>
+      <td>YES</td>
+      <td>YES</td>
+      <td>YES</td>
     </tr>
     <tr>
-      <td>GNU/Linux</td>
-      <td>$XDG_CONFIG_HOME/<strong>launcher-name</strong>/pk_logs/</td>
-      <td>If <code class="highlighter-rouge">$XDG_CONFIG_HOME</code> is set</td>
+      <td>Release Notes</td>
+      <td>YES</td>
+      <td>YES</td>
+      <td>YES</td>
     </tr>
     <tr>
-      <td>GNU/Linux</td>
-      <td>~/.config/<strong>launcher-name</strong>/pk_logs/</td>
-      <td> </td>
+      <td>Fail-safe architecture</td>
+      <td>YES</td>
+      <td>YES</td>
+      <td>YES</td>
     </tr>
     <tr>
-      <td>Mac OSX</td>
-      <td>~/Library/Application Support/<strong>launcher-name</strong>/pk_logs/</td>
-      <td> </td>
+      <td>Automatic error reporting</td>
+      <td>YES</td>
+      <td>YES</td>
+      <td>YES</td>
+    </tr>
+    <tr>
+      <td>License-keys support</td>
+      <td>YES</td>
+      <td>YES</td>
+      <td>YES</td>
+    </tr>
+    <tr>
+      <td>Stream-based installation</td>
+      <td>NO</td>
+      <td>YES</td>
+      <td>YES</td>
+    </tr>
+    <tr>
+      <td>HTML engine</td>
+      <td>NO*</td>
+      <td>YES</td>
+      <td>YES</td>
+    </tr>
+    <tr>
+      <td>Multiple games support</td>
+      <td>NO</td>
+      <td>NO</td>
+      <td>YES</td>
+    </tr>
+    <tr>
+      <td>Screenshot &amp; video galleries</td>
+      <td>NO</td>
+      <td>NO</td>
+      <td>YES</td>
+    </tr>
+    <tr>
+      <td>User account support</td>
+      <td>NO</td>
+      <td>NO</td>
+      <td>YES</td>
+    </tr>
+    <tr>
+      <td>Detailed user analytics</td>
+      <td>NO</td>
+      <td>NO</td>
+      <td>YES</td>
+    </tr>
+    <tr>
+      <td>Distribution size</td>
+      <td>~25 MiB</td>
+      <td>~80 MiB</td>
+      <td>~80 MiB</td>
+    </tr>
+    <tr>
+      <td>Operating Systems Support</td>
+      <td>Windows, OSX, Linux**</td>
+      <td>Windows, OSX, Linux</td>
+      <td>Windows, OSX, Linux</td>
     </tr>
   </tbody>
 </table>
 
-<h2 id="command-line-arguments-unity-based-only">Command line arguments (unity-based only)</h2>
-
-<p>The launcher (formerly patcher) should be run with the following command-line arguments:</p>
-
-<p><code class="highlighter-rouge">"
-patcher.exe --installdir "dir" --secret "secret" --readable
-</code>”</p>
-
-<p>You can try and launch it with your custom <em>installdir</em> and <em>secret</em>. Remember always to pass <code class="highlighter-rouge">--readable</code>, because otherwise, the patcher will expect an encoded secret instead of a string.</p>
-
-<h2 id="environment-variables">Environment variables</h2>
-
-<p>Launcher behavior can be overridden by setting up those environment variables.</p>
-
-<table>
-  <thead>
-    <tr>
-      <th>Variable Name</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>PK_PATCHER_FORCE_SECRET</td>
-      <td>Set it to application secret to forcefully change what game should be downloaded.</td>
-    </tr>
-    <tr>
-      <td>PK_PATCHER_FORCE_VERSION</td>
-      <td>Change the latest game version to the given one. This is internal version id starting from 1.</td>
-    </tr>
-  </tbody>
-</table>
+<ul>
+  <li>* There may be Unity plugins that enable HTML engine embedding.</li>
+  <li>** Unity-based single-launcher has been reported to crash on some Linux distributions randomly. The nature of this issue seems to be related to graphics card drivers and window manager in use.</li>
+</ul>
 
     </div>
     <div class="p-md"></div>
