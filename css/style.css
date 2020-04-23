@@ -1048,6 +1048,7 @@ h2[id]::before,h3[id]::before {
   display:block;
   height:90px; /* fixed header height*/
   margin:-90px 0 0;
+  pointer-events: none;
 }
 
 #content > table, th, td {
