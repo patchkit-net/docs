@@ -85,65 +85,60 @@
 
 <ol class="breadcrumb">
   <li><a href="/">Index</a></li>
-  <li><a href="#">Pricing</a></li>
+  <li><a href="#">Signing the Launcher with a Certificate</a></li>
 </ol>
 
 <section id="content" class="container">
     <div class="row">
-        <h1>Pricing</h1>
+        <h1>Signing the Launcher with a Certificate</h1>
 
         
         
         <div id="inner-content">
-            <h3 id="custom-plans">Custom Plans</h3>
+            <p>Running the PatchKit Launcher on a Windows PC may result in the following message on Windows PC:</p>
 
-<p>We understand that our clients have very specific needs. Being said, please use our <a href="https://patchkit.net/pricing.html">Get a Quote</a> form, so we can prepare an ideal pricing plan for your needs.</p>
+<p><img src="/img/certificate/smart_screen.png" alt="Windows Smart Screen Warning" /></p>
 
-<h3 id="pay-as-you-go-payg">Pay As You Go (PAYG)</h3>
+<p>This message usually means exactly what it says - the Microsoft Defender SmartScreen does not know this application, and it prevents it from running. It can be easily ignored by clicking on the <code class="highlighter-rouge">More info</code> link and then <code class="highlighter-rouge">Run anyway</code> button, but it’s highly counterintuitive for the average user and may create a lot of support queries to the publisher.</p>
 
-<p>You pay only for the outbound (to the internet) data transfer that you use, billed monthly at the beginning of each month. Prices may vary depending on the region.</p>
+<p>One way to prevent it from happening is to sign the Launcher with a <em>code signing certificate</em>. A signature raises the trust score of the application and usually gets rid of the above message.</p>
 
-<table>
-  <thead>
-    <tr>
-      <th><strong>Traffic From</strong></th>
-      <th><strong>Price</strong></th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>Europe, US</td>
-      <td>$0.04 / GiB</td>
-    </tr>
-    <tr>
-      <td>Asia &amp; Pacific</td>
-      <td>$0.06 / GiB</td>
-    </tr>
-    <tr>
-      <td>Latin America</td>
-      <td>$0.09 / GiB</td>
-    </tr>
-  </tbody>
-</table>
+<h2 id="obtaining-the-certificate">Obtaining the Certificate</h2>
 
-<p>PAYG model may be the best choice for those who don’t expect too much traffic from their accounts.</p>
+<p>A code signing certificate needs to be purchased. There are only a handful of certificate providers, some of them are listed on <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/dashboard/get-a-code-signing-certificate">this Microsoft Documentation Page</a>.</p>
 
-<h3 id="indie--student-plan">Indie &amp; Student Plan</h3>
-
-<p>We gladly support indie developers. By “indies” we understand those, who are building a game with a small team without a publisher. We offer a PatchKit account with:</p>
+<p>There are two types of certificates in general:</p>
 
 <ul>
-  <li><strong>500 GiB</strong> of pooled data transfer per month for free</li>
-  <li><strong>Spike Guard</strong> feature for free</li>
-  <li><strong>License Keys</strong> feature on demand for free</li>
-  <li>Overages billed with standard PAYG pricing.</li>
+  <li>Standard Validation (SV)</li>
+  <li>Extended Validation (EV)</li>
 </ul>
 
-<p>If you’d like to apply to the Indie plan, please use <a href="">Indie Apply Form</a>.</p>
+<p>The difference (except the price) is the level of validation. While SV certificate should get rid of the Windows SmartScreen warning message, an EV will raise your trust score even more. Unfortunately, we can’t tell in which cases Windows SmartScreen can display its dialog message even if the application is signed with an SV certificate.</p>
 
-<h2 id="questions">Questions?</h2>
+<h2 id="signing-the-binaries">Signing the Binaries</h2>
 
-<p>If you have any questions regarding pricing, please don’t hesitate to <a href="/contact.html">contact us</a>.</p>
+<div class="alert alert-info" role="alert">
+    This description is related to a unity-based single-launcher setup. For any other setup, the steps are pretty similar.
+</div>
+
+<p>There are two to three files that you will need to sign:</p>
+
+<ul>
+  <li>Launcher.exe</li>
+  <li>Patcher.exe</li>
+  <li>Your application’s executable</li>
+</ul>
+
+<p>The actual signing process is described in detail on <a href="https://comodosslstore.com/codesigning.aspx">Comodo Code Signing page</a> - <em>The Six Steps of Code Signing</em>. Make sure to read it carefully.</p>
+
+<p>To sign the Patcher.exe, you will need to either use our default binaries or make a custom build. Our provided binaries can be easily extracted from the <code class="highlighter-rouge">patcher</code> directory after the first run. When signed, upload your custom launcher to the panel - <a href="/unity_custom_patcher.html">Customizing Unity-based single-launcher</a>.</p>
+
+<p>The launcher.exe needs to be signed only once, but it cannot be re-uploaded. Ensure that you share your signed binary with your users by hosting it in a place that can be reached.</p>
+
+<h2 id="code-signing-on-osx">Code signing on OSX</h2>
+
+<p>The main difference between Windows and OSX is the method of code signing. You can find how to do that on this <a href="https://www.digicert.com/kb/code-signing/mac-os-codesign-tool.htm">DigiCert article</a>.</p>
 
         </div>
     </div>
