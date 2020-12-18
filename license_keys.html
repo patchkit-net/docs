@@ -98,13 +98,13 @@
         
         <div id="inner-content">
             <ul id="markdown-toc">
-  <li><a href="#how-license-keys-are-working" id="markdown-toc-how-license-keys-are-working">How license keys are working?</a></li>
+  <li><a href="#how-it-works" id="markdown-toc-how-it-works">How it works?</a></li>
   <li><a href="#enabling-license-keys" id="markdown-toc-enabling-license-keys">Enabling license keys</a></li>
   <li><a href="#setup-overview" id="markdown-toc-setup-overview">Setup Overview</a></li>
   <li><a href="#distributing-collection" id="markdown-toc-distributing-collection">Distributing collection</a></li>
   <li><a href="#distributing-individual-keys" id="markdown-toc-distributing-individual-keys">Distributing individual keys</a></li>
   <li><a href="#blocking-collections-and-keys" id="markdown-toc-blocking-collections-and-keys">Blocking collections and keys</a></li>
-  <li><a href="#securing-the-game-from-being-played" id="markdown-toc-securing-the-game-from-being-played">Securing the game from being played</a>    <ul>
+  <li><a href="#securing-the-application-from-being-used" id="markdown-toc-securing-the-application-from-being-used">Securing the application from being used</a>    <ul>
       <li><a href="#reading-the-license-key" id="markdown-toc-reading-the-license-key">Reading the license key</a></li>
       <li><a href="#verifying-the-license-key" id="markdown-toc-verifying-the-license-key">Verifying the license key</a></li>
       <li><a href="#tolerance-to-errors" id="markdown-toc-tolerance-to-errors">Tolerance to errors</a>        <ul>
@@ -115,36 +115,42 @@
       </li>
     </ul>
   </li>
+  <li><a href="#sharing-keys-between-applications" id="markdown-toc-sharing-keys-between-applications">Sharing keys between applications</a>    <ul>
+      <li><a href="#creating-a-link" id="markdown-toc-creating-a-link">Creating a Link</a></li>
+      <li><a href="#testing-a-link" id="markdown-toc-testing-a-link">Testing a link</a></li>
+      <li><a href="#modifying-or-removing-a-link" id="markdown-toc-modifying-or-removing-a-link">Modifying or removing a link</a></li>
+    </ul>
+  </li>
 </ul>
 
-<p>PatchKit allows you to use license keys with your games. If you’re looking for a way of limiting who should be allowed to play your game, license keys may be the best available option.</p>
+<p>PatchKit allows you to use license keys with your applications. If you’re looking for a way of limiting who should be allowed to start your application, license keys may be the best available option.</p>
 
 <p><img src="/img/license_keys/question.png" alt="Launcher asking for a license key" /></p>
 
-<h2 id="how-license-keys-are-working">How license keys are working?</h2>
+<h2 id="how-it-works">How it works?</h2>
 
-<p>As soon as license keys are enabled for your game, your players will be prompted to enter a license key by the <em>Launcher</em>. Failing to do so prevents the player from downloading the game.</p>
+<p>As soon as license keys are enabled for your application, your users will be prompted to enter a license key by the <em>Launcher</em>. Failing to do so prevents the user from downloading the application.</p>
 
-<p>As you can see, having license keys enabled for your game only prevents the player from downloading your game and its updates. As soon as your game is on the hard drive, it can be played without the need of having a valid license key if the player is smart enough to go into the installation directory and launch the game from its executable instead of using the <em>Launcher</em>. We call this approach a non-intrusive DRM since it requires the player to be fair without any negative impact on the game’s mechanics.</p>
+<p>As you can see, having license keys enabled for your application only prevents the user from downloading it and any of the updates. As soon as your application is on the hard drive, it can be started without the need of having a valid license key if the user is smart enough to go into the installation directory and launch it from its executable instead of using the <em>Launcher</em>. We call this approach a non-intrusive DRM since it requires the user to be fair without any negative impact on the app’s mechanics.</p>
 
-<p>If you find this method of validation insufficient, it’s recommended to implement additional keys check inside of your game’s code. Details of how to do that can be found inside <a href="#securing-the-game-from-being-played">Securing the game from being played</a> section.</p>
+<p>If you find this method of validation insufficient, it’s recommended to implement additional keys check inside of your application’s code. Details of how to do that can be found inside <a href="#securing-the-application-from-being-used">Securing the application from being used</a> section.</p>
 
 <h2 id="enabling-license-keys">Enabling license keys</h2>
 
-<p>License keys are disabled for all new games by default. To enable license keys:</p>
+<p>License keys are disabled for all new applications by default. To enable license keys:</p>
 
 <ol>
   <li>Go to <a href="http://panel.patchkit.net/apps">Applications</a> listing.</li>
-  <li>Click on the name of your game.</li>
-  <li>Click on the <em>Keys</em> option - it can be found on the upper navigation bar.</li>
-  <li>Click on the *Enable License Keys * button.</li>
+  <li>Click on the name of your application.</li>
+  <li>Click on the <em>Keys</em> tab - it can be found on the upper navigation bar.</li>
+  <li>Find the <em>Status</em> option and change it to <em>Enabled</em>.</li>
 </ol>
 
 <h2 id="setup-overview">Setup Overview</h2>
 
 <div class="bs-callout bs-callout-info">
   <h4>Info</h4>
-  You will be prompted on whether you are sure to enable license keys. Enabling license keys means that no one without a license key can download or upgrade your game.
+  You will be prompted on whether you are sure to enable license keys. Enabling license keys means that no one without a license key can download or upgrade your application.
 </div>
 
 <p><img src="/img/license_keys/overview.png" alt="License keys collections table" /></p>
@@ -156,7 +162,7 @@
 <ol>
   <li><strong>Distributed</strong> - This flag tells you whether the collection has been distributed. <strong>This flag is set manually and exists only for organizational purposes</strong>.</li>
   <li><strong>In Use</strong> - The number of keys that have been used at least once. When a key has been used more than once, this number won’t change.</li>
-  <li><strong>Blocked</strong> - Tells whether this <em>collection</em> has been blocked from further use. Players can no longer use blocked keys. You can always unblock any previously blocked collections.</li>
+  <li><strong>Blocked</strong> - Tells whether this <em>collection</em> has been blocked from further use. Users can no longer use blocked keys. You can always unblock any previously blocked collections.</li>
   <li><strong>Status</strong> - Keys generation status. If you order a large number of keys, you will have to wait sometime before the collection is ready to be used.</li>
 </ol>
 
@@ -171,7 +177,7 @@
 
 <div class="bs-callout bs-callout-info">
   <h4>Info</h4>
-  PatchKit won't distribute your keys in any particular way. If you want your keys to be delivered to your players, you have to do it on your own. Most probably, you may want to integrate it with your game store.
+  PatchKit won't distribute your keys in any particular way. If you want your keys to be delivered to your users, you have to do it on your own. Most probably, you may want to integrate it with your applications store.
 </div>
 
 <p>As soon as a <em>collection</em> or a <em>license key</em> is distributed, it’s recommended to set <strong>distributed</strong> flag to <em>true</em>, so you don’t distribute it twice by mistake. To mark the collection as <em>distributed</em>, click the <em>Action</em> button and then select <em>Mark as distributed</em> from the drop-down menu.</p>
@@ -192,15 +198,15 @@
 
 <h2 id="blocking-collections-and-keys">Blocking collections and keys</h2>
 
-<p>Collections and keys can be blocked from further use in the manner similar to marking collections and keys as distributed. Note that blocking keys and collections have a real effect on the players by forbidding them from downloading the game and updates.</p>
+<p>Collections and keys can be blocked from further use in a manner similar to marking collections and keys as distributed. Note that blocking keys and collections have a real effect on the users by forbidding them from downloading the application and updates.</p>
 
-<h2 id="securing-the-game-from-being-played">Securing the game from being played</h2>
+<h2 id="securing-the-application-from-being-used">Securing the application from being used</h2>
 
-<p>License keys are preventing the game from being downloaded by default, as soon as it resides on the hard drive it can be played without any additional checks. Here you can find the instructions on how to make sure that player won’t be able to play the game without a valid license key.</p>
+<p>License keys prevent the application from being downloaded by default, as soon as it resides on the hard drive, it can be started without any additional checks. Here you can find the instructions on making sure that users won’t be able to use the application without a valid license key.</p>
 
 <h3 id="reading-the-license-key">Reading the license key</h3>
 
-<p>You can read the entered license key from your game. <em>Launcher</em> is passing to your game an argument that looks similar to this:</p>
+<p>You can read the entered license key from your application. <em>Launcher</em> is passing to your app’s process an argument that looks similar to this:</p>
 
 <p><code class="highlighter-rouge">"
 +patcher-data-location app_data.json
@@ -220,18 +226,18 @@
 
 <div class="bs-callout bs-callout-info">
   <h4>Info</h4>
-  License key encryption is a feature that is not available yet. By default, it will always be set to <code class="highlighter-rouge">none</code> and you will be able to set the encryption method in the game's configuration panel.
+  License key encryption is a feature that is not available yet. By default, it will always be set to <code class="highlighter-rouge">none</code> and you will be able to set the encryption method in the apps's configuration panel.
 </div>
 
 <h3 id="verifying-the-license-key">Verifying the license key</h3>
 
-<p>To verify a license key, you need one more thing - your application secret. Make sure to hard-code it within your game. Then make a GET request to:</p>
+<p>To verify a license key, you need one more thing - your application secret. Make sure to hard-code it within your application. Then make a GET request to:</p>
 
 <p><code class="highlighter-rouge">"
 https://keys2.patchkit.net/v2/keys/LICENSE_KEY?app_secret=APP_SECRET
 </code>”</p>
 
-<p>Make sure to replace <code class="highlighter-rouge">LICENSE_KEY</code> with entered license key and <code class="highlighter-rouge">APP_SECRET</code> with your application secret string. Now expect to receive <a href="https://en.wikipedia.org/wiki/List_of_HTTP_status_codes#2xx_Success">HTTP 200 OK</a> response and ignore the body content. Any other response code would mean that something is wrong with the license key and player is most probably not authorized to play the game.</p>
+<p>Make sure to replace <code class="highlighter-rouge">LICENSE_KEY</code> with the entered license key, and <code class="highlighter-rouge">APP_SECRET</code> with your application secret string. Now expect to receive <a href="https://en.wikipedia.org/wiki/List_of_HTTP_status_codes#2xx_Success">HTTP 200 OK</a> response and ignore the body content. Any other response code would mean that something is wrong with the license key and the user is most probably not authorized to use the application.</p>
 
 <div class="bs-callout bs-callout-info">
   <h4>Info</h4>
@@ -242,16 +248,68 @@ https://keys2.patchkit.net/v2/keys/LICENSE_KEY?app_secret=APP_SECRET
 
 <h4 id="missing-patcher-data-location-parameter">Missing +patcher-data-location parameter</h4>
 
-<p>If you cannot find this parameter within your application arguments, the player could’ve launched the game directly from the executable. You can try to locate this file manually or display an error with a request to start the game using the <em>Launcher</em>.</p>
+<p>If you cannot find this parameter within your application arguments, the user could’ve launched the application directly from the executable. You can try to locate this file manually or display an error with a request to start the application using the <em>Launcher</em>.</p>
 
 <h4 id="invalid-app_datajson-content">Invalid app_data.json content</h4>
 
-<p>If the content of <code class="highlighter-rouge">app_data.json</code> file is different than you’ve expected, somebody might’ve tried to point your game to a different file. You should terminate the game immediately and inspect the cause.</p>
+<p>If the content of <code class="highlighter-rouge">app_data.json</code> file is different than you’ve expected, somebody might’ve tried to point your application to a different file. You should terminate the process immediately and probably investigate this situation.</p>
 
 <h4 id="keys-server-not-reachable">Keys server not reachable</h4>
 
-<p>Usually, a lack of Internet connection may be the reason. Then it’s up to you to decide if you allow the player to play the game. It may be a right approach to allow to play the game offline at all times or for a limited amount of time.</p>
+<p>If this happens, usually a lack of the Internet connection may be the reason. Then it’s up to you to decide if you allow the user to use your application. It may be the right approach to allow to use it offline at all times or for a limited amount of time.</p>
 
+<h2 id="sharing-keys-between-applications">Sharing keys between applications</h2>
+
+<p>License keys can be shared between application. It may be useful if you have a group of applications that should be accessible using the same license key. Like:</p>
+
+<ul>
+  <li>A bundle of multiple applications</li>
+  <li>The same application for multiple architectures / operating systems</li>
+  <li>An application with multiple channels</li>
+</ul>
+
+<p>There’s no limit of how many links you can create.</p>
+
+<h3 id="creating-a-link">Creating a Link</h3>
+
+<p>Sharing keys between two applications can be done by making a link. To create a link:</p>
+
+<ol>
+  <li>Navigate to <a href="http://panel.patchkit.net/apps">Applications</a>.</li>
+  <li>Find your application on the list and click on its name.</li>
+  <li>Click on the <em>Keys</em> tab - it can be found on the upper navigation bar.</li>
+  <li>Click on the <em>New Link</em> button.</li>
+</ol>
+
+<p>On the next form, you will be asked to specify a direction of the link.</p>
+
+<ul>
+  <li>Outgoing - License keys of the current application will be shared with another application that you will choose.</li>
+  <li>Incoming - License keys of another application will be shared with the current one.</li>
+</ul>
+
+<p>In the same form, there’s a application choice box as well.</p>
+
+<p>For instance, if your application name is <code class="highlighter-rouge">AppOne</code> and you want to share its keys with <code class="highlighter-rouge">AppTwo</code>, you have to select the direction to be <em>Outgoing</em> and find <code class="highlighter-rouge">AppTwo</code> on the applications list.</p>
+
+<p>When done, click on the <em>Create Link</em> button.</p>
+
+<h3 id="testing-a-link">Testing a link</h3>
+
+<p>To test a link, simply try using a license key on all of the applications that are linked.</p>
+
+<h3 id="modifying-or-removing-a-link">Modifying or removing a link</h3>
+
+<p>Links cannot be modified. If you want to change the direction or the application linked, the simplest approach would be to remove a link and create a new one.</p>
+
+<p>To remove a link:</p>
+
+<ol>
+  <li>Navigate to <a href="http://panel.patchkit.net/apps">Applications</a>.</li>
+  <li>Find your application on the list and click on its name.</li>
+  <li>Click on the <em>Keys</em> tab - it can be found on the upper navigation bar.</li>
+  <li>Find the link on the Links list that you want to remove and then click on the <em>delete</em> label.</li>
+</ol>
 
         </div>
     </div>
